@@ -1,10 +1,10 @@
 T1	Residence 26 39	Juvenile Hall
-E1	Residence:T1 Type:T2 State:T4 Time:T3
+E1	Residence:T1 Type:T2 Status:T4 Time:T3
 T2	Type 26 39	Juvenile Hall
-T3	Temporal 40 62	for about 25 more days
-T4	Status 17 25	He is in
-A1	Value T4 current
+T3	Time 40 62	for about 25 more days
+T4	StatusTime 17 25	He is in
+A1	StatusTimeVal T4 current
 T5	Tobacco 72 81	nonsmoker
-E2	Tobacco:T5 State:T6
-T6	Status 72 75	non
-A2	Value T6 none
+E2	Tobacco:T5 Status:T6
+T6	StatusTime 72 75	non
+A2	StatusTimeVal T6 none

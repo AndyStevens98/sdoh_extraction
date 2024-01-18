@@ -1,12 +1,12 @@
-T1	Status 24 27	non
-A1	Value T1 none
+T1	StatusTime 24 27	non
+A1	StatusTimeVal T1 none
 T2	Tobacco 27 33	smoker
-E1	Tobacco:T2 State:T1
-T4	Status 35 38	non
-A2	Value T4 none
+E1	Tobacco:T2 Status:T1
+T4	StatusTime 35 38	non
+A2	StatusTimeVal T4 none
 T5	Alcohol 38 47	alcoholic
-E2	Alcohol:T5 State:T4
-T6	Status 53 56	not
-A3	Value T6 none
+E2	Alcohol:T5 Status:T4
+T6	StatusTime 53 56	not
+A3	StatusTimeVal T6 none
 T7	Drug 59 68	drug user
-E3	Drug:T7 State:T6
+E3	Drug:T7 Status:T6

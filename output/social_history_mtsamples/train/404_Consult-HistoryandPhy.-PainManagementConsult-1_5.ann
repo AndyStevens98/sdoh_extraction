@@ -1,23 +1,23 @@
 T1	Occupation 31 44	on disability
-E1	Occupation:T1 Method:T2 State:T3
+E1	Occupation:T1 Method:T2 Status:T3
 T2	Method 31 44	on disability
-T3	Status 28 44	is on disability
-A1	Value T3 current
-T4	Status 49 57	does not
-A2	Value T4 none
+T3	StatusTime 28 44	is on disability
+A1	StatusTimeVal T3 current
+T4	StatusTime 49 57	does not
+A2	StatusTimeVal T4 none
 T5	Tobacco 58 63	smoke
-E2	Tobacco:T5 State:T4
-T7	Status 68 76	does not
-A3	Value T7 none
+E2	Tobacco:T5 Status:T4
+T7	StatusTime 68 76	does not
+A3	StatusTimeVal T7 none
 T8	Alcohol 77 90	drink alcohol
-E3	Alcohol:T8 State:T7
+E3	Alcohol:T8 Status:T7
 T9	MaritalStatus 98 104	single
-E4	MaritalStatus:T9 Type:T10 State:T11
+E4	MaritalStatus:T9 Type:T10 Status:T11
 T10	Type 98 104	single
-T11	Status 95 104	is single
-A4	Value T11 current
+T11	StatusTime 95 104	is single
+A4	StatusTimeVal T11 current
 T12	LivingSituation 109 132	lives with a girlfriend
-E5	LivingSituation:T12 Method:T13 State:T14
+E5	LivingSituation:T12 Method:T13 Status:T14
 T13	Method 109 132	lives with a girlfriend
-T14	Status 109 114	lives
-A5	Value T14 current
+T14	StatusTime 109 114	lives
+A5	StatusTimeVal T14 current

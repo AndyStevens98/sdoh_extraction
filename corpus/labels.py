@@ -115,6 +115,7 @@ def get_indices_by_sent(start, end, offsets, tokens):
     token_end = None
 
     for i, sent in enumerate(offsets):
+        #print(f"{start}, {end}: ", sent)
 
         for j, (char_start, char_end) in enumerate(sent):
 
@@ -206,6 +207,7 @@ def tb2entities(tb_dict, attr_dict, \
             token_indices_ = None
             tokens_ = None
         else:
+            #print(tb)
             sent_index, token_start, token_end, tokens_ = get_indices( \
                                 start = tb.start,
                                 end = tb.end,

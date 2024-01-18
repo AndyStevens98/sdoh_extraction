@@ -1,11 +1,11 @@
-T1	Status 271 277	denied
-A1	Value T1 none
+T1	StatusTime 271 277	denied
+A1	StatusTimeVal T1 none
 T2	Alcohol 218 225	alcohol
-E1	Alcohol:T2 State:T1 ExposureHistory:T5
+E1	Alcohol:T2 Status:T1 ExposureHistory:T5
 T3	Drug 227 232	drugs
-E2	Drug:T3 State:T1 ExposureHistory:T5
+E2	Drug:T3 Status:T1 ExposureHistory:T5
 T4	Tobacco 237 244	tobacco
-E3	Tobacco:T4 State:T1 ExposureHistory:T5
+E3	Tobacco:T4 Status:T1 ExposureHistory:T5
 T5	ExposureHistory 245 265	during the pregnancy
 T6	Family 155 161	Mother
 E4	Family:T6 Type:T7

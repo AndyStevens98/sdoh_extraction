@@ -1,22 +1,22 @@
 T3	ExposureHistory 47 67	since the age of 10.
-T5	Status 149 167	has cut it down to
-A1	Value T5 current
+T5	StatusTime 149 167	has cut it down to
+A1	StatusTimeVal T5 current
 T6	Amount 168 179	half a pack
 T7	Frequency 180 187	per day
-T8	Status 192 200	does not
-A2	Value T8 none
+T8	StatusTime 192 200	does not
+A2	StatusTimeVal T8 none
 T9	Amount 201 206	abuse
 T10	Alcohol 207 215	alcohol.
-E2	Alcohol:T10 Amount:T9 State:T8
+E2	Alcohol:T10 Amount:T9 Status:T8
 T1	Tobacco 40 46	smoker
-E1	Tobacco:T1 State:T11 ExposureHistory:T3
-T11	Status 29 32	has
-A3	Value T11 current
+E1	Tobacco:T1 Status:T11 ExposureHistory:T3
+T11	StatusTime 29 32	has
+A3	StatusTimeVal T11 current
 T2	Tobacco 79 86	smoking
-E3	Tobacco:T2 State:T13 Amount:T4 Frequency:T12
+E3	Tobacco:T2 Status:T13 Amount:T4 Frequency:T12
 T4	Amount 87 96	2-3 packs
 T12	Frequency 97 104	per day
-T13	Status 75 78	was
-A4	Value T13 past
+T13	StatusTime 75 78	was
+A4	StatusTimeVal T13 past
 T14	Tobacco 175 179	pack
-E4	Tobacco:T14 Amount:T6 Frequency:T7 State:T5
+E4	Tobacco:T14 Amount:T6 Frequency:T7 Status:T5

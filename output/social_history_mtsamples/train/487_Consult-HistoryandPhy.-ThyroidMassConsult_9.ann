@@ -1,11 +1,11 @@
 T1	LivingSituation 67 95	lives with her mom in Fresno
-E1	LivingSituation:T1 Method:T2 State:T7
+E1	LivingSituation:T1 Method:T2 Status:T7
 T2	Method 67 85	lives with her mom
 T3	Family 82 85	mom
 E2	Family:T3 Type:T4
 T4	Type 82 85	mom
 T5	Location 89 95	Fresno
 T6	Residence 89 95	Fresno
-E3	Residence:T6 Location:T5 State:T7
-T7	Status 89 95	Fresno
-A1	Value T7 current
+E3	Residence:T6 Location:T5 Status:T7
+T7	StatusTime 89 95	Fresno
+A1	StatusTimeVal T7 current

@@ -1,14 +1,14 @@
 T1	MaritalStatus 31 39	divorced
-E1	MaritalStatus:T1 State:T8
+E1	MaritalStatus:T1 Status:T8
 T2	Occupation 49 58	homemaker
-E2	Occupation:T2 State:T7
+E2	Occupation:T2 Status:T7
 T3	Tobacco 63 70	smoking
-E3	Tobacco:T3 State:T5
+E3	Tobacco:T3 Status:T5
 T4	Alcohol 74 81	alcohol
-E4	Alcohol:T4 State:T5
-T5	Status 60 62	No
-A1	Value T5 none
-T7	Status 44 48	is a
-A2	Value T7 current
-T8	Status 28 30	is
-A3	Value T8 current
+E4	Alcohol:T4 Status:T5
+T5	StatusTime 60 62	No
+A1	StatusTimeVal T5 none
+T7	StatusTime 44 48	is a
+A2	StatusTimeVal T7 current
+T8	StatusTime 28 30	is
+A3	StatusTimeVal T8 current

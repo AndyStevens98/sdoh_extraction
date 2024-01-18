@@ -1,28 +1,28 @@
 T1	Tobacco 38 43	smoke
-E1	Tobacco:T1 State:T2
-T2	Status 29 37	does not
-A1	Value T2 none
+E1	Tobacco:T1 Status:T2
+T2	StatusTime 29 37	does not
+A1	StatusTimeVal T2 none
 T3	Type 44 54	cigarettes
 T5	Alcohol 62 69	alcohol
-E2	Alcohol:T5 State:T2 Frequency:T6
+E2	Alcohol:T5 Status:T2 Frequency:T6
 T6	Frequency 56 61	abuse
 T7	Drug 84 92	caffeine
-E3	Drug:T7 State:T2 Type:T4
+E3	Drug:T7 Status:T2 Type:T4
 T9	Drug 104 117	illicit drugs
-E4	Drug:T9 Type:T10 State:T11
+E4	Drug:T9 Type:T10 Status:T11
 T10	Type 104 111	illicit
-T11	Status 94 100	No use
-A2	Value T11 none
+T11	StatusTime 94 100	No use
+A2	StatusTimeVal T11 none
 T12	MaritalStatus 131 138	married
-E5	MaritalStatus:T12 Time:T13 State:T14 Type:T15
-T13	Temporal 139 151	for 22 years
-T14	Status 131 138	married
-A3	Value T14 current
+E5	MaritalStatus:T12 Time:T13 Status:T14 Type:T15
+T13	Time 139 151	for 22 years
+T14	StatusTime 131 138	married
+A3	StatusTimeVal T14 current
 T15	Type 131 138	married
 T16	Occupation 363 371	employed
-E6	Occupation:T16 State:T17 Type:T18
-T17	Status 360 371	is employed
-A4	Value T17 current
+E6	Occupation:T16 Status:T17 Type:T18
+T17	StatusTime 360 371	is employed
+A4	StatusTimeVal T17 current
 T18	Type 378 386	attorney
 T19	Family 529 537	daughter
 E7	Family:T19 Type:T20
@@ -31,7 +31,7 @@ T21	Family 233 237	wife
 E8	Family:T21 Type:T22
 T22	Type 233 237	wife
 T23	PhysicalActivity 274 283	exercises
-E9	PhysicalActivity:T23 State:T24
-T24	Status 245 262	not participating
-A5	Value T24 none
+E9	PhysicalActivity:T23 Status:T24
+T24	StatusTime 245 262	not participating
+A5	StatusTimeVal T24 none
 T4	Type 84 92	caffeine

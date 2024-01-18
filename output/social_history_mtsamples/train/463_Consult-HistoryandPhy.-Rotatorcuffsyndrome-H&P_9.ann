@@ -1,13 +1,13 @@
-T1	Status 25 31	denies
-A1	Value T1 none
+T1	StatusTime 25 31	denies
+A1	StatusTimeVal T1 none
 T2	Tobacco 32 39	smoking
-E1	Tobacco:T2 State:T1
+E1	Tobacco:T2 Status:T1
 T4	Alcohol 41 48	alcohol
-E2	Alcohol:T4 Amount:T5 State:T1
+E2	Alcohol:T4 Amount:T5 Status:T1
 T5	Amount 49 54	abuse
 T6	Type 56 63	illicit
 T7	Drug 64 68	drug
-E3	Drug:T7 Type:T6 State:T1
+E3	Drug:T7 Type:T6 Status:T1
 T8	InfectiousDiseases 77 81	STDs
-E4	InfectiousDiseases:T8 Type:T9 State:T1
+E4	InfectiousDiseases:T8 Type:T9 Status:T1
 T9	Type 77 81	STDs

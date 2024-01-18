@@ -1,18 +1,18 @@
-T1	Status 28 33	still
-A1	Value T1 current
+T1	StatusTime 28 33	still
+A1	StatusTimeVal T1 current
 T2	Tobacco 34 40	smokes
-E1	Tobacco:T2 State:T1 Amount:T4 Frequency:T5
+E1	Tobacco:T2 Status:T1 Amount:T4 Frequency:T5
 T4	Amount 41 64	about a third of a pack
 T5	Frequency 65 70	a day
 T7	Alcohol 77 83	drinks
-E2	Alcohol:T7 Frequency:T8 State:T9 Type:T16
+E2	Alcohol:T7 Frequency:T8 Status:T9 Type:T16
 T8	Frequency 84 98	only occasiona
-T9	Status 77 83	drinks
-A2	Value T9 current
+T9	StatusTime 77 83	drinks
+A2	StatusTimeVal T9 current
 T10	MaritalStatus 130 141	is married.
-E3	MaritalStatus:T10 State:T11 Type:T12
-T11	Status 130 132	is
-A3	Value T11 current
+E3	MaritalStatus:T10 Status:T11 Type:T12
+T11	StatusTime 130 132	is
+A3	StatusTimeVal T11 current
 T12	Type 133 140	married
 T13	Family 150 166	three grown sons
 E4	Family:T13 Amount:T14 Type:T15

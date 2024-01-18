@@ -1,5 +1,5 @@
 T1	Alcohol 39 46	alcohol
-E1	Alcohol:T1 Amount:T2 State:T3
+E1	Alcohol:T1 Amount:T2 Status:T3
 T2	Amount 47 52	abuse
-T3	Status 28 38	history of
-A1	Value T3 current
+T3	StatusTime 28 38	history of
+A1	StatusTimeVal T3 current

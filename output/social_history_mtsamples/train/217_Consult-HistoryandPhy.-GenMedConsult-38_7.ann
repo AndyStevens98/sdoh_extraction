@@ -1,15 +1,15 @@
-T1	Status 29 35	denies
-A1	Value T1 none
+T1	StatusTime 29 35	denies
+A1	StatusTimeVal T1 none
 T2	Tobacco 49 56	smoking
-E1	Tobacco:T2 State:T1
+E1	Tobacco:T2 Status:T1
 T4	Alcohol 58 66	drinking
-E2	Alcohol:T4 State:T1
+E2	Alcohol:T4 Status:T1
 T5	Type 70 81	intravenous
 T6	Drug 82 86	drug
-E3	Drug:T6 Type:T5 State:T1
+E3	Drug:T6 Type:T5 Status:T1
 T7	Occupation 135 151	works as a nurse
-E4	Occupation:T7 State:T8 Type:T9 Location:T10
-T8	Status 135 140	works
-A2	Value T8 current
+E4	Occupation:T7 Status:T8 Type:T9 Location:T10
+T8	StatusTime 135 140	works
+A2	StatusTimeVal T8 current
 T9	Type 146 151	nurse
 T10	Location 152 172	in a newborn nursery

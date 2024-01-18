@@ -1,11 +1,11 @@
 T1	Tobacco 166 172	smokes
-E1	Tobacco:T1 Type:T3 Amount:T4 State:T5
+E1	Tobacco:T1 Type:T3 Amount:T4 Status:T5
 T3	Type 173 183	cigarettes
 T4	Amount 184 197	quite heavily
 T6	QuitHistory 37 51	when he was 25
-T5	Status 155 161	before
-A2	Value T5 current
+T5	StatusTime 155 161	before
+A2	StatusTimeVal T5 current
 T2	Drug 31 36	drugs
-E2	Drug:T2 QuitHistory:T6 State:T7
-T7	Status 17 24	stopped
-A1	Value T7 past
+E2	Drug:T2 QuitHistory:T6 Status:T7
+T7	StatusTime 17 24	stopped
+A1	StatusTimeVal T7 past

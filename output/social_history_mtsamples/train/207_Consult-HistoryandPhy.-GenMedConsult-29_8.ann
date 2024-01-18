@@ -1,40 +1,40 @@
 T1	MaritalStatus 19 28	is single
-E1	MaritalStatus:T1 State:T2 Type:T3
-T2	Status 19 21	is
-A1	Value T2 current
+E1	MaritalStatus:T1 Status:T2 Type:T3
+T2	StatusTime 19 21	is
+A1	StatusTimeVal T2 current
 T3	Type 22 28	single
 T4	Family 37 47	2 children
 E2	Family:T4 Type:T5 Amount:T6
 T5	Type 39 47	children
 T6	Amount 37 38	2
 T7	Alcohol 52 78	drinks 4-8 beers per night
-E3	Alcohol:T7 Type:T9 Frequency:T10 State:T27 Amount:T8
+E3	Alcohol:T7 Type:T9 Frequency:T10 Status:T27 Amount:T8
 T9	Type 63 68	beers
 T10	Frequency 69 78	per night
 T11	Tobacco 83 89	smokes
-E4	Tobacco:T11 Amount:T12 Frequency:T13 State:T28 ExposureHistory:T14
+E4	Tobacco:T11 Amount:T12 Frequency:T13 Status:T28 ExposureHistory:T14
 T12	Amount 90 101	half a pack
 T13	Frequency 102 109	per day
 T14	ExposureHistory 110 122	for 30 years
 T16	Residence 131 153	born in Salt Lake City
-E5	Residence:T16 Method:T17 Location:T18 State:T23
+E5	Residence:T16 Method:T17 Location:T18 Status:T23
 T17	Method 131 138	born in
 T18	Location 139 153	Salt Lake City
 T19	Occupation 158 163	works
-E6	Occupation:T19 Type:T20 Location:T21 State:T22
+E6	Occupation:T19 Type:T20 Location:T21 Status:T22
 T20	Type 170 189	electronic assembly
 T21	Location 194 208	Harmony Music.
-T22	Status 158 163	works
-A2	Value T22 current
-T23	Status 127 138	was born in
-A3	Value T23 past
-T24	Status 216 226	no history
-A4	Value T24 none
+T22	StatusTime 158 163	works
+A2	StatusTimeVal T22 current
+T23	StatusTime 127 138	was born in
+A3	StatusTimeVal T23 past
+T24	StatusTime 216 226	no history
+A4	StatusTimeVal T24 none
 T25	InfectiousDiseases 230 239	hepatitis
-E7	InfectiousDiseases:T25 Type:T26 State:T24
+E7	InfectiousDiseases:T25 Type:T26 Status:T24
 T26	Type 230 239	hepatitis
-T27	Status 52 58	drinks
-A5	Value T27 current
-T28	Status 83 89	smokes
-A6	Value T28 current
+T27	StatusTime 52 58	drinks
+A5	StatusTimeVal T27 current
+T28	StatusTime 83 89	smokes
+A6	StatusTimeVal T28 current
 T8	Amount 59 62	4-8

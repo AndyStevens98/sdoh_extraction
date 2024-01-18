@@ -1,14 +1,14 @@
-T1	Status 16 26	No history
-A1	Value T1 none
+T1	StatusTime 16 26	No history
+A1	StatusTimeVal T1 none
 T2	Tobacco 34 41	smoking
-E1	Tobacco:T2 State:T1 Amount:T6
+E1	Tobacco:T2 Status:T1 Amount:T6
 T4	Alcohol 43 50	alcohol
-E2	Alcohol:T4 State:T1 Amount:T6
+E2	Alcohol:T4 Status:T1 Amount:T6
 T5	Drug 55 59	drug
-E3	Drug:T5 Amount:T6 State:T1
+E3	Drug:T5 Amount:T6 Status:T1
 T6	Amount 60 65	abuse
 T7	Occupation 84 100	registered nurse
-E4	Occupation:T7 Type:T8 State:T9
+E4	Occupation:T7 Type:T8 Status:T9
 T8	Type 84 100	registered nurse
-T9	Status 79 81	is
-A2	Value T9 current
+T9	StatusTime 79 81	is
+A2	StatusTimeVal T9 current

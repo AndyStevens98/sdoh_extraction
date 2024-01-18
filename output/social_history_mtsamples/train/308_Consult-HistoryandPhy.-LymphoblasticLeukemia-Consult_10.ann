@@ -1,22 +1,22 @@
 T1	Occupation 33 78	student at the University majoring in biology
-E1	Occupation:T1 Type:T2 Location:T3 State:T7
+E1	Occupation:T1 Type:T2 Location:T3 Status:T7
 T2	Type 33 40	student
 T3	Location 41 58	at the University
 T4	Residence 83 98	lives in a dorm
-E2	Residence:T4 State:T6 Type:T5
+E2	Residence:T4 Status:T6 Type:T5
 T5	Type 89 98	in a dorm
-T6	Status 83 88	lives
-A1	Value T6 current
-T7	Status 28 32	is a
-A2	Value T7 current
+T6	StatusTime 83 88	lives
+A1	StatusTimeVal T6 current
+T7	StatusTime 28 32	is a
+A2	StatusTimeVal T7 current
 T8	Drug 160 166	smoked
-E3	Drug:T8 Type:T9 State:T11
+E3	Drug:T8 Type:T9 Status:T11
 T9	Type 167 176	marijuana
-T11	Status 150 159	to having
-A3	Value T11 past
+T11	StatusTime 150 159	to having
+A3	StatusTimeVal T11 past
 T12	Alcohol 205 218	drinking beer
-E4	Alcohol:T12 Type:T14 State:T15 Frequency:T13
+E4	Alcohol:T12 Type:T14 Status:T15 Frequency:T13
 T13	Frequency 219 229	off and on
 T14	Type 214 218	beer
-T15	Status 219 229	off and on
-A4	Value T15 current
+T15	StatusTime 219 229	off and on
+A4	StatusTimeVal T15 current

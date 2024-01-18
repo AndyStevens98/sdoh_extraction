@@ -1,31 +1,22 @@
 from __future__ import division, print_function, unicode_literals
-import sys
+
 import argparse
+import logging
 import os
+import shutil
+import sys
+from collections import OrderedDict
+
 import joblib
 import pandas as pd
-
-from collections import OrderedDict
-import logging
-import shutil
-
-
 from brat_scoring.scoring import score_docs
-
-from utils.misc import get_include
-
-from spert_utils.config_setup import dict_to_config_file
-from spert_utils.spert_io import merge_spert_files
-
-from spert_utils.config_setup import create_event_types_path, get_dataset_stats
-from spert_utils.convert_brat import RELATION_DEFAULT
-
-
-from spert_utils.spert_io import plot_loss
-
 
 import config.constants as C
 from corpus.corpus_brat import CorpusBrat
+from spert_utils.config_setup import create_event_types_path, dict_to_config_file, get_dataset_stats
+from spert_utils.convert_brat import RELATION_DEFAULT
+from spert_utils.spert_io import merge_spert_files, plot_loss
+from utils.misc import get_include
 
 pd.set_option("display.max_columns", None)
 pd.set_option("display.width", None)
@@ -40,6 +31,7 @@ python train_mspert.py --source_file /home/lybarger/sdoh_challenge/output/corpus
 python train_mspert.py --source_file /home/lybarger/sdoh_challenge/output2/corpus.pkl  --destination /home/lybarger/sdoh_challenge/output2/model01/ --mspert_path /home/lybarger/mspert/     --model_path "emilyalsentzer/Bio_ClinicalBERT" --tokenizer_path "emilyalsentzer/Bio_ClinicalBERT" --epochs 1 --train_subset train --valid_subset dev --train_source None --valid_source uw
 
 """
+logging.basicConfig(level=logging.INFO)
 
 
 def get_label_definition():
@@ -90,18 +82,16 @@ def get_label_definition():
 
     # entity_types: list of entities, including event types and argument types
     #   ex. ["Lesion", "Medical_Problem", "Anatomy", "Count", "Size"]
-    label_definition["entity_types"] = (
-        label_definition["event_types"] + label_definition["argument_types"]
-    )
+    label_definition["entity_types"] = label_definition["event_types"] + label_definition["argument_types"]
 
     # subtype layers: list of subtype classification layers
     #   ex. ["Assertion", "Indication_Type", "Size"]
-    label_definition["subtype_layers"] = [C.STATUS]
+    label_definition["subtype_layers"] = [C.STATUS_TIME]
 
     # swapped_spans: list of arguments for which to the span should be
     # mapped to the trigger span
     #   ex. ["Assertion", "Indication_Type"]
-    label_definition["swapped_spans"] = [C.STATUS]
+    label_definition["swapped_spans"] = [C.STATUS_TIME]
 
     # skip_dup_trig: bool indicating whether duplicate trigger should be skipped
     label_definition["skip_dup_trig"] = True
@@ -126,7 +116,7 @@ def get_label_definition():
     # labeled_args: list of labeled arguments. Only used and scoring.
     #   NOTE: likely corresponds to the keys associated with spert_types_config["subtypes"]
     #   ex. ["Assertion", "Indication_Type", "Size"]
-    label_definition["score_labeled_args"] = [C.STATUS]
+    label_definition["score_labeled_args"] = [C.STATUS_TIME]
 
     # argument types: list entity types, including "Trigger"
     # if None, all argument types included
@@ -142,9 +132,7 @@ def get_scoring_def():
     """
     # Scoring:
     scoring = OrderedDict()
-    scoring["n2c2"] = dict(
-        score_trig=C.OVERLAP, score_span=C.EXACT, score_labeled=C.LABEL
-    )
+    scoring["n2c2"] = dict(score_trig=C.OVERLAP, score_span=C.EXACT, score_labeled=C.LABEL)
     return scoring
 
 
@@ -169,7 +157,7 @@ def get_spert_config(label_definition):
     #   dict values defines the list of label classes of each subtype layer (argument)
     #   ex. {"Assertion", ["present", "absent"], "Size", ["current", "past"]}
     spert_types_config["subtypes"] = OrderedDict()
-    spert_types_config["subtypes"][C.STATUS] = C.STATUS_CLASSES
+    spert_types_config["subtypes"][C.STATUS_TIME] = C.STATUS_TIME_CLASSES
 
     return spert_types_config
 
@@ -247,17 +235,12 @@ def main(args):
         c = corpus.swap_spans(source=arg, target=C.TRIGGER, use_role=False)
 
     if valid_include == train_include:
-        logging.warn(
-            "=" * 200 + "\nValidation set and train set are equivalent\n" + "=" * 200
-        )
+        logging.warn("=" * 200 + "\nValidation set and train set are equivalent\n" + "=" * 200)
 
     # create formatted data
 
     fast_count = args.fast_count if args.fast_run else None
-    for path, include, sample_count in [
-        (train_path, train_include, fast_count),
-        (valid_path, valid_include, fast_count),
-    ]:
+    for path, include, sample_count in [(train_path, train_include, fast_count), (valid_path, valid_include, fast_count)]:
         corpus.events2spert_multi(
             include=include,
             entity_types=label_definition["entity_types"],
@@ -269,9 +252,7 @@ def main(args):
         )
 
         include_name = "_".join(list(include))
-        get_dataset_stats(
-            dataset_path=path, dest_path=args.destination, name=include_name
-        )
+        get_dataset_stats(dataset_path=path, dest_path=args.destination, name=include_name)
 
     # create spert types file
     create_event_types_path(**spert_types_config, path=types_path)
@@ -333,9 +314,7 @@ def main(args):
     )
 
     # predict_corpus.map_roles(role_map, path=args.destination)
-    predict_corpus.prune_invalid_connections(
-        label_definition["args_by_event_type"], path=args.destination
-    )
+    predict_corpus.prune_invalid_connections(label_definition["args_by_event_type"], path=args.destination)
     predict_docs = predict_corpus.docs(as_dict=True)
 
     for description, score_def in scoring.items():
@@ -364,121 +343,38 @@ if __name__ == "__main__":
     SpERT
     """
     arg_parser = argparse.ArgumentParser(add_help=False)
-    arg_parser.add_argument(
-        "--source_file", type=str, help="path to input corpus object", required=True
-    )
-    arg_parser.add_argument(
-        "--destination", type=str, help="path to output directory", required=True
-    )
-    arg_parser.add_argument(
-        "--mspert_path", type=str, help="path to mspert", required=True
-    )
+    arg_parser.add_argument("--source_file", type=str, help="path to input corpus object", required=True)
+    arg_parser.add_argument("--destination", type=str, help="path to output directory", required=True)
+    arg_parser.add_argument("--mspert_path", type=str, help="path to mspert", required=True)
 
-    arg_parser.add_argument(
-        "--fast_run",
-        default=False,
-        action="store_true",
-        help="only train a small portion of training set for debugging",
-    )
+    arg_parser.add_argument("--fast_run", default=False, action="store_true", help="only train a small portion of training set for debugging")
     arg_parser.add_argument("--fast_count", type=int, default=20, help="")
-    arg_parser.add_argument(
-        "--train_subset",
-        type=str,
-        default="train",
-        help="tag for training subset from {train, dev, test}",
-    )
-    arg_parser.add_argument(
-        "--valid_subset",
-        type=str,
-        default="dev",
-        help="tag for validation subset from {train, dev, test}",
-    )
-    arg_parser.add_argument(
-        "--train_source",
-        type=str,
-        help="tag for training soruce from {None, 'uw', 'mimic'}. None will use both uw and mimic",
-    )
-    arg_parser.add_argument(
-        "--valid_source",
-        type=str,
-        help="tag for validation soruce from {None, 'uw', 'mimic'}. None will use both uw and mimic",
-    )
+    arg_parser.add_argument("--train_subset", type=str, default="train", help="tag for training subset from {train, dev, test}")
+    arg_parser.add_argument("--valid_subset", type=str, default="dev", help="tag for validation subset from {train, dev, test}")
+    arg_parser.add_argument("--train_source", type=str, help="tag for training soruce from {None, 'uw', 'mimic'}. None will use both uw and mimic")
+    arg_parser.add_argument("--valid_source", type=str, help="tag for validation soruce from {None, 'uw', 'mimic'}. None will use both uw and mimic")
 
-    arg_parser.add_argument(
-        "--model_path",
-        type=str,
-        default="emilyalsentzer/Bio_ClinicalBERT",
-        help="pretrained BERT model",
-    )
-    arg_parser.add_argument(
-        "--tokenizer_path",
-        type=str,
-        default="emilyalsentzer/Bio_ClinicalBERT",
-        help="pretrained BERT tokenizer",
-    )
-    arg_parser.add_argument(
-        "--train_batch_size", type=int, default=15, help="training batch size"
-    )
-    arg_parser.add_argument(
-        "--eval_batch_size", type=int, default=2, help="evaluation batch size"
-    )
-    arg_parser.add_argument(
-        "--neg_entity_count", type=int, default=100, help="negative entity County"
-    )
-    arg_parser.add_argument(
-        "--neg_relation_count", type=int, default=100, help="negative relation count"
-    )
+    arg_parser.add_argument("--model_path", type=str, default="emilyalsentzer/Bio_ClinicalBERT", help="pretrained BERT model")
+    arg_parser.add_argument("--tokenizer_path", type=str, default="emilyalsentzer/Bio_ClinicalBERT", help="pretrained BERT tokenizer")
+    arg_parser.add_argument("--train_batch_size", type=int, default=15, help="training batch size")
+    arg_parser.add_argument("--eval_batch_size", type=int, default=2, help="evaluation batch size")
+    arg_parser.add_argument("--neg_entity_count", type=int, default=100, help="negative entity County")
+    arg_parser.add_argument("--neg_relation_count", type=int, default=100, help="negative relation count")
     arg_parser.add_argument("--epochs", type=int, default=1, help="number of epochs")
     arg_parser.add_argument("--lr", type=float, default=5e-5, help="learning rate")
-    arg_parser.add_argument(
-        "--lr_warmup", type=float, default=0.1, help="learning rate warm-up"
-    )
-    arg_parser.add_argument(
-        "--weight_decay", type=float, default=0.01, help="learning we decay"
-    )
-    arg_parser.add_argument(
-        "--max_grad_norm", type=float, default=1.0, help="maximum gradient norm"
-    )
-    arg_parser.add_argument(
-        "--rel_filter_threshold",
-        type=float,
-        default=0.5,
-        help="relation filter threshold",
-    )
-    arg_parser.add_argument(
-        "--size_embedding", type=int, default=25, help="size for size embeddings"
-    )
+    arg_parser.add_argument("--lr_warmup", type=float, default=0.1, help="learning rate warm-up")
+    arg_parser.add_argument("--weight_decay", type=float, default=0.01, help="learning we decay")
+    arg_parser.add_argument("--max_grad_norm", type=float, default=1.0, help="maximum gradient norm")
+    arg_parser.add_argument("--rel_filter_threshold", type=float, default=0.5, help="relation filter threshold")
+    arg_parser.add_argument("--size_embedding", type=int, default=25, help="size for size embeddings")
     arg_parser.add_argument("--prop_drop", type=float, default=0.2, help="dropout")
-    arg_parser.add_argument(
-        "--max_span_size", type=int, default=10, help="maximum span size"
-    )
-    arg_parser.add_argument(
-        "--store_predictions",
-        default=True,
-        action="store_false",
-        help="store predictions?",
-    )
-    arg_parser.add_argument(
-        "--store_examples", default=True, action="store_false", help="store examples?"
-    )
-    arg_parser.add_argument(
-        "--sampling_processes", type=int, default=4, help="number of sampling processes"
-    )
-    arg_parser.add_argument(
-        "--max_pairs", type=int, default=1000, help="maximum relation pairs"
-    )
-    arg_parser.add_argument(
-        "--final_eval",
-        default=True,
-        action="store_false",
-        help="perform final evaluation?",
-    )
-    arg_parser.add_argument(
-        "--no_overlapping",
-        default=True,
-        action="store_false",
-        help="disallow overlapping spans",
-    )
+    arg_parser.add_argument("--max_span_size", type=int, default=10, help="maximum span size")
+    arg_parser.add_argument("--store_predictions", default=True, action="store_false", help="store predictions?")
+    arg_parser.add_argument("--store_examples", default=True, action="store_false", help="store examples?")
+    arg_parser.add_argument("--sampling_processes", type=int, default=4, help="number of sampling processes")
+    arg_parser.add_argument("--max_pairs", type=int, default=1000, help="maximum relation pairs")
+    arg_parser.add_argument("--final_eval", default=True, action="store_false", help="perform final evaluation?")
+    arg_parser.add_argument("--no_overlapping", default=True, action="store_false", help="disallow overlapping spans")
     arg_parser.add_argument("--device", type=int, default=0, help="GPU device")
 
     args, _ = arg_parser.parse_known_args()

@@ -1,14 +1,14 @@
-T1	Status 21 27	denied
-A1	Value T1 none
+T1	StatusTime 21 27	denied
+A1	StatusTimeVal T1 none
 T2	Alcohol 28 44	drinking alcohol
-E1	Alcohol:T2 State:T1
+E1	Alcohol:T2 Status:T1
 T3	Type 54 61	illicit
 T4	Drug 62 67	drugs
-E2	Drug:T4 Type:T3 State:T1
-T5	Status 73 80	used to
-A2	Value T5 past
+E2	Drug:T4 Type:T3 Status:T1
+T5	StatusTime 73 80	used to
+A2	StatusTimeVal T5 past
 T6	Tobacco 81 86	smoke
-E3	Tobacco:T6 Type:T9 Frequency:T8 State:T5 Amount:T7 QuitHistory:T10
+E3	Tobacco:T6 Type:T9 Frequency:T8 Status:T5 Amount:T7 QuitHistory:T10
 T8	Frequency 108 115	per day
 T9	Type 97 107	cigarettes
 T10	QuitHistory 126 147	five to six years ago

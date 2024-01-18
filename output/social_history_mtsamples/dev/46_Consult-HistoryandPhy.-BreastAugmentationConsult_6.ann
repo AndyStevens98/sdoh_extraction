@@ -13,22 +13,22 @@ T9	MedicalCondition 131 139	aneurysm
 T13	Amount 232 244	about a pack
 T14	Frequency 245 250	a day
 T11	Alcohol 256 262	drinks
-E5	Alcohol:T11 Frequency:T15 State:T16
+E5	Alcohol:T11 Frequency:T15 Status:T16
 T15	Frequency 269 280	once a week
-T16	Status 256 262	drinks
-A1	Value T16 current
-T17	Status 145 168	does occasionally smoke
-A2	Value T17 current
-T18	Status 289 298	currently
-A3	Value T18 current
+T16	StatusTime 256 262	drinks
+A1	StatusTimeVal T16 current
+T17	StatusTime 145 168	does occasionally smoke
+A2	StatusTimeVal T17 current
+T18	StatusTime 289 298	currently
+A3	StatusTimeVal T18 current
 T19	Type 301 351	registered nurse, circulator, and scrub technician
 T20	Occupation 301 351	registered nurse, circulator, and scrub technician
-E6	Occupation:T20 Type:T19 State:T18 Location:T21
+E6	Occupation:T20 Type:T19 Status:T18 Location:T21
 T21	Location 359 384	operating room at Hopkins
 T22	Frequency 150 162	occasionally
 T10	Tobacco 224 231	smoking
-E4	Tobacco:T10 State:T23 Amount:T13 Frequency:T14
-T23	Status 214 223	currently
-A4	Value T23 current
+E4	Tobacco:T10 Status:T23 Amount:T13 Frequency:T14
+T23	StatusTime 214 223	currently
+A4	StatusTimeVal T23 current
 T24	Tobacco 163 168	smoke
-E7	Tobacco:T24 State:T17 Frequency:T22
+E7	Tobacco:T24 Status:T17 Frequency:T22

@@ -1,23 +1,23 @@
 T1	Residence 29 37	lives in
-E1	Residence:T1 State:T2 Location:T3
-T2	Status 29 34	lives
-A1	Value T2 current
+E1	Residence:T1 Status:T2 Location:T3
+T2	StatusTime 29 34	lives
+A1	StatusTimeVal T2 current
 T3	Location 38 48	Greensboro
 T4	Tobacco 53 59	smokes
-E2	Tobacco:T4 State:T5 Amount:T7 Type:T8 Frequency:T9 ExposureHistory:T10
-T5	Status 53 59	smokes
-A2	Value T5 current
+E2	Tobacco:T4 Status:T5 Amount:T7 Type:T8 Frequency:T9 ExposureHistory:T10
+T5	StatusTime 53 59	smokes
+A2	StatusTimeVal T5 current
 T7	Amount 60 68	one pack
 T8	Type 72 82	cigarettes
 T9	Frequency 83 88	a day
 T10	ExposureHistory 105 117	for 15 years
 T11	Drug 136 144	drug use
-E3	Drug:T11 State:T12 Method:T13
-T12	Status 122 128	denies
-A3	Value T12 none
+E3	Drug:T11 Status:T12 Method:T13
+T12	StatusTime 122 128	denies
+A3	StatusTimeVal T12 none
 T13	Method 133 135	IV
 T14	Alcohol 167 174	alcohol
-E4	Alcohol:T14 State:T16 Frequency:T15
+E4	Alcohol:T14 Status:T16 Frequency:T15
 T15	Frequency 156 166	occasional
-T16	Status 167 174	alcohol
-A4	Value T16 current
+T16	StatusTime 167 174	alcohol
+A4	StatusTimeVal T16 current

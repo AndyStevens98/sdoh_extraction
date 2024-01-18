@@ -1,4 +1,4 @@
-T1	Status 117 121	None
-A1	Value T1 none
+T1	StatusTime 117 121	None
+A1	StatusTimeVal T1 none
 T2	Tobacco 108 115	Tobacco
-E1	Tobacco:T2 State:T1
+E1	Tobacco:T2 Status:T1

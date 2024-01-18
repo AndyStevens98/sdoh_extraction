@@ -1,28 +1,28 @@
-T1	Status 16 18	No
-A1	Value T1 none
+T1	StatusTime 16 18	No
+A1	StatusTimeVal T1 none
 T2	Tobacco 19 26	tobacco
-E1	Tobacco:T2 State:T1
+E1	Tobacco:T2 Status:T1
 T3	Alcohol 28 35	alcohol
-E2	Alcohol:T3 State:T1
+E2	Alcohol:T3 Status:T1
 T4	Drug 47 51	drug
-E3	Drug:T4 Type:T5 State:T1
+E3	Drug:T4 Type:T5 Status:T1
 T5	Type 39 46	illicit
 T7	Location 87 95	Oklahoma
 T8	Method 68 83	born and raised
-T9	Status 65 67	is
-A2	Value T9 current
+T9	StatusTime 65 67	is
+A2	StatusTimeVal T9 current
 T6	Residence 68 95	born and raised in Oklahoma
-E4	Residence:T6 Location:T7 Method:T8 State:T9
-T10	Status 98 106	No known
-A3	Value T10 none
+E4	Residence:T6 Location:T7 Method:T8 Status:T9
+T10	StatusTime 98 106	No known
+A3	StatusTimeVal T10 none
 T11	EnvironmentalExposure 107 116	exposures
-E5	EnvironmentalExposure:T11 State:T10
+E5	EnvironmentalExposure:T11 Status:T10
 T12	MaritalStatus 118 125	Married
-E7	MaritalStatus:T12 Type:T13 State:T17
+E7	MaritalStatus:T12 Type:T13 Status:T17
 T13	Type 118 125	Married
 T14	Family 131 141	2 children
 E6	Family:T14 Type:T16 Amount:T15
 T15	Amount 131 132	2
 T16	Type 133 141	children
-T17	Status 118 125	Married
-A4	Value T17 current
+T17	StatusTime 118 125	Married
+A4	StatusTimeVal T17 current

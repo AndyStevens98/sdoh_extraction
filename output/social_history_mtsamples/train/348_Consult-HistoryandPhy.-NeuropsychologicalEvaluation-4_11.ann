@@ -1,19 +1,19 @@
 T1	Frequency 46 52	rarely
 T2	Alcohol 53 67	drinks alcohol
-E1	Alcohol:T2 State:T3 Frequency:T1
-T3	Status 53 59	drinks
-A1	Value T3 current
-T4	Status 76 82	denied
-A2	Value T4 none
+E1	Alcohol:T2 Status:T3 Frequency:T1
+T3	StatusTime 53 59	drinks
+A1	StatusTimeVal T3 current
+T4	StatusTime 76 82	denied
+A2	StatusTimeVal T4 none
 T5	Tobacco 83 90	smoking
-E2	Tobacco:T5 State:T4
+E2	Tobacco:T5 Status:T4
 T7	Type 100 107	illicit
 T8	Drug 108 113	drugs
-E3	Drug:T8 Type:T7 State:T4
+E3	Drug:T8 Type:T7 Status:T4
 T6	Type 146 152	coffee
 T9	Drug 146 152	coffee
-E4	Drug:T9 State:T12 Amount:T10 Frequency:T11 Type:T6
+E4	Drug:T9 Status:T12 Amount:T10 Frequency:T11 Type:T6
 T10	Amount 126 142	two to four cups
 T11	Frequency 153 160	per day
-T12	Status 119 125	drinks
-A3	Value T12 current
+T12	StatusTime 119 125	drinks
+A3	StatusTimeVal T12 current

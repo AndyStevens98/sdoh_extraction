@@ -1,13 +1,13 @@
-T1	Status 26 29	non
-A1	Value T1 none
-T2	Status 41 44	non
-A2	Value T2 none
+T1	StatusTime 26 29	non
+A1	StatusTimeVal T1 none
+T2	StatusTime 41 44	non
+A2	StatusTimeVal T2 none
 T3	Alcohol 29 36	drinker
-E1	Alcohol:T3 State:T1
+E1	Alcohol:T3 Status:T1
 T4	Tobacco 44 50	smoker
-E2	Tobacco:T4 State:T2
-T6	Status 55 64	currently
-A3	Value T6 current
+E2	Tobacco:T4 Status:T2
+T6	StatusTime 55 64	currently
+A3	StatusTimeVal T6 current
 T7	Residence 65 102	lives at the skilled nursing facility
-E3	Residence:T7 Type:T8 State:T6
+E3	Residence:T7 Type:T8 Status:T6
 T8	Type 78 102	skilled nursing facility

@@ -1,29 +1,29 @@
 T1	MaritalStatus 20 38	patient is married
-E1	MaritalStatus:T1 State:T3 Type:T2
+E1	MaritalStatus:T1 Status:T3 Type:T2
 T2	Type 31 38	married
-T3	Status 28 30	is
-A1	Value T3 current
+T3	StatusTime 28 30	is
+A1	StatusTimeVal T3 current
 T4	Occupation 43 66	works as a truck driver
-E2	Occupation:T4 State:T7 Type:T5 Location:T6
+E2	Occupation:T4 Status:T7 Type:T5 Location:T6
 T5	Type 54 66	truck driver
 T6	Location 71 88	he drives in town
-T7	Status 40 48	He works
-A2	Value T7 current
+T7	StatusTime 40 48	He works
+A2	StatusTimeVal T7 current
 T8	Tobacco 93 99	smokes
-E3	Tobacco:T8 Amount:T10 Frequency:T11 State:T19
+E3	Tobacco:T8 Amount:T10 Frequency:T11 Status:T19
 T10	Amount 100 109	two packs
 T11	Frequency 110 115	a day
 T12	Amount 127 130	two
 T13	Frequency 137 142	a day
-T14	Status 156 169	not consuming
-A3	Value T14 none
+T14	StatusTime 156 169	not consuming
+A3	StatusTimeVal T14 none
 T15	Type 170 177	illegal
 T16	Drug 178 183	drugs
-E4	Drug:T16 Type:T15 State:T14
+E4	Drug:T16 Type:T15 Status:T14
 T17	Alcohol 127 142	two beers a day
-E5	Alcohol:T17 Amount:T12 Frequency:T13 Type:T18 State:T20
+E5	Alcohol:T17 Amount:T12 Frequency:T13 Type:T18 Status:T20
 T18	Type 131 136	beers
-T19	Status 93 99	smokes
-A4	Value T19 current
-T20	Status 123 126	has
-A5	Value T20 current
+T19	StatusTime 93 99	smokes
+A4	StatusTimeVal T19 current
+T20	StatusTime 123 126	has
+A5	StatusTimeVal T20 current

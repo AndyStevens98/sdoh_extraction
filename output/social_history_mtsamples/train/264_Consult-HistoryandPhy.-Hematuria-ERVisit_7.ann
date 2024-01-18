@@ -1,17 +1,17 @@
 T1	LivingSituation 29 61	lives at home with his daughter.
-E1	LivingSituation:T1 State:T3 Method:T2
+E1	LivingSituation:T1 Status:T3 Method:T2
 T2	Method 29 60	lives at home with his daughter
-T3	Status 29 34	lives
-A1	Value T3 current
+T3	StatusTime 29 34	lives
+A1	StatusTimeVal T3 current
 T4	Family 52 60	daughter
 E2	Family:T4 Type:T5
 T5	Type 52 60	daughter
-T6	Status 65 73	does not
-A2	Value T6 none
+T6	StatusTime 65 73	does not
+A2	StatusTimeVal T6 none
 T7	Tobacco 74 79	smoke
-E3	Tobacco:T7 State:T6
+E3	Tobacco:T7 Status:T6
 T8	Frequency 81 93	occasionally
 T9	Alcohol 94 108	drinks alcohol
-E4	Alcohol:T9 Frequency:T8 State:T11
-T11	Status 81 93	occasionally
-A3	Value T11 current
+E4	Alcohol:T9 Frequency:T8 Status:T11
+T11	StatusTime 81 93	occasionally
+A3	StatusTimeVal T11 current

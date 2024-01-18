@@ -1,16 +1,16 @@
 T1	MaritalStatus 31 38	married
-E1	MaritalStatus:T1 Type:T2 State:T3
+E1	MaritalStatus:T1 Type:T2 Status:T3
 T2	Type 31 38	married
-T3	Status 28 30	is
-A1	Value T3 current
-T4	Status 112 124	quit smoking
-A2	Value T4 past
+T3	StatusTime 28 30	is
+A1	StatusTimeVal T3 current
+T4	StatusTime 112 124	quit smoking
+A2	StatusTimeVal T4 past
 T7	QuitHistory 125 136	6 years ago
 T8	Method 141 145	dips
 T9	Tobacco 158 165	tobacco
-E3	Tobacco:T9 Method:T8 State:T10 Type:T15
-T10	Status 141 145	dips
-A3	Value T10 current
+E3	Tobacco:T9 Method:T8 Status:T10 Type:T15
+T10	StatusTime 141 145	dips
+A3	StatusTimeVal T10 current
 T11	Family 47 54	1 child
 E4	Family:T11 Amount:T13 Type:T12 LivingStatus:T14
 T12	Type 49 54	child
@@ -18,4 +18,4 @@ T13	Amount 47 48	1
 T14	LivingStatus 59 87	died at the age of 26 months
 T15	Type 146 165	(smokeless) tobacco
 T5	Tobacco 117 124	smoking
-E2	Tobacco:T5 State:T4 QuitHistory:T7
+E2	Tobacco:T5 Status:T4 QuitHistory:T7

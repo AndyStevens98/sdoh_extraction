@@ -1,5 +1,5 @@
 T1	LivingSituation 17 104	At home live mom, dad, and 18-, 16-, 14-, 12-year-old brothers, and a 3-year-old sister
-E1	LivingSituation:T1 Method:T2 State:T19
+E1	LivingSituation:T1 Method:T2 Status:T19
 T2	Method 17 104	At home live mom, dad, and 18-, 16-, 14-, 12-year-old brothers, and a 3-year-old sister
 T3	Family 30 33	mom
 E2	Family:T3 Type:T7
@@ -24,20 +24,20 @@ T15	Amount 44 46	18
 T16	Amount 49 51	16
 T17	Amount 54 56	14
 T18	Amount 59 62	12-
-T19	Status 25 29	live
-A1	Value T19 current
+T19	StatusTime 25 29	live
+A1	StatusTimeVal T19 current
 T21	EnvironmentalExposure 322 340	no smoke exposures
-E4	EnvironmentalExposure:T21 Type:T23 State:T22
-T22	Status 322 324	no
-A2	Value T22 none
+E4	EnvironmentalExposure:T21 Type:T23 Status:T22
+T22	StatusTime 322 324	no
+A2	StatusTimeVal T22 none
 T23	Type 325 340	smoke exposures
 T24	EnvironmentalExposure 200 204	home
 T25	Type 217 221	dogs
 T26	Type 228 240	outside cats
 T27	Amount 215 216	2
 T28	Amount 226 227	2
-E11	EnvironmentalExposure:T24 Amount:T27 Type:T25 State:T30
+E11	EnvironmentalExposure:T24 Amount:T27 Type:T25 Status:T30
 T29	EnvironmentalExposure 226 227	2
-E10	EnvironmentalExposure:T29 Amount:T28 Type:T26 State:T30
-T30	Status 197 199	At
-A3	Value T30 current
+E10	EnvironmentalExposure:T29 Amount:T28 Type:T26 Status:T30
+T30	StatusTime 197 199	At
+A3	StatusTimeVal T30 current

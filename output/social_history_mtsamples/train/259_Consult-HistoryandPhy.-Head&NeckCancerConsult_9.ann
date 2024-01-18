@@ -1,41 +1,41 @@
 T1	MaritalStatus 32 39	married
-E1	MaritalStatus:T1 State:T3 Type:T2 Time:T4
-T3	Status 29 31	is
-A1	Value T3 current
+E1	MaritalStatus:T1 Status:T3 Type:T2 Time:T4
+T3	StatusTime 29 31	is
+A1	StatusTimeVal T3 current
 T2	Type 44 76	has been separated from his wife
-T4	Temporal 77 91	for many years
+T4	Time 77 91	for many years
 T5	Family 126 140	two adult sons
 E2	Family:T5 Type:T7 Amount:T6
 T6	Amount 126 129	two
 T7	Type 130 140	adult sons
 T8	Occupation 148 174	retired from the Air Force
-E3	Occupation:T8 Type:T10 Method:T9 State:T11
+E3	Occupation:T8 Type:T10 Method:T9 Status:T11
 T9	Method 148 155	retired
 T10	Type 165 174	Air Force
-T11	Status 148 155	retired
-A2	Value T11 past
-T12	Status 176 185	currently
-A3	Value T12 current
+T11	StatusTime 148 155	retired
+A2	StatusTimeVal T11 past
+T12	StatusTime 176 185	currently
+A3	StatusTimeVal T12 current
 T13	Occupation 186 211	works for Lockheed Martin
-E4	Occupation:T13 Type:T14 State:T12
+E4	Occupation:T13 Type:T14 Status:T12
 T14	Type 196 211	Lockheed Martin
 T15	Residence 220 247	born and raised in New York
 E5	Residence:T15 Location:T17 Method:T16
 T16	Method 220 235	born and raised
 T17	Location 239 247	New York
-T22	Status 317 344	reports quitting on July 27
-A4	Value T22 past
+T22	StatusTime 317 344	reports quitting on July 27
+A4	StatusTimeVal T22 past
 T23	Alcohol 349 367	does drink alcohol
-E7	Alcohol:T23 State:T25 Amount:T24
+E7	Alcohol:T23 Status:T25 Amount:T24
 T24	Amount 368 376	socially
-T25	Status 349 359	does drink
-A5	Value T25 current
-T26	Status 378 384	No use
-A6	Value T26 none
+T25	StatusTime 349 359	does drink
+A5	StatusTimeVal T25 current
+T26	StatusTime 378 384	No use
+A6	StatusTimeVal T26 none
 T27	Drug 396 401	drugs
-E8	Drug:T27 Type:T28 State:T26
+E8	Drug:T27 Type:T28 Status:T26
 T28	Type 388 395	illicit
 T18	QuitHistory 337 344	July 27
 T19	Amount 289 301	20 pack-year
 T20	Tobacco 264 271	smoking
-E6	Tobacco:T20 Amount:T19 State:T22 QuitHistory:T18
+E6	Tobacco:T20 Amount:T19 Status:T22 QuitHistory:T18

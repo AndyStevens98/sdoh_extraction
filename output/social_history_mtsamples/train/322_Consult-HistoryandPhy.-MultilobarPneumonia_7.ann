@@ -1,12 +1,12 @@
-T1	Status 43 47	quit
-A1	Value T1 past
+T1	StatusTime 43 47	quit
+A1	StatusTimeVal T1 past
 T2	Tobacco 48 55	smoking
-E1	Tobacco:T2 State:T1 QuitHistory:T4
+E1	Tobacco:T2 Status:T1 QuitHistory:T4
 T4	QuitHistory 56 74	about 30 years ago
 T5	MaritalStatus 91 98	married
 E2	MaritalStatus:T5 Type:T6
 T6	Type 91 98	married
 T7	Alcohol 17 33	Alcohol drinking
-E3	Alcohol:T7 State:T8
-T8	Status 34 41	history
-A2	Value T8 current
+E3	Alcohol:T7 Status:T8
+T8	StatusTime 34 41	history
+A2	StatusTimeVal T8 current

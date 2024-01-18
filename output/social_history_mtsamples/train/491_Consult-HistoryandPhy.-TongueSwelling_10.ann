@@ -1,6 +1,6 @@
-T1	Status 28 36	does not
-A1	Value T1 none
+T1	StatusTime 28 36	does not
+A1	StatusTimeVal T1 none
 T2	Tobacco 37 42	smoke
-E1	Tobacco:T2 State:T1
+E1	Tobacco:T2 Status:T1
 T3	Alcohol 47 60	drink alcohol
-E2	Alcohol:T3 State:T1
+E2	Alcohol:T3 Status:T1

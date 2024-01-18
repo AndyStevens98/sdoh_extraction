@@ -1,30 +1,30 @@
 T1	Tobacco 29 34	smoke
-E1	Tobacco:T1 Type:T3 State:T4
+E1	Tobacco:T1 Type:T3 Status:T4
 T3	Type 35 45	cigarettes
-T4	Status 20 28	does not
-A1	Value T4 none
+T4	StatusTime 20 28	does not
+A1	StatusTimeVal T4 none
 T5	Alcohol 53 60	alcohol
-E2	Alcohol:T5 State:T4 Amount:T6
+E2	Alcohol:T5 Status:T4 Amount:T6
 T6	Amount 47 52	abuse
-T7	Status 62 68	no use
-A2	Value T7 none
+T7	StatusTime 62 68	no use
+A2	StatusTimeVal T7 none
 T8	Drug 80 85	drugs
-E3	Drug:T8 Type:T9 State:T7
+E3	Drug:T8 Type:T9 Status:T7
 T9	Type 72 79	illicit
 T10	MaritalStatus 94 102	divorced
-E4	MaritalStatus:T10 State:T11 Type:T12
-T11	Status 91 102	is divorced
-A3	Value T11 current
+E4	MaritalStatus:T10 Status:T11 Type:T12
+T11	StatusTime 91 102	is divorced
+A3	StatusTimeVal T11 current
 T12	Type 94 102	divorced
 T13	LivingSituation 107 118	lives alone
-E5	LivingSituation:T13 Method:T14 State:T15
+E5	LivingSituation:T13 Method:T14 Status:T15
 T14	Method 107 118	lives alone
-T15	Status 107 112	lives
-A4	Value T15 current
+T15	StatusTime 107 112	lives
+A4	StatusTimeVal T15 current
 T16	Occupation 128 157	retired laboratory technician
-E6	Occupation:T16 State:T20 Method:T17 Type:T18 Location:T19
+E6	Occupation:T16 Status:T20 Method:T17 Type:T18 Location:T19
 T17	Method 128 135	retired
 T18	Type 136 157	laboratory technician
 T19	Location 163 192	Cornell Diagnostic Laboratory
-T20	Status 128 135	retired
-A5	Value T20 past
+T20	StatusTime 128 135	retired
+A5	StatusTimeVal T20 past

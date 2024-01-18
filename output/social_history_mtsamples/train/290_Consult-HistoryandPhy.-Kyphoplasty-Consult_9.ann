@@ -1,18 +1,18 @@
 T1	Residence 42 55	lives locally
-E1	Residence:T1 Location:T2 State:T3
+E1	Residence:T1 Location:T2 Status:T3
 T2	Location 48 55	locally
-T3	Status 42 47	lives
-A1	Value T3 current
+T3	StatusTime 42 47	lives
+A1	StatusTimeVal T3 current
 T4	MaritalStatus 66 72	widow.
-E2	MaritalStatus:T4 Type:T5 State:T6
+E2	MaritalStatus:T4 Type:T5 Status:T6
 T5	Type 66 71	widow
-T6	Status 61 65	is a
-A2	Value T6 current
-T7	Status 77 85	does not
-A3	Value T7 none
+T6	StatusTime 61 65	is a
+A2	StatusTimeVal T6 current
+T7	StatusTime 77 85	does not
+A3	StatusTimeVal T7 none
 T8	Tobacco 86 91	smoke
-E3	Tobacco:T8 Type:T9 State:T7
+E3	Tobacco:T8 Type:T9 Status:T7
 T9	Type 92 102	cigarettes
 T11	Type 110 117	illicit
 T12	Drug 118 123	drugs
-E4	Drug:T12 State:T7 Type:T11
+E4	Drug:T12 Status:T7 Type:T11

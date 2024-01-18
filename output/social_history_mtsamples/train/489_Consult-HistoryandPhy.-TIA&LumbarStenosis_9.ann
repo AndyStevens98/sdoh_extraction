@@ -1,29 +1,29 @@
 T1	Method 22 29	retired
 T2	Type 39 69	social security administration
-T3	Temporal 70 80	x 20 years
+T3	Time 70 80	x 20 years
 T4	Occupation 22 69	retired from the social security administration
 E1	Occupation:T4 Method:T1 Type:T2 Time:T3
 T5	PhysicalActivity 103 122	is extremely active
-E2	PhysicalActivity:T5 Amount:T7 State:T6
-T6	Status 103 105	is
-A1	Value T6 current
+E2	PhysicalActivity:T5 Amount:T7 Status:T6
+T6	StatusTime 103 105	is
+A1	StatusTimeVal T6 current
 T7	Amount 106 115	extremely
-T8	Status 127 135	does not
-A2	Value T8 none
+T8	StatusTime 127 135	does not
+A2	StatusTimeVal T8 none
 T9	Tobacco 136 141	smoke
-E3	Tobacco:T9 State:T8
+E3	Tobacco:T9 Status:T8
 T11	Alcohol 155 162	alcohol
-E4	Alcohol:T11 Amount:T12 State:T13
+E4	Alcohol:T11 Amount:T12 Status:T13
 T12	Amount 163 171	socially
-T13	Status 163 171	socially
-A3	Value T13 current
-T14	Status 181 193	does not use
-A4	Value T14 none
+T13	StatusTime 163 171	socially
+A3	StatusTimeVal T13 current
+T14	StatusTime 181 193	does not use
+A4	StatusTimeVal T14 none
 T15	Type 194 201	illicit
 T16	Drug 202 207	drugs
-E5	Drug:T16 Type:T15 State:T14
+E5	Drug:T16 Type:T15 Status:T14
 T17	MaritalStatus 212 222	is married
-E6	MaritalStatus:T17 State:T19 Type:T18
+E6	MaritalStatus:T17 Status:T19 Type:T18
 T18	Type 215 222	married
-T19	Status 212 214	is
-A5	Value T19 current
+T19	StatusTime 212 214	is
+A5	StatusTimeVal T19 current

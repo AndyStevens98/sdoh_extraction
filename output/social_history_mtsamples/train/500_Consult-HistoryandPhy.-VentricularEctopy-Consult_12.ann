@@ -1,13 +1,13 @@
 T1	MaritalStatus 23 30	married
-E1	MaritalStatus:T1 State:T6 Type:T2
+E1	MaritalStatus:T1 Status:T6 Type:T2
 T2	Type 23 30	married
 T3	Occupation 35 42	retired
-E2	Occupation:T3 Method:T4 State:T5
+E2	Occupation:T3 Method:T4 Status:T5
 T4	Method 35 42	retired
-T5	Status 35 42	retired
-A1	Value T5 current
-T6	Status 23 30	married
-A2	Value T6 current
+T5	StatusTime 35 42	retired
+A1	StatusTimeVal T5 current
+T6	StatusTime 23 30	married
+A2	StatusTimeVal T6 current
 T7	Family 51 64	nine children
 E3	Family:T7 Amount:T8 Type:T9
 T8	Amount 51 55	nine
@@ -17,14 +17,14 @@ E4	Family:T10 Amount:T11 Type:T12
 T11	Amount 66 68	25
 T12	Type 69 82	grandchildren
 T13	Tobacco 87 93	smokes
-E5	Tobacco:T13 Amount:T15 Frequency:T16 State:T17
+E5	Tobacco:T13 Amount:T15 Frequency:T16 Status:T17
 T15	Amount 94 102	one pack
 T16	Frequency 103 110	per day
-T17	Status 87 93	smokes
-A3	Value T17 current
+T17	StatusTime 87 93	smokes
+A3	StatusTimeVal T17 current
 T18	Tobacco 115 121	smoked
-E6	Tobacco:T18 State:T19 Amount:T20 Frequency:T21
-T19	Status 115 121	smoked
-A4	Value T19 past
+E6	Tobacco:T18 Status:T19 Amount:T20 Frequency:T21
+T19	StatusTime 115 121	smoked
+A4	StatusTimeVal T19 past
 T20	Amount 122 129	50 pack
 T21	Frequency 130 135	years

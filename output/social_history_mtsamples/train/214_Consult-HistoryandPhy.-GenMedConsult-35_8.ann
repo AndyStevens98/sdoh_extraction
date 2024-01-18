@@ -1,35 +1,35 @@
 T1	Residence 32 43	from Brazil
-E1	Residence:T1 Method:T3 Location:T2 State:T16
+E1	Residence:T1 Method:T3 Location:T2 Status:T16
 T2	Location 37 43	Brazil
 T3	Method 32 36	from
-T5	Status 92 102	denied any
-A1	Value T5 none
+T5	StatusTime 92 102	denied any
+A1	StatusTimeVal T5 none
 T6	Tobacco 114 121	tobacco
-E2	Tobacco:T6 State:T5
+E2	Tobacco:T6 Status:T5
 T7	Alcohol 123 130	alcohol
-E3	Alcohol:T7 State:T5
+E3	Alcohol:T7 Status:T5
 T8	Type 135 142	illicit
 T9	Drug 143 147	drug
-E4	Drug:T9 Type:T8 State:T5
-T10	Status 156 159	was
-A2	Value T10 past
+E4	Drug:T9 Type:T8 Status:T5
+T10	StatusTime 156 159	was
+A2	StatusTimeVal T10 past
 T11	MaritalStatus 160 167	married
-E5	MaritalStatus:T11 Type:T12 State:T10
+E5	MaritalStatus:T11 Type:T12 Status:T10
 T12	Type 160 167	married
-T13	Status 187 193	worked
-A3	Value T13 past
+T13	StatusTime 187 193	worked
+A3	StatusTimeVal T13 past
 T14	Occupation 200 216	engineer/manager
-E6	Occupation:T14 Type:T15 State:T13
+E6	Occupation:T14 Type:T15 Status:T13
 T15	Type 200 216	engineer/manager
-T16	Status 28 36	was from
-A4	Value T16 past
-T17	Status 325 331	denied
-A5	Value T17 none
+T16	StatusTime 28 36	was from
+A4	StatusTimeVal T16 past
+T17	StatusTime 325 331	denied
+A5	StatusTimeVal T17 none
 T18	EnvironmentalExposure 349 358	exposures
-E7	EnvironmentalExposure:T18 State:T17
-T4	Temporal 75 87	one year ago
-T19	Location 61 74	United States
+E7	EnvironmentalExposure:T18 Status:T17
+T4	Time 75 87	one year ago
+T19	Location 61 74	United Statuss
 T20	Residence 48 53	moved
-E8	Residence:T20 State:T21 Location:T19 Time:T4
-T21	Status 48 53	moved
-A6	Value T21 current
+E8	Residence:T20 Status:T21 Location:T19 Time:T4
+T21	StatusTime 48 53	moved
+A6	StatusTimeVal T21 current

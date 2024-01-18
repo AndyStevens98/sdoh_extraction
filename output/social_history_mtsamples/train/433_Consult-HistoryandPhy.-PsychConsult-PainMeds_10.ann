@@ -1,10 +1,10 @@
 T1	LivingSituation 19 52	lives with his wife in New Jersey
-E1	LivingSituation:T1 Method:T2 State:T3
+E1	LivingSituation:T1 Method:T2 Status:T3
 T2	Method 19 38	lives with his wife
-T3	Status 19 24	lives
-A1	Value T3 current
+T3	StatusTime 19 24	lives
+A1	StatusTimeVal T3 current
 T4	Residence 19 24	lives
-E2	Residence:T4 State:T3 Location:T5
+E2	Residence:T4 Status:T3 Location:T5
 T5	Location 42 52	New Jersey
 T6	Family 61 71	2 children
 E3	Family:T6 Type:T9 Amount:T10
@@ -15,29 +15,29 @@ T9	Type 63 71	children
 T10	Amount 61 62	2
 T12	Type 130 145	master mechanic
 T13	Location 152 168	trucking company
-T14	Temporal 169 179	since 1968
-T11	Status 184 207	retired in the May 2006
-A2	Value T11 past
+T14	Time 169 179	since 1968
+T11	StatusTime 184 207	retired in the May 2006
+A2	StatusTimeVal T11 past
 T15	Method 184 191	retired
 T16	Occupation 122 145	He is a master mechanic
-E5	Occupation:T16 Type:T12 Location:T13 Time:T14 Method:T15 State:T11
-T18	Status 353 365	quit in 1996
-A3	Value T18 past
+E5	Occupation:T16 Type:T12 Location:T13 Time:T14 Method:T15 Status:T11
+T18	StatusTime 353 365	quit in 1996
+A3	StatusTimeVal T18 past
 T21	Frequency 370 382	occasionally
 T22	Type 389 393	beer
 T23	Amount 387 394	a beer,
 T24	Alcohol 370 436	occasionally has a beer, but denies any continuous use of alcohol.
-E7	Alcohol:T24 Type:T22 Amount:T23 Frequency:T21 State:T26
-T25	Status 440 446	denies
-A4	Value T25 none
-T26	Status 370 394	occasionally has a beer,
-A5	Value T26 current
+E7	Alcohol:T24 Type:T22 Amount:T23 Frequency:T21 Status:T26
+T25	StatusTime 440 446	denies
+A4	StatusTimeVal T25 none
+T26	StatusTime 370 394	occasionally has a beer,
+A5	StatusTimeVal T26 current
 T27	Drug 459 463	drug
-E8	Drug:T27 State:T25 Type:T28
+E8	Drug:T27 Status:T25 Type:T28
 T28	Type 451 458	illicit
 T17	Amount 319 326	2 packs
 T19	Frequency 327 334	per day
 T29	ExposureHistory 335 347	for 40 years
 T30	Tobacco 290 297	tobacco
-E6	Tobacco:T30 Amount:T17 Frequency:T19 State:T18 ExposureHistory:T29 QuitHistory:T31
+E6	Tobacco:T30 Amount:T17 Frequency:T19 Status:T18 ExposureHistory:T29 QuitHistory:T31
 T31	QuitHistory 358 365	in 1996

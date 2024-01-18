@@ -1,17 +1,17 @@
 T1	MaritalStatus 25 35	is married
-E1	MaritalStatus:T1 State:T3 Type:T2
+E1	MaritalStatus:T1 Status:T3 Type:T2
 T2	Type 28 35	married
-T3	Status 25 27	is
-A1	Value T3 current
-T4	Status 45 48	non
-A2	Value T4 none
+T3	StatusTime 25 27	is
+A1	StatusTimeVal T3 current
+T4	StatusTime 45 48	non
+A2	StatusTimeVal T4 none
 T5	Tobacco 48 54	smoker
-E2	Tobacco:T5 State:T4
+E2	Tobacco:T5 Status:T4
 T7	LivingSituation 59 78	lives with his wife
-E3	LivingSituation:T7 Method:T8 State:T9
+E3	LivingSituation:T7 Method:T8 Status:T9
 T8	Method 59 78	lives with his wife
-T9	Status 59 64	lives
-A3	Value T9 current
+T9	StatusTime 59 64	lives
+A3	StatusTimeVal T9 current
 T10	Family 74 78	wife
 E4	Family:T10 Type:T11
 T11	Type 74 78	wife

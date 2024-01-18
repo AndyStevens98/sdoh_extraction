@@ -1,22 +1,22 @@
 T1	Occupation 28 38	is retired
-E1	Occupation:T1 State:T2 Method:T3
-T2	Status 28 30	is
-A1	Value T2 current
+E1	Occupation:T1 Status:T2 Method:T3
+T2	StatusTime 28 30	is
+A1	StatusTimeVal T2 current
 T3	Method 31 38	retired
 T4	MaritalStatus 44 54	is married
-E2	MaritalStatus:T4 State:T5 Type:T6
-T5	Status 44 46	is
-A2	Value T5 current
+E2	MaritalStatus:T4 Status:T5 Type:T6
+T5	StatusTime 44 46	is
+A2	StatusTimeVal T5 current
 T6	Type 47 54	married
 T7	Family 60 80	three grown children
 E3	Family:T7 Amount:T8 Type:T9
 T8	Amount 60 65	three
 T9	Type 66 80	grown children
-T10	Status 117 125	Does not
-A3	Value T10 none
+T10	StatusTime 117 125	Does not
+A3	StatusTimeVal T10 none
 T11	Tobacco 126 131	smoke
-E4	Tobacco:T11 State:T10
+E4	Tobacco:T11 Status:T10
 T13	Alcohol 133 138	drink
-E5	Alcohol:T13 State:T10
+E5	Alcohol:T13 Status:T10
 T14	Drug 155 173	illicit substances
-E6	Drug:T14 State:T10
+E6	Drug:T14 Status:T10

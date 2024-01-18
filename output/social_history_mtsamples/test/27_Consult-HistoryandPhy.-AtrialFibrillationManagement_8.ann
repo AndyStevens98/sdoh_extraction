@@ -1,32 +1,32 @@
 T1	Occupation 24 41	retired as a cook
-E1	Occupation:T1 Method:T2 Type:T3 Location:T4 State:T5 Time:T6
+E1	Occupation:T1 Method:T2 Type:T3 Location:T4 Status:T5 Time:T6
 T2	Method 24 31	retired
 T3	Type 37 41	cook
 T4	Location 42 63	in a school cafeteria
-T5	Status 17 23	She is
-A1	Value T5 past
-T6	Temporal 65 94	where she worked for 34 years
+T5	StatusTime 17 23	She is
+A1	StatusTimeVal T5 past
+T6	Time 65 94	where she worked for 34 years
 T7	Occupation 100 107	retired
-E2	Occupation:T7 Method:T8 Time:T9 State:T10
+E2	Occupation:T7 Method:T8 Time:T9 Status:T10
 T8	Method 100 107	retired
-T9	Temporal 108 119	7 years ago
-T10	Status 100 107	retired
-A2	Value T10 past
-T12	Status 202 206	quit
-A3	Value T12 past
-T16	Status 216 222	Denies
-A4	Value T16 none
+T9	Time 108 119	7 years ago
+T10	StatusTime 100 107	retired
+A2	StatusTimeVal T10 past
+T12	StatusTime 202 206	quit
+A3	StatusTimeVal T12 past
+T16	StatusTime 216 222	Denies
+A4	StatusTimeVal T16 none
 T17	Alcohol 223 230	alcohol
-E4	Alcohol:T17 State:T16
-T18	Status 236 242	denies
-A5	Value T18 none
+E4	Alcohol:T17 Status:T16
+T18	StatusTime 236 242	denies
+A5	StatusTimeVal T18 none
 T19	Type 243 256	IV or illicit
 T20	Drug 257 261	drug
-E5	Drug:T20 Type:T19 State:T18 Method:T14
+E5	Drug:T20 Type:T19 Status:T18 Method:T14
 T21	Amount 164 175	2-1/2 packs
 T22	Frequency 176 183	per day
 T23	ExposureHistory 188 196	32 years
 T11	QuitHistory 210 214	1995
 T13	Tobacco 158 163	smoke
-E3	Tobacco:T13 State:T12 Amount:T21 Frequency:T22 ExposureHistory:T23 QuitHistory:T11
+E3	Tobacco:T13 Status:T12 Amount:T21 Frequency:T22 ExposureHistory:T23 QuitHistory:T11
 T14	Method 243 245	IV

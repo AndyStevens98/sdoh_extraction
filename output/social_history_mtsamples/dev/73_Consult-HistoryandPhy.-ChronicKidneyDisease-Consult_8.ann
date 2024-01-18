@@ -1,27 +1,27 @@
 T1	Residence 20 25	lives
-E1	Residence:T1 Location:T2 State:T3
+E1	Residence:T1 Location:T2 Status:T3
 T2	Location 34 38	ABCD
-T3	Status 20 25	lives
-A1	Value T3 current
+T3	StatusTime 20 25	lives
+A1	StatusTimeVal T3 current
 T4	Occupation 46 54	employed
-E2	Occupation:T4 State:T5 Method:T8 Type:T6 Location:T7
-T5	Status 43 54	is employed
-A2	Value T5 current
+E2	Occupation:T4 Status:T5 Method:T8 Type:T6 Location:T7
+T5	StatusTime 43 54	is employed
+A2	StatusTimeVal T5 current
 T6	Type 62 75	sales counter
 T7	Location 81 99	local butcher shop
 T8	Method 46 54	employed
 T9	Tobacco 117 122	smoke
-E3	Tobacco:T9 State:T13 Amount:T10 Type:T11 Frequency:T12 ExposureHistory:T14
+E3	Tobacco:T9 Status:T13 Amount:T10 Type:T11 Frequency:T12 ExposureHistory:T14
 T10	Amount 123 131	one pack
 T11	Type 135 145	cigarettes
 T12	Frequency 146 151	daily
-T13	Status 104 116	continues to
-A3	Value T13 current
+T13	StatusTime 104 116	continues to
+A3	StatusTimeVal T13 current
 T14	ExposureHistory 163 184	for the past 28 years
 T15	Alcohol 200 207	alcohol
-E4	Alcohol:T15 State:T17
+E4	Alcohol:T15 Status:T17
 T16	Drug 211 229	illicit substances
-E5	Drug:T16 State:T17 Type:T19
-T17	Status 189 195	denies
-A4	Value T17 none
+E5	Drug:T16 Status:T17 Type:T19
+T17	StatusTime 189 195	denies
+A4	StatusTimeVal T17 none
 T19	Type 211 218	illicit

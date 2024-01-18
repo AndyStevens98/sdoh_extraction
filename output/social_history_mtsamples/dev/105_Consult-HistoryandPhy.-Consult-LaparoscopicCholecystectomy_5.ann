@@ -1,21 +1,21 @@
 T1	Occupation 17 35	Currently employed
-E1	Occupation:T1 State:T2 Type:T6
-T2	Status 17 26	Currently
-A1	Value T2 current
+E1	Occupation:T1 Status:T2 Type:T6
+T2	StatusTime 17 26	Currently
+A1	StatusTimeVal T2 current
 T3	MaritalStatus 41 51	is married
-E2	MaritalStatus:T3 State:T4 Type:T5
-T4	Status 41 43	is
-A2	Value T4 current
+E2	MaritalStatus:T3 Status:T4 Type:T5
+T4	StatusTime 41 43	is
+A2	StatusTimeVal T4 current
 T5	Type 44 51	married
 T6	Type 63 68	sales
-T7	Status 74 82	does not
-A3	Value T7 none
+T7	StatusTime 74 82	does not
+A3	StatusTimeVal T7 none
 T8	Tobacco 83 88	smoke
-E3	Tobacco:T8 State:T7
+E3	Tobacco:T8 Status:T7
 T10	Alcohol 94 100	drinks
-E4	Alcohol:T10 State:T14 Type:T11 Amount:T12 Frequency:T13
+E4	Alcohol:T10 Status:T14 Type:T11 Amount:T12 Frequency:T13
 T11	Type 101 105	wine
 T12	Amount 106 118	a few drinks
 T13	Frequency 119 126	a month
-T14	Status 94 100	drinks
-A4	Value T14 current
+T14	StatusTime 94 100	drinks
+A4	StatusTimeVal T14 current

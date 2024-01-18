@@ -1,13 +1,13 @@
-T1	Status 16 29	No history of
-A1	Value T1 none
+T1	StatusTime 16 29	No history of
+A1	StatusTimeVal T1 none
 T2	Tobacco 30 37	smoking
-E1	Tobacco:T2 State:T1
+E1	Tobacco:T2 Status:T1
 T4	Alcohol 39 46	alcohol
-E2	Alcohol:T4 State:T1
+E2	Alcohol:T4 Status:T1
 T5	Drug 51 55	drug
-E3	Drug:T5 State:T1
+E3	Drug:T5 Status:T1
 T6	Residence 65 79	lives at home.
-E4	Residence:T6 Type:T7 State:T8
+E4	Residence:T6 Type:T7 Status:T8
 T7	Type 71 78	at home
-T8	Status 65 70	lives
-A2	Value T8 current
+T8	StatusTime 65 70	lives
+A2	StatusTimeVal T8 current

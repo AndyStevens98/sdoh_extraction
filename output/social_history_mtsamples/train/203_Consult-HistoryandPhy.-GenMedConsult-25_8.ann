@@ -1,29 +1,29 @@
 T1	Method 28 35	retired
-T2	Temporal 36 48	one year PTA
+T2	Time 36 48	one year PTA
 T3	Occupation 28 48	retired one year PTA
 E1	Occupation:T3 Method:T1 Time:T2 Type:T4 Location:T5
 T4	Type 103 124	electronic technician
 T5	Location 133 150	US postal service
 T6	LivingSituation 164 196	lives with his wife and daughter
-E2	LivingSituation:T6 State:T8 Method:T7
+E2	LivingSituation:T6 Status:T8 Method:T7
 T7	Method 164 196	lives with his wife and daughter
-T8	Status 164 169	lives
-A1	Value T8 current
+T8	StatusTime 164 169	lives
+A1	StatusTimeVal T8 current
 T9	Residence 197 213	in an apartment.
-E3	Residence:T9 State:T8 Type:T10
+E3	Residence:T9 Status:T8 Type:T10
 T10	Type 203 212	apartment
-T11	Status 217 227	denied any
-A2	Value T11 none
+T11	StatusTime 217 227	denied any
+A2	StatusTimeVal T11 none
 T12	Tobacco 228 235	smoking
-E4	Tobacco:T12 State:T11
-T14	Status 248 261	used to drink
-A3	Value T14 past
+E4	Tobacco:T12 Status:T11
+T14	StatusTime 248 261	used to drink
+A3	StatusTimeVal T14 past
 T15	Alcohol 262 269	alcohol
-E5	Alcohol:T15 State:T14 Frequency:T16
+E5	Alcohol:T15 Status:T14 Frequency:T16
 T16	Frequency 270 276	rarely
-T18	Status 333 347	denied any h/o
-A4	Value T18 none
+T18	StatusTime 333 347	denied any h/o
+A4	StatusTimeVal T18 none
 T19	Drug 348 352	drug
-E6	Drug:T19 Amount:T20 State:T18 Type:T21
+E6	Drug:T19 Amount:T20 Status:T18 Type:T21
 T20	Amount 353 358	abuse
 T21	Type 344 347	h/o

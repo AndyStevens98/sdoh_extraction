@@ -1,11 +1,11 @@
 T1	Occupation 23 30	retired
-E1	Occupation:T1 Method:T3 State:T2
-T2	Status 20 22	is
-A1	Value T2 current
+E1	Occupation:T1 Method:T3 Status:T2
+T2	StatusTime 20 22	is
+A1	StatusTimeVal T2 current
 T3	Method 23 30	retired
 T4	Tobacco 41 46	smoke
-E2	Tobacco:T4 State:T7
+E2	Tobacco:T4 Status:T7
 T5	Alcohol 50 55	drink
-E3	Alcohol:T5 State:T7
-T7	Status 32 40	Does not
-A2	Value T7 none
+E3	Alcohol:T5 Status:T7
+T7	StatusTime 32 40	Does not
+A2	StatusTimeVal T7 none

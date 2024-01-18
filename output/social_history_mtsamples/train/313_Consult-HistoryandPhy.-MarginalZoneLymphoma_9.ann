@@ -1,21 +1,21 @@
-T3	Status 59 62	use
-A1	Value T3 current
+T3	StatusTime 59 62	use
+A1	StatusTimeVal T3 current
 T4	Frequency 72 76	rare
 T5	Alcohol 77 84	alcohol
-E2	Alcohol:T5 Frequency:T4 State:T6
-T6	Status 85 89	use.
-A2	Value T6 current
-T7	Status 98 100	no
-A3	Value T7 none
+E2	Alcohol:T5 Frequency:T4 Status:T6
+T6	StatusTime 85 89	use.
+A2	StatusTimeVal T6 current
+T7	StatusTime 98 100	no
+A3	StatusTimeVal T7 none
 T8	Type 101 108	illicit
 T9	Drug 109 113	drug
-E3	Drug:T9 Type:T8 State:T7
+E3	Drug:T9 Type:T8 Status:T7
 T10	MaritalStatus 144 160	getting divorced
-E4	MaritalStatus:T10 Time:T13 State:T11 Type:T12
-T11	Status 144 151	getting
-A4	Value T11 current
+E4	MaritalStatus:T10 Time:T13 Status:T11 Type:T12
+T11	StatusTime 144 151	getting
+A4	StatusTimeVal T11 current
 T12	Type 152 160	divorced
-T13	Temporal 123 160	is in the process of getting divorced
+T13	Time 123 160	is in the process of getting divorced
 T14	Family 184 187	son
 E5	Family:T14 Type:T18 Amount:T16
 T15	Family 216 224	daughter
@@ -27,4 +27,4 @@ T19	Type 216 225	daughter.
 T20	Amount 27 34	20-pack
 T21	Frequency 35 39	year
 T2	Tobacco 51 58	tobacco
-E1	Tobacco:T2 State:T3 Frequency:T21 Amount:T20
+E1	Tobacco:T2 Status:T3 Frequency:T21 Amount:T20

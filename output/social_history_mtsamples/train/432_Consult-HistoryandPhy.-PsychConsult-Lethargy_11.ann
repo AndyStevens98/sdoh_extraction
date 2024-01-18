@@ -1,12 +1,12 @@
 T1	LivingSituation 44 89	lives with husband of 40 years in League City
-E1	LivingSituation:T1 Method:T2 State:T3
+E1	LivingSituation:T1 Method:T2 Status:T3
 T2	Method 44 74	lives with husband of 40 years
-T3	Status 34 43	Currently
-A1	Value T3 current
+T3	StatusTime 34 43	Currently
+A1	StatusTimeVal T3 current
 T4	MaritalStatus 55 74	husband of 40 years
 E2	MaritalStatus:T4 Type:T5 Time:T6
 T5	Type 55 62	husband
-T6	Temporal 63 74	of 40 years
+T6	Time 63 74	of 40 years
 T7	Family 55 62	husband
 E3	Family:T7 Type:T5
 T8	Residence 44 49	lives
@@ -14,7 +14,7 @@ E4	Residence:T8 Location:T9
 T9	Location 75 90	in League City,
 T10	Method 124 131	retired
 T11	Type 132 150	reading specialist
-T12	Temporal 157 180	she did it for 33 years
+T12	Time 157 180	she did it for 33 years
 T13	Occupation 119 150	is a retired reading specialist
 E5	Occupation:T13 Method:T10 Type:T11 Time:T12
 T14	Family 186 205	one younger brother
@@ -25,12 +25,12 @@ T16	Amount 186 189	one
 T17	Amount 207 210	one
 T18	Type 190 205	younger brother
 T19	Type 211 219	daughter
-T20	Status 221 231	Denies use
-A2	Value T20 none
+T20	StatusTime 221 231	Denies use
+A2	StatusTimeVal T20 none
 T21	Tobacco 235 243	tobacco,
-E8	Tobacco:T21 State:T20
+E8	Tobacco:T21 Status:T20
 T22	Alcohol 244 251	alcohol
-E9	Alcohol:T22 State:T20
+E9	Alcohol:T22 Status:T20
 T23	Type 256 263	illicit
 T24	Drug 264 269	drugs
-E10	Drug:T24 Type:T23 State:T20
+E10	Drug:T24 Type:T23 Status:T20

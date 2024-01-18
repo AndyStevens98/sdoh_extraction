@@ -1,8 +1,8 @@
 T1	Type 36 43	illicit
 T2	Drug 44 49	drugs
-E1	Drug:T2 Type:T1 State:T3
-T3	Status 22 35	were possible
-A1	Value T3 current
+E1	Drug:T2 Type:T1 Status:T3
+T3	StatusTime 22 35	were possible
+A1	StatusTimeVal T3 current
 T4	Family 113 119	mother
 E2	Family:T4 Type:T6
 T5	Family 124 130	sister

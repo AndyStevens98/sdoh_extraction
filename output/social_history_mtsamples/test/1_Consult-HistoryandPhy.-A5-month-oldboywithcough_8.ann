@@ -1,12 +1,12 @@
 T1	LivingSituation 17 22	Lives
-E1	LivingSituation:T1 Method:T2 State:T4
+E1	LivingSituation:T1 Method:T2 Status:T4
 T2	Method 17 57	Lives with parents and with two siblings
 T3	Residence 107 112	house
-E2	Residence:T3 State:T5 Type:T6 Location:T7
-T4	Status 17 22	Lives
-A1	Value T4 current
-T5	Status 107 112	house
-A2	Value T5 current
+E2	Residence:T3 Status:T5 Type:T6 Location:T7
+T4	StatusTime 17 22	Lives
+A1	StatusTimeVal T4 current
+T5	StatusTime 107 112	house
+A2	StatusTimeVal T5 current
 T6	Type 107 112	house
 T7	Location 114 125	in Corrales
 T8	Family 172 178	father

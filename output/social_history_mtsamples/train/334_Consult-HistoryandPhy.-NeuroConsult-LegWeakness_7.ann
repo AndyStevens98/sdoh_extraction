@@ -1,42 +1,42 @@
 T1	LivingSituation 19 38	lives with his wife
-E1	LivingSituation:T1 Method:T5 State:T2
-T2	Status 19 24	lives
-A1	Value T2 current
+E1	LivingSituation:T1 Method:T5 Status:T2
+T2	StatusTime 19 24	lives
+A1	StatusTimeVal T2 current
 T3	Family 34 38	wife
 E2	Family:T3 Type:T4
 T4	Type 34 38	wife
 T5	Method 19 38	lives with his wife
 T6	MaritalStatus 34 38	wife
-E3	MaritalStatus:T6 Type:T7 State:T8
+E3	MaritalStatus:T6 Type:T7 Status:T8
 T7	Type 34 38	wife
-T8	Status 34 38	wife
-A2	Value T8 current
+T8	StatusTime 34 38	wife
+A2	StatusTimeVal T8 current
 T9	Occupation 43 48	works
-E4	Occupation:T9 State:T12 Location:T10 Type:T11
+E4	Occupation:T9 Status:T12 Location:T10 Type:T11
 T10	Location 52 66	Shepherd Pratt
 T11	Type 73 92	network engineering
-T12	Status 43 48	works
-A3	Value T12 current
+T12	StatusTime 43 48	works
+A3	StatusTimeVal T12 current
 T13	Tobacco 97 103	smokes
-E5	Tobacco:T13 Type:T16 Frequency:T17 Amount:T15 State:T14
+E5	Tobacco:T13 Type:T16 Frequency:T17 Amount:T15 Status:T14
 T16	Type 114 124	cigarettes
 T17	Frequency 125 130	a day
 T18	Alcohol 162 168	drinks
-E6	Alcohol:T18 State:T21 Frequency:T20 Amount:T19 Type:T28
+E6	Alcohol:T18 Status:T21 Frequency:T20 Amount:T19 Type:T28
 T20	Frequency 194 203	per night
-T21	Status 162 168	drinks
-A4	Value T21 current
-T23	Status 252 258	denies
-A5	Value T23 none
+T21	StatusTime 162 168	drinks
+A4	StatusTimeVal T21 current
+T23	StatusTime 252 258	denies
+A5	StatusTimeVal T23 none
 T24	Type 259 266	illicit
 T25	Drug 267 275	drug use
-E7	Drug:T25 Type:T24 State:T23
-T26	Status 280 283	was
-A6	Value T26 past
+E7	Drug:T25 Type:T24 Status:T23
+T26	StatusTime 280 283	was
+A6	StatusTimeVal T26 past
 T27	PhysicalActivity 284 292	athletic
-E8	PhysicalActivity:T27 State:T26
+E8	PhysicalActivity:T27 Status:T26
 T15	Amount 104 110	a pack
 T19	Amount 169 173	four
 T28	Type 174 193	alcoholic beverages
-T14	Status 97 103	smokes
-A7	Value T14 current
+T14	StatusTime 97 103	smokes
+A7	StatusTimeVal T14 current

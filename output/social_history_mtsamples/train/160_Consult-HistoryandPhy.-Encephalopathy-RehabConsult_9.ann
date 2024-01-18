@@ -1,18 +1,18 @@
-T1	Status 24 27	non
-A1	Value T1 none
-T2	Status 38 41	non
-A2	Value T2 none
+T1	StatusTime 24 27	non
+A1	StatusTimeVal T1 none
+T2	StatusTime 38 41	non
+A2	StatusTimeVal T2 none
 T3	Tobacco 27 33	smoker
-E1	Tobacco:T3 State:T1
+E1	Tobacco:T3 Status:T1
 T5	Alcohol 41 48	drinker
-E2	Alcohol:T5 State:T2
-T6	Status 50 55	Prior
-A3	Value T6 past
+E2	Alcohol:T5 Status:T2
+T6	StatusTime 50 55	Prior
+A3	StatusTimeVal T6 past
 T7	Type 56 61	boxer
 T8	Occupation 50 61	Prior boxer
-E3	Occupation:T8 State:T6 Type:T7
+E3	Occupation:T8 Status:T6 Type:T7
 T9	LivingSituation 66 134	lives in a home where he would need to be independent during the day
-E4	LivingSituation:T9 State:T11 Method:T10
+E4	LivingSituation:T9 Status:T11 Method:T10
 T10	Method 66 134	lives in a home where he would need to be independent during the day
-T11	Status 66 71	lives
-A4	Value T11 current
+T11	StatusTime 66 71	lives
+A4	StatusTimeVal T11 current

@@ -1,23 +1,23 @@
 T1	LivingSituation 134 153	he lives on his own
-E1	LivingSituation:T1 Method:T2 State:T3
+E1	LivingSituation:T1 Method:T2 Status:T3
 T2	Method 134 153	he lives on his own
-T3	Status 137 142	lives
-A1	Value T3 current
+T3	StatusTime 137 142	lives
+A1	StatusTimeVal T3 current
 T4	MaritalStatus 163 174	single male
-E2	MaritalStatus:T4 Type:T6 State:T5
-T5	Status 158 160	is
-A2	Value T5 current
+E2	MaritalStatus:T4 Type:T6 Status:T5
+T5	StatusTime 158 160	is
+A2	StatusTimeVal T5 current
 T6	Type 163 169	single
-T7	Status 321 331	history of
-A3	Value T7 current
+T7	StatusTime 321 331	history of
+A3	StatusTimeVal T7 current
 T8	Drug 332 348	methamphetamines
-E3	Drug:T8 Type:T9 State:T7
+E3	Drug:T8 Type:T9 Status:T7
 T9	Type 332 348	methamphetamines
-T10	Status 396 410	denies current
-A4	Value T10 past
+T10	StatusTime 396 410	denies current
+A4	StatusTimeVal T10 past
 T11	Alcohol 411 418	alcohol
-E4	Alcohol:T11 State:T10
-T12	Status 427 431	does
-A5	Value T12 current
+E4	Alcohol:T11 Status:T10
+T12	StatusTime 427 431	does
+A5	StatusTimeVal T12 current
 T13	Tobacco 432 437	smoke
-E5	Tobacco:T13 State:T12
+E5	Tobacco:T13 Status:T12

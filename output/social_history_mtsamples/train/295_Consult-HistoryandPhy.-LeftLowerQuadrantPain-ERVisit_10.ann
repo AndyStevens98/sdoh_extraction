@@ -1,34 +1,34 @@
 T1	Tobacco 24 31	tobacco
-E1	Tobacco:T1 State:T3
+E1	Tobacco:T1 Status:T3
 T2	Alcohol 36 43	alcohol
-E2	Alcohol:T2 State:T3
-T3	Status 17 23	Denies
-A1	Value T3 none
+E2	Alcohol:T2 Status:T3
+T3	StatusTime 17 23	Denies
+A1	StatusTimeVal T3 none
 T4	Drug 62 71	marijuana
-E3	Drug:T4 Type:T7 State:T8
+E3	Drug:T4 Type:T7 Status:T8
 T5	Drug 93 100	cocaine
-E4	Drug:T5 Type:T6 State:T9 ExposureHistory:T10
+E4	Drug:T5 Type:T6 Status:T9 ExposureHistory:T10
 T6	Type 93 100	cocaine
 T7	Type 62 71	marijuana
-T8	Status 72 75	use
-A2	Value T8 current
-T9	Status 105 119	five years ago
-A3	Value T9 current
+T8	StatusTime 72 75	use
+A2	StatusTimeVal T8 current
+T9	StatusTime 105 119	five years ago
+A3	StatusTimeVal T9 current
 T10	ExposureHistory 105 119	five years ago
 T11	Drug 297 312	benzodiazepines
-E5	Drug:T11 Type:T12 State:T21
+E5	Drug:T11 Type:T12 Status:T21
 T12	Type 297 313	benzodiazepines,
 T13	Drug 314 326	barbiturates
-E6	Drug:T13 Type:T14 State:T21
+E6	Drug:T13 Type:T14 Status:T21
 T14	Type 314 326	barbiturates
 T15	Drug 328 335	opiates
-E7	Drug:T15 Type:T16 State:T21
+E7	Drug:T15 Type:T16 Status:T21
 T16	Type 328 335	opiates
 T17	Drug 341 350	marijuana
-E8	Drug:T17 Type:T18 State:T21
+E8	Drug:T17 Type:T18 Status:T21
 T18	Type 341 350	marijuana
 T19	Drug 380 387	cocaine
-E9	Drug:T19 Type:T20 State:T21
+E9	Drug:T19 Type:T20 Status:T21
 T20	Type 380 387	cocaine
-T21	Status 284 292	positive
-A4	Value T21 current
+T21	StatusTime 284 292	positive
+A4	StatusTimeVal T21 current

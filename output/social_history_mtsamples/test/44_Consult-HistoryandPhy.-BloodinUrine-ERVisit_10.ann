@@ -1,16 +1,16 @@
-T1	Status 34 37	non
-A1	Value T1 none
+T1	StatusTime 34 37	non
+A1	StatusTimeVal T1 none
 T2	Tobacco 37 43	smoker
-E1	Tobacco:T2 State:T1
-T4	Status 45 55	Denies any
-A2	Value T4 none
+E1	Tobacco:T2 Status:T1
+T4	StatusTime 45 55	Denies any
+A2	StatusTimeVal T4 none
 T5	Alcohol 56 63	alcohol
-E2	Alcohol:T5 State:T4
+E2	Alcohol:T5 Status:T4
 T6	Type 67 74	illicit
 T7	Drug 75 79	drug
-E3	Drug:T7 State:T4 Type:T6
+E3	Drug:T7 Status:T4 Type:T6
 T8	LivingSituation 102 122	live with his family
-E4	LivingSituation:T8 Method:T10 State:T9
-T9	Status 97 106	does live
-A3	Value T9 current
+E4	LivingSituation:T8 Method:T10 Status:T9
+T9	StatusTime 97 106	does live
+A3	StatusTimeVal T9 current
 T10	Method 102 123	live with his family.

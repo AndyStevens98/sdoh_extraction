@@ -3,29 +3,29 @@ T5	Frequency 148 155	per day
 T6	ExposureHistory 156 173	in the last month
 T7	Frequency 229 241	occasionally
 T8	Alcohol 212 228	consumed alcohol
-E2	Alcohol:T8 Frequency:T7 State:T9
-T9	Status 212 228	consumed alcohol
-A1	Value T9 current
+E2	Alcohol:T8 Frequency:T7 Status:T9
+T9	StatusTime 212 228	consumed alcohol
+A1	StatusTimeVal T9 current
 T11	Method 311 318	smoking
 T12	Drug 319 328	marijuana
-E3	Drug:T12 Type:T13 Method:T11 Frequency:T14 State:T21
+E3	Drug:T12 Type:T13 Method:T11 Frequency:T14 Status:T21
 T13	Type 319 328	marijuana
 T14	Frequency 329 352	a few times in his life
-T15	Status 372 380	Denies o
-A2	Value T15 none
+T15	StatusTime 372 380	Denies o
+A2	StatusTimeVal T15 none
 T16	Type 385 392	illicit
 T17	Drug 393 406	substance use
-E4	Drug:T17 Type:T16 State:T15
+E4	Drug:T17 Type:T16 Status:T15
 T3	Amount 51 67	one to two packs
 T1	Frequency 68 75	per day
 T2	ExposureHistory 76 101	for most of the last year
-T10	Status 44 50	smoked
-A3	Value T10 past
+T10	StatusTime 44 50	smoked
+A3	StatusTimeVal T10 past
 T18	Tobacco 44 50	smoked
-E1	Tobacco:T18 State:T10 Amount:T3 Frequency:T1 ExposureHistory:T2
+E1	Tobacco:T18 Status:T10 Amount:T3 Frequency:T1 ExposureHistory:T2
 T19	Tobacco 111 120	increased
-E5	Tobacco:T19 State:T20 Amount:T4 Frequency:T5 ExposureHistory:T6
-T20	Status 111 120	increased
-A4	Value T20 current
-T21	Status 358 370	not recently
-A5	Value T21 past
+E5	Tobacco:T19 Status:T20 Amount:T4 Frequency:T5 ExposureHistory:T6
+T20	StatusTime 111 120	increased
+A4	StatusTimeVal T20 current
+T21	StatusTime 358 370	not recently
+A5	StatusTimeVal T21 past

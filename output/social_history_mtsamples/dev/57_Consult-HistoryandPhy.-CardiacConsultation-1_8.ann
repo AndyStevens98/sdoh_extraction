@@ -1,12 +1,12 @@
 T1	Tobacco 28 34	smokes
-E1	Tobacco:T1 State:T9 Amount:T3 Type:T5 Frequency:T4
+E1	Tobacco:T1 Status:T9 Amount:T3 Type:T5 Frequency:T4
 T3	Amount 35 43	one pack
 T4	Frequency 58 65	per day
 T5	Type 47 57	cigarettes
 T6	Alcohol 70 82	takes drinks
-E2	Alcohol:T6 State:T8 Frequency:T7
+E2	Alcohol:T6 Status:T8 Frequency:T7
 T7	Frequency 83 102	on social occasions
-T8	Status 70 75	takes
-A1	Value T8 current
-T9	Status 28 34	smokes
-A2	Value T9 current
+T8	StatusTime 70 75	takes
+A1	StatusTimeVal T8 current
+T9	StatusTime 28 34	smokes
+A2	StatusTimeVal T9 current

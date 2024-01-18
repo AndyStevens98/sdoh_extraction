@@ -1,17 +1,17 @@
-T1	Status 34 40	former
-A1	Value T1 past
+T1	StatusTime 34 40	former
+A1	StatusTimeVal T1 past
 T2	Tobacco 41 47	smoker
-E1	Tobacco:T2 State:T1 QuitHistory:T4
+E1	Tobacco:T2 Status:T1 QuitHistory:T4
 T5	Drug 82 89	cocaine
-E2	Drug:T5 Type:T6 State:T7 QuitHistory:T8
+E2	Drug:T5 Type:T6 Status:T7 QuitHistory:T8
 T6	Type 82 89	cocaine
-T7	Status 90 101	in the past
-A2	Value T7 past
+T7	StatusTime 90 101	in the past
+A2	StatusTimeVal T7 past
 T9	Alcohol 153 160	alcohol
-E3	Alcohol:T9 Amount:T10 State:T12 QuitHistory:T11
+E3	Alcohol:T9 Amount:T10 Status:T12 QuitHistory:T11
 T10	Amount 161 166	abuse
-T12	Status 142 152	history of
-A3	Value T12 past
+T12	StatusTime 142 152	history of
+A3	StatusTimeVal T12 past
 T11	QuitHistory 188 210	more than 10 years ago
 T4	QuitHistory 65 72	in 2007
 T8	QuitHistory 119 126	in 2005

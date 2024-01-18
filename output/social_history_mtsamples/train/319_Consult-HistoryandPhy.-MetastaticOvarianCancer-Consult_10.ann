@@ -1,18 +1,18 @@
 T1	QuitHistory 120 131	6 weeks ago
-T3	Status 101 113	quit smoking
-A1	Value T3 past
+T3	StatusTime 101 113	quit smoking
+A1	StatusTimeVal T3 past
 T5	Tobacco 106 113	smoking
-E1	Tobacco:T5 State:T3 QuitHistory:T1
+E1	Tobacco:T5 Status:T3 QuitHistory:T1
 T6	Frequency 137 149	occasionally
 T7	Alcohol 154 161	alcohol
-E2	Alcohol:T7 Frequency:T6 State:T8
-T8	Status 137 149	occasionally
-A2	Value T8 current
+E2	Alcohol:T7 Frequency:T6 Status:T8
+T8	StatusTime 137 149	occasionally
+A2	StatusTimeVal T8 current
 T9	MaritalStatus 170 177	married
-E3	MaritalStatus:T9 Type:T10 State:T11
+E3	MaritalStatus:T9 Type:T10 Status:T11
 T10	Type 170 177	married
-T11	Status 167 177	is married
-A3	Value T11 current
+T11	StatusTime 167 177	is married
+A3	StatusTimeVal T11 current
 T12	Family 186 196	3 children
 E4	Family:T12 Type:T13 Amount:T14
 T13	Type 188 196	children
@@ -21,21 +21,21 @@ T15	Family 225 232	husband
 E5	Family:T15 Type:T16
 T16	Type 225 232	husband
 T17	LivingSituation 202 232	lives at home with her husband
-E6	LivingSituation:T17 Method:T18 State:T19
+E6	LivingSituation:T17 Method:T18 Status:T19
 T18	Method 202 232	lives at home with her husband
-T19	Status 202 207	lives
-A4	Value T19 current
-T20	Status 238 245	used to
-A5	Value T20 past
+T19	StatusTime 202 207	lives
+A4	StatusTimeVal T19 current
+T20	StatusTime 238 245	used to
+A5	StatusTimeVal T20 past
 T21	Occupation 246 250	work
-E7	Occupation:T21 State:T20 Type:T22 Location:T23
+E7	Occupation:T21 Status:T20 Type:T22 Location:T23
 T22	Type 256 266	unit clerk
 T23	Location 270 288	XYZ Medical Center
 T2	Tobacco 21 27	smokes
-E8	Tobacco:T2 State:T28 Amount:T24 Type:T25 Frequency:T26 ExposureHistory:T27
+E8	Tobacco:T2 Status:T28 Amount:T24 Type:T25 Frequency:T26 ExposureHistory:T27
 T24	Amount 34 37	6-7
 T25	Type 38 48	cigarettes
 T26	Frequency 49 56	per day
 T27	ExposureHistory 73 95	for more than 50 years
-T28	Status 21 27	smokes
-A6	Value T28 current
+T28	StatusTime 21 27	smokes
+A6	StatusTimeVal T28 current

@@ -1,58 +1,58 @@
 T1	MaritalStatus 29 38	is single
-E1	MaritalStatus:T1 State:T3 Type:T2
+E1	MaritalStatus:T1 Status:T3 Type:T2
 T2	Type 32 38	single
-T3	Status 29 31	is
-A1	Value T3 current
-T4	Status 43 52	currently
-A2	Value T4 current
+T3	StatusTime 29 31	is
+A1	StatusTimeVal T3 current
+T4	StatusTime 43 52	currently
+A2	StatusTimeVal T4 current
 T5	LivingSituation 53 73	lives with his mothe
-E2	LivingSituation:T5 Method:T6 State:T4 Time:T10
+E2	LivingSituation:T5 Method:T6 Status:T4 Time:T10
 T6	Method 53 74	lives with his mother
 T7	Residence 78 133	house for several both in New York and here in Colorado
-E3	Residence:T7 Location:T9 Type:T8 State:T4 Time:T10
+E3	Residence:T7 Location:T9 Type:T8 Status:T4 Time:T10
 T8	Type 78 83	house
 T9	Location 104 133	New York and here in Colorado
-T10	Temporal 188 225	he has been out here for seven years.
+T10	Time 188 225	he has been out here for seven years.
 T11	Occupation 242 255	self employed
-E4	Occupation:T11 State:T14 Type:T12 Type2:T13
+E4	Occupation:T11 Status:T14 Type:T12 Type2:T13
 T12	Type 242 255	self employed
 T13	Type 265 274	antiquing
-T14	Status 239 241	is
-A3	Value T14 current
+T14	StatusTime 239 241	is
+A3	StatusTimeVal T14 current
 T15	Occupation 288 294	worked
-E5	Occupation:T15 State:T16 Type:T17
-T16	Status 288 294	worked
-A4	Value T16 past
+E5	Occupation:T15 Status:T16 Type:T17
+T16	StatusTime 288 294	worked
+A4	StatusTimeVal T16 past
 T17	Type 298 310	nurses' aide
 T18	Occupation 315 321	worked
-E6	Occupation:T18 State:T19 Type:T20 Location:T21
-T19	Status 315 321	worked
-A5	Value T19 past
+E6	Occupation:T18 Status:T19 Type:T20 Location:T21
+T19	StatusTime 315 321	worked
+A5	StatusTimeVal T19 past
 T20	Type 325 335	group home
-T21	Location 344 393	state of New York for the developmentally delayed
+T21	Location 344 393	Status of New York for the developmentally delayed
 T22	SexualHistory 401 411	homosexual
-E7	SexualHistory:T22 State:T24 Type:T23
+E7	SexualHistory:T22 Status:T24 Type:T23
 T23	Type 401 411	homosexual
-T24	Status 398 400	is
-A6	Value T24 current
-T25	Status 534 543	currently
-A7	Value T25 current
+T24	StatusTime 398 400	is
+A6	StatusTimeVal T24 current
+T25	StatusTime 534 543	currently
+A7	StatusTimeVal T25 current
 T28	Amount 558 577	a quarter of a pack
 T29	Frequency 578 585	per day
-T31	Status 590 602	does not use
-A8	Value T31 none
+T31	StatusTime 590 602	does not use
+A8	StatusTimeVal T31 none
 T32	Alcohol 603 610	alcohol
-E9	Alcohol:T32 State:T31
+E9	Alcohol:T32 Status:T31
 T33	Type 614 621	illicit
 T34	Drug 622 627	drugs
-E10	Drug:T34 Type:T33 State:T31
+E10	Drug:T34 Type:T33 Status:T31
 T26	Tobacco 544 551	smoking
-E8	Tobacco:T26 State:T25 Amount:T28 Frequency:T29
+E8	Tobacco:T26 Status:T25 Amount:T28 Frequency:T29
 T27	Tobacco 457 464	smoking
-E11	Tobacco:T27 State:T37 Amount:T35 Frequency:T36
-T30	Status 457 464	smoking
-A9	Value T30 past
+E11	Tobacco:T27 Status:T37 Amount:T35 Frequency:T36
+T30	StatusTime 457 464	smoking
+A9	StatusTimeVal T30 past
 T35	Amount 482 508	a thirteen and a half pack
 T36	Frequency 509 513	year
-T37	Status 452 456	have
-A10	Value T37 current
+T37	StatusTime 452 456	have
+A10	StatusTimeVal T37 current

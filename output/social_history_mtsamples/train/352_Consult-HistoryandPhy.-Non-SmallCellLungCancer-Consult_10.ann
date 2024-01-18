@@ -1,29 +1,29 @@
 T4	Amount 31 45	30-pack-a-year
-T6	Status 69 82	used to drink
-A2	Value T6 past
+T6	StatusTime 69 82	used to drink
+A2	StatusTimeVal T6 past
 T7	Alcohol 83 90	alcohol
-E2	Alcohol:T7 Amount:T8 State:T6
+E2	Alcohol:T7 Amount:T8 Status:T6
 T8	Amount 91 98	heavily
 T13	MaritalStatus 276 283	married
-E4	MaritalStatus:T13 State:T15 Type:T21
+E4	MaritalStatus:T13 Status:T15 Type:T21
 T14	Amount 292 295	two
-T15	Status 273 275	is
-A4	Value T15 current
+T15	StatusTime 273 275	is
+A4	StatusTimeVal T15 current
 T16	Type 296 304	children
 T17	Family 292 304	two children
 E5	Family:T17 Type:T16 Amount:T14
 T18	LivingSituation 292 370	two children, both of whom are grown in their 20s, but are now living at home.
-E6	LivingSituation:T18 Method:T19 State:T20
+E6	LivingSituation:T18 Method:T19 Status:T20
 T19	Method 292 370	two children, both of whom are grown in their 20s, but are now living at home.
-T20	Status 355 369	living at home
-A5	Value T20 current
+T20	StatusTime 355 369	living at home
+A5	StatusTimeVal T20 current
 T21	Type 276 283	married
 T22	Occupation 188 201	truck-driving
-E7	Occupation:T22 State:T23 Type:T24
-T23	Status 202 217	license revoked
-A6	Value T23 past
+E7	Occupation:T22 Status:T23 Type:T24
+T23	StatusTime 202 217	license revoked
+A6	StatusTimeVal T23 past
 T24	Type 188 201	truck-driving
-T2	Status 19 22	has
-A7	Value T2 current
+T2	StatusTime 19 22	has
+A7	StatusTimeVal T2 current
 T5	Tobacco 57 64	smoking
-E1	Tobacco:T5 Amount:T4 State:T2
+E1	Tobacco:T5 Amount:T4 Status:T2

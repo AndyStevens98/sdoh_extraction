@@ -1,40 +1,40 @@
 T1	Occupation 16 26	Occupation
-E1	Occupation:T1 Type:T2 State:T27
+E1	Occupation:T1 Type:T2 Status:T27
 T2	Type 28 40	truck driver
 T5	MaritalStatus 86 93	married
-E2	MaritalStatus:T5 State:T6 Type:T7
-T6	Status 86 93	married
-A2	Value T6 current
+E2	MaritalStatus:T5 Status:T6 Type:T7
+T6	StatusTime 86 93	married
+A2	StatusTimeVal T6 current
 T7	Type 86 93	married
 T8	Family 95 104	Children:
 E3	Family:T8 Type:T9 Amount:T10
 T9	Type 95 103	Children
 T10	Amount 105 110	three
 T11	LivingSituation 124 149	lives at home with family
-E4	LivingSituation:T11 State:T12 Method:T13
-T12	Status 124 129	lives
-A3	Value T12 current
+E4	LivingSituation:T11 Status:T12 Method:T13
+T12	StatusTime 124 129	lives
+A3	StatusTimeVal T12 current
 T13	Method 124 149	lives at home with family
 T14	Tobacco 168 174	smokes
-E5	Tobacco:T14 Amount:T16 Type:T18 Frequency:T17 State:T3
+E5	Tobacco:T14 Amount:T16 Type:T18 Frequency:T17 Status:T3
 T16	Amount 175 184	two packs
 T17	Frequency 199 206	per day
 T18	Type 188 198	cigarettes
-T19	Status 220 237	denies the use of
-A4	Value T19 none
+T19	StatusTime 220 237	denies the use of
+A4	StatusTimeVal T19 none
 T20	Alcohol 242 261	alcoholic beverages
-E6	Alcohol:T20 State:T19 Type:T4
-T21	Status 275 312	denies any current or past history of
-A5	Value T21 none
+E6	Alcohol:T20 Status:T19 Type:T4
+T21	StatusTime 275 312	denies any current or past history of
+A5	StatusTimeVal T21 none
 T22	Type 313 335	illegal / recreational
 T23	Drug 336 340	drug
-E7	Drug:T23 Type:T22 State:T21 Amount:T26
+E7	Drug:T23 Type:T22 Status:T21 Amount:T26
 T24	Drug 357 361	drug
-E8	Drug:T24 Type:T25 Amount:T26 State:T21
+E8	Drug:T24 Type:T25 Amount:T26 Status:T21
 T25	Type 344 356	prescription
 T26	Amount 362 367	abuse
-T27	Status 16 26	Occupation
-A6	Value T27 current
-T3	Status 159 166	history
-A1	Value T3 current
+T27	StatusTime 16 26	Occupation
+A6	StatusTimeVal T27 current
+T3	StatusTime 159 166	history
+A1	StatusTimeVal T3 current
 T4	Type 242 261	alcoholic beverages

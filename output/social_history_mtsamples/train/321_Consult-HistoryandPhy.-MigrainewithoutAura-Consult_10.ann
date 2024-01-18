@@ -1,16 +1,16 @@
 T1	MaritalStatus 41 48	Married
-E1	MaritalStatus:T1 Type:T3 State:T2
-T2	Status 41 48	Married
-A1	Value T2 current
+E1	MaritalStatus:T1 Type:T3 Status:T2
+T2	StatusTime 41 48	Married
+A1	StatusTimeVal T2 current
 T3	Type 41 49	Married.
 T4	Tobacco 62 68	smokes
-E2	Tobacco:T4 Amount:T5 Type:T6 Frequency:T7 State:T8
+E2	Tobacco:T4 Amount:T5 Type:T6 Frequency:T7 Status:T8
 T5	Amount 69 75	1 pack
 T6	Type 79 89	cigarettes
 T7	Frequency 90 97	per day
-T8	Status 62 68	smokes
-A2	Value T8 current
-T9	Status 99 109	Denies use
-A3	Value T9 none
+T8	StatusTime 62 68	smokes
+A2	StatusTimeVal T8 current
+T9	StatusTime 99 109	Denies use
+A3	StatusTimeVal T9 none
 T10	Alcohol 113 120	alcohol
-E3	Alcohol:T10 State:T9
+E3	Alcohol:T10 Status:T9

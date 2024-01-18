@@ -1,5 +1,5 @@
 T1	Tobacco 67 75	nicotine
-E1	Tobacco:T1 Type:T2 State:T3
+E1	Tobacco:T1 Type:T2 Status:T3
 T2	Type 67 75	nicotine
-T3	Status 76 79	use
-A1	Value T3 current
+T3	StatusTime 76 79	use
+A1	StatusTimeVal T3 current

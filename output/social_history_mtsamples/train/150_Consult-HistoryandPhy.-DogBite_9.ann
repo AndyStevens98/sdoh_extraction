@@ -1,17 +1,17 @@
 T1	Tobacco 38 44	smoker
-E1	Tobacco:T1 State:T3 Type:T2
+E1	Tobacco:T1 Status:T3 Type:T2
 T2	Type 24 37	non-cigarette
-T3	Status 24 27	non
-A1	Value T3 current
+T3	StatusTime 24 27	non
+A1	StatusTimeVal T3 current
 T4	Alcohol 73 77	wine
-E2	Alcohol:T4 Frequency:T5 State:T7 Type:T19 Amount:T6
+E2	Alcohol:T4 Frequency:T5 Status:T7 Type:T19 Amount:T6
 T5	Frequency 53 63	occasional
-T7	Status 49 52	has
-A2	Value T7 current
+T7	StatusTime 49 52	has
+A2	StatusTimeVal T7 current
 T8	MaritalStatus 85 92	married
-E3	MaritalStatus:T8 State:T9
-T9	Status 82 92	is married
-A3	Value T9 current
+E3	MaritalStatus:T8 Status:T9
+T9	StatusTime 82 92	is married
+A3	StatusTimeVal T9 current
 T10	Family 101 121	one biological child
 E4	Family:T10 Amount:T15 Type:T11
 T11	Type 105 121	biological child
@@ -21,9 +21,9 @@ T13	Amount 126 131	three
 T14	Type 132 144	stepchildren
 T15	Amount 101 104	one
 T16	Occupation 149 163	works for ABCD
-E6	Occupation:T16 Location:T18 State:T17
-T17	Status 149 154	works
-A4	Value T17 current
+E6	Occupation:T16 Location:T18 Status:T17
+T17	StatusTime 149 154	works
+A4	StatusTimeVal T17 current
 T18	Location 159 163	ABCD
 T19	Type 73 77	wine
 T6	Amount 64 69	glass

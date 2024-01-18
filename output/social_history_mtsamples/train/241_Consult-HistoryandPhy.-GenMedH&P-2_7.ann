@@ -1,25 +1,25 @@
 T1	Frequency 20 32	occasionally
 T2	Alcohol 33 39	drinks
-E1	Alcohol:T2 Frequency:T1 State:T3
-T3	Status 20 32	occasionally
-A1	Value T3 current
+E1	Alcohol:T2 Frequency:T1 Status:T3
+T3	StatusTime 20 32	occasionally
+A1	StatusTimeVal T3 current
 T4	Tobacco 52 58	smoker
-E2	Tobacco:T4 State:T5
-T5	Status 49 52	non
-A2	Value T5 none
+E2	Tobacco:T4 Status:T5
+T5	StatusTime 49 52	non
+A2	StatusTimeVal T5 none
 T6	SexualHistory 88 107	homosexual activity
-E3	SexualHistory:T6 State:T7 Time:T8 Type:T9 Amount:T10
-T7	Status 117 128	during 1982
-A3	Value T7 past
-T8	Temporal 117 128	during 1982
+E3	SexualHistory:T6 Status:T7 Time:T8 Type:T9 Amount:T10
+T7	StatusTime 117 128	during 1982
+A3	StatusTimeVal T7 past
+T8	Time 117 128	during 1982
 T9	Type 88 98	homosexual
-T11	Status 166 172	Denies
-A4	Value T11 none
+T11	StatusTime 166 172	Denies
+A4	StatusTimeVal T11 none
 T12	Drug 185 189	drug
-E4	Drug:T12 Type:T13 State:T11
+E4	Drug:T12 Type:T13 Status:T11
 T13	Type 173 184	intravenous
 T15	Occupation 210 228	currently employed
-E5	Occupation:T15 State:T16
-T16	Status 210 219	currently
-A5	Value T16 current
+E5	Occupation:T15 Status:T16
+T16	StatusTime 210 219	currently
+A5	StatusTimeVal T16 current
 T10	Amount 152 163	very active

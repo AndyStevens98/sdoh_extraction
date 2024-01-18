@@ -1,8 +1,8 @@
 T1	MaritalStatus 25 30	widow
-E1	MaritalStatus:T1 Type:T2 State:T3
+E1	MaritalStatus:T1 Type:T2 Status:T3
 T2	Type 25 30	widow
-T3	Status 20 22	is
-A1	Value T3 current
+T3	StatusTime 20 22	is
+A1	StatusTimeVal T3 current
 T4	Family 40 50	8 children
 E2	Family:T4 LivingStatus:T7 Amount:T5 Type:T6
 T5	Amount 40 41	8
@@ -19,13 +19,13 @@ T13	LivingStatus 170 190	lumbar spine disease
 T14	Type 161 164	son
 T15	Amount 159 160	a
 T16	Amount 90 93	one
-T17	Status 192 194	No
-A2	Value T17 none
+T17	StatusTime 192 194	No
+A2	StatusTimeVal T17 none
 T18	Tobacco 195 202	tobacco
-E5	Tobacco:T18 Amount:T22 State:T17
+E5	Tobacco:T18 Amount:T22 Status:T17
 T19	Alcohol 204 211	alcohol
-E6	Alcohol:T19 Amount:T22 State:T17
+E6	Alcohol:T19 Amount:T22 Status:T17
 T20	Drug 218 222	drug
-E7	Drug:T20 Amount:T22 State:T17 Method:T21
+E7	Drug:T20 Amount:T22 Status:T17 Method:T21
 T21	Method 215 217	IV
 T22	Amount 223 228	abuse

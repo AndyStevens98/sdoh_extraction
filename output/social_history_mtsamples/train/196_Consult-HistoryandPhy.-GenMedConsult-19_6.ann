@@ -5,10 +5,10 @@ T3	Family 296 303	Grandma
 E2	Family:T3 Type:T4
 T4	Type 296 303	Grandma
 T5	LivingSituation 37 58	she is in foster care
-E3	LivingSituation:T5 Method:T6 State:T7
+E3	LivingSituation:T5 Method:T6 Status:T7
 T6	Method 37 58	she is in foster care
-T7	Status 37 46	she is in
-A1	Value T7 current
+T7	StatusTime 37 46	she is in
+A1	StatusTimeVal T7 current
 T8	Family 60 70	Foster mom
 E4	Family:T8 Type:T9
 T9	Type 60 70	Foster mom

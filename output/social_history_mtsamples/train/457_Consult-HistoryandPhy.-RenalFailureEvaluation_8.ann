@@ -1,18 +1,18 @@
 T1	MaritalStatus 20 30	is married
-E1	MaritalStatus:T1 State:T3 Type:T2
+E1	MaritalStatus:T1 Status:T3 Type:T2
 T2	Type 23 30	married
-T3	Status 20 22	is
-A1	Value T3 current
+T3	StatusTime 20 22	is
+A1	StatusTimeVal T3 current
 T4	Tobacco 40 45	smoke
-E2	Tobacco:T4 State:T6 Amount:T7 Frequency:T8
-T6	Status 35 45	does smoke
-A2	Value T6 current
+E2	Tobacco:T4 Status:T6 Amount:T7 Frequency:T8
+T6	StatusTime 35 45	does smoke
+A2	StatusTimeVal T6 current
 T7	Amount 102 108	a pack
 T8	Frequency 109 121	every 6 days
-T9	Status 123 131	Does not
-A3	Value T9 none
+T9	StatusTime 123 131	Does not
+A3	StatusTimeVal T9 none
 T10	Alcohol 132 145	drink alcohol
-E3	Alcohol:T10 State:T9
+E3	Alcohol:T10 Status:T9
 T11	Type 157 169	recreational
 T12	Drug 170 178	drug use
-E4	Drug:T12 Type:T11 State:T9
+E4	Drug:T12 Type:T11 Status:T9

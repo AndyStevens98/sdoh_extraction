@@ -1,26 +1,26 @@
-T1	Status 19 36	previously worked
-A1	Value T1 past
+T1	StatusTime 19 36	previously worked
+A1	StatusTimeVal T1 past
 T2	Type 42 55	pipeline work
 T3	Method 70 83	on disability
-T4	Temporal 84 98	for five years
+T4	Time 84 98	for five years
 T5	Occupation 42 98	pipeline work, but has been on disability for five years
-E1	Occupation:T5 Type:T2 State:T1 Method:T3 Time:T4
-T6	Status 164 174	previously
-A2	Value T6 past
-T11	Status 264 270	denies
-A3	Value T11 none
+E1	Occupation:T5 Type:T2 Status:T1 Method:T3 Time:T4
+T6	StatusTime 164 174	previously
+A2	StatusTimeVal T6 past
+T11	StatusTime 264 270	denies
+A3	StatusTimeVal T11 none
 T12	Alcohol 271 278	alcohol
-E3	Alcohol:T12 State:T11
+E3	Alcohol:T12 Status:T11
 T13	Type 282 289	illicit
 T14	Drug 290 294	drug
-E4	Drug:T14 Type:T13 State:T11
+E4	Drug:T14 Type:T13 Status:T11
 T15	LivingSituation 303 322	lives with his wife
-E5	LivingSituation:T15 Method:T16 State:T17
+E5	LivingSituation:T15 Method:T16 Status:T17
 T16	Method 303 322	lives with his wife
-T17	Status 303 308	lives
-A4	Value T17 current
+T17	StatusTime 303 308	lives
+A4	StatusTimeVal T17 current
 T7	Tobacco 175 181	smoked
-E2	Tobacco:T7 State:T6 Amount:T8 Type:T9 ExposureHistory:T18 QuitHistory:T10
+E2	Tobacco:T7 Status:T6 Amount:T8 Type:T9 ExposureHistory:T18 QuitHistory:T10
 T8	Amount 188 197	two packs
 T9	Type 201 211	cigarettes
 T18	ExposureHistory 218 230	for 20 years

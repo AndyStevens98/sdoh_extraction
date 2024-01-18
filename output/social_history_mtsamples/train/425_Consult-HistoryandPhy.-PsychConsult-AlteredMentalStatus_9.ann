@@ -2,13 +2,13 @@ T1	Method 33 40	retired
 T2	Type 41 64	paster and missionary t
 T3	Location 66 72	Mexico
 T4	Occupation 33 62	retired paster and missionary
-E1	Occupation:T4 Method:T1 Type:T2 Location:T3 State:T5
-T5	Status 28 40	is a retired
-A1	Value T5 past
-T6	Status 122 140	denies any history
-A2	Value T6 none
+E1	Occupation:T4 Method:T1 Type:T2 Location:T3 Status:T5
+T5	StatusTime 28 40	is a retired
+A1	StatusTimeVal T5 past
+T6	StatusTime 122 140	denies any history
+A2	StatusTimeVal T6 none
 T7	Alcohol 144 151	alcohol
-E2	Alcohol:T7 State:T6 Amount:T9
+E2	Alcohol:T7 Status:T6 Amount:T9
 T8	Drug 155 164	substance
-E3	Drug:T8 State:T6 Amount:T9
+E3	Drug:T8 Status:T6 Amount:T9
 T9	Amount 165 170	abuse

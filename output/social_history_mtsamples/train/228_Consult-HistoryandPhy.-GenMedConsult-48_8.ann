@@ -6,23 +6,23 @@ T4	Family 40 56	adopted daughter
 E2	Family:T4 Type:T5 Amount:T15
 T5	Type 40 56	adopted daughter
 T6	MaritalStatus 62 72	is married
-E3	MaritalStatus:T6 State:T7 Type:T8 Time:T9
-T7	Status 62 64	is
-A1	Value T7 current
+E3	MaritalStatus:T6 Status:T7 Type:T8 Time:T9
+T7	StatusTime 62 64	is
+A1	StatusTimeVal T7 current
 T8	Type 65 72	married
-T9	Temporal 73 83	long term,
+T9	Time 73 83	long term,
 T10	Occupation 84 101	retired from Avon
-E4	Occupation:T10 Method:T11 Location:T12 State:T18
+E4	Occupation:T10 Method:T11 Location:T12 Status:T18
 T11	Method 84 91	retired
 T12	Location 97 101	Avon
-T13	Status 112 115	non
-A2	Value T13 none
+T13	StatusTime 112 115	non
+A2	StatusTimeVal T13 none
 T14	Tobacco 115 121	smoker
-E5	Tobacco:T14 State:T13
-T16	Status 123 126	non
-A3	Value T16 none
+E5	Tobacco:T14 Status:T13
+T16	StatusTime 123 126	non
+A3	StatusTimeVal T16 none
 T17	Alcohol 126 133	drinker
-E6	Alcohol:T17 State:T16
-T18	Status 84 91	retired
-A4	Value T18 current
+E6	Alcohol:T17 Status:T16
+T18	StatusTime 84 91	retired
+A4	StatusTimeVal T18 current
 T15	Amount 37 39	an

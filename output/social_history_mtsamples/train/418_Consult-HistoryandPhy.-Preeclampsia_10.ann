@@ -1,13 +1,13 @@
-T1	Status 19 22	Non
-A1	Value T1 none
+T1	StatusTime 19 22	Non
+A1	StatusTimeVal T1 none
 T2	Tobacco 22 28	smoker
-E1	Tobacco:T2 State:T1
-T4	Status 30 38	Does not
-A2	Value T4 none
+E1	Tobacco:T2 Status:T1
+T4	StatusTime 30 38	Does not
+A2	StatusTimeVal T4 none
 T5	Alcohol 39 54	consume alcohol
-E2	Alcohol:T5 State:T4
-T6	Status 56 69	No history of
-A3	Value T6 none
+E2	Alcohol:T5 Status:T4
+T6	StatusTime 56 69	No history of
+A3	StatusTimeVal T6 none
 T7	Type 70 82	recreational
 T8	Drug 83 87	drug
-E3	Drug:T8 Type:T7 State:T6
+E3	Drug:T8 Type:T7 Status:T6

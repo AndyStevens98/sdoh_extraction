@@ -1,20 +1,20 @@
 T1	Tobacco 24 30	smoker
-E1	Tobacco:T1 State:T3
-T3	Status 19 21	is
-A1	Value T3 current
+E1	Tobacco:T1 Status:T3
+T3	StatusTime 19 21	is
+A1	StatusTimeVal T3 current
 T4	Frequency 41 45	rare
 T5	Alcohol 46 54	alcohol.
-E2	Alcohol:T5 Frequency:T4 State:T6
-T6	Status 35 40	takes
-A2	Value T6 current
+E2	Alcohol:T5 Frequency:T4 Status:T6
+T6	StatusTime 35 40	takes
+A2	StatusTimeVal T6 current
 T7	Occupation 59 69	employment
-E3	Occupation:T7 State:T8 Type:T2
-T8	Status 78 85	he does
-A3	Value T8 current
+E3	Occupation:T7 Status:T8 Type:T2
+T8	StatusTime 78 85	he does
+A3	StatusTimeVal T8 current
 T10	MaritalStatus 244 254	is married
-E4	MaritalStatus:T10 State:T11 Type:T12
-T11	Status 244 246	is
-A4	Value T11 current
+E4	MaritalStatus:T10 Status:T11 Type:T12
+T11	StatusTime 244 246	is
+A4	StatusTimeVal T11 current
 T12	Type 247 254	married
 T13	Family 260 267	one son
 E5	Family:T13 Amount:T14 Type:T15

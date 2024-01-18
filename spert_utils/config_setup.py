@@ -1,10 +1,11 @@
 
-from collections import Counter, OrderedDict
 import json
 import logging
-import pandas as pd
 import os
+from collections import Counter, OrderedDict
 from pathlib import Path
+
+import pandas as pd
 
 PREDICTION_FILE_PATTERN = 'prediction*.json'
 MODEL_DIRECTORY_PATTERN = "final_model"
@@ -16,9 +17,6 @@ NON_EVAL_ARGS = ["train_path", "valid_path", "log_path", "save_path",
 CONFIG_MAP = {}
 CONFIG_MAP["model_path"] = "save_path"
 CONFIG_MAP["tokenizer_path"] = "save_path"
-
-from spert_utils.spert_io import ID, TOKENS, OFFSETS, ENTITIES, RELATIONS, SUBTYPES, TYPE, START, END, HEAD, TAIL
-
 
 
 def dict_to_config_file(params, path):
@@ -223,12 +221,12 @@ def get_dataset_stats(dataset_path, dest_path, name='none'):
                     subtype_counter[subtype["type"]] += 1
 
     logging.info("")
-    logging.info(f"Data set summary")
+    logging.info("Data set summary")
 
     df = pd.DataFrame(entity_counter.items())
     f = os.path.join(dest_path, f"{name}_entity_counts.csv")
     df.to_csv(f, index=False)
-    logging.info(f"")
+    logging.info("")
     logging.info(f"Entity counts:\n{df}")
 
 
@@ -239,13 +237,13 @@ def get_dataset_stats(dataset_path, dest_path, name='none'):
         df = pd.DataFrame(subtype_counter.items())
     f = os.path.join(dest_path, f"{name}_subtype_counts.csv")
     df.to_csv(f, index=False)
-    logging.info(f"")
+    logging.info("")
     logging.info(f"Subtype counts:\n{df}")
 
     df = pd.DataFrame(relation_counter.items())
     f = os.path.join(dest_path, f"{name}_relation_counts.csv")
     df.to_csv(f, index=False)
-    logging.info(f"")
+    logging.info("")
     logging.info(f"Relation counts:\n{df}")
 
     return None
@@ -332,13 +330,13 @@ def update_model_config(model_config, previous_config_file, new_config_file, \
     assert "model_path" in config
     assert "tokenizer_path" in config
 
-    logging.info(f"Update model config")
+    logging.info("Update model config")
     logging.info(f"Previous config file:    {previous_config_file}")
     logging.info(f"New config file:         {new_config_file}")
     logging.info(f"Parameters removed:      ({len(removed)}) {removed}")
     logging.info(f"Parameters added:        ({len(added)}) {added}")
     logging.info(f"Parameters overridden:   ({len(overridden)}) {overridden}")
-    logging.info(f"Mapped config: ")
+    logging.info("Mapped config: ")
     for k, v in config_map.items():
         logging.info(f"\t{k} = {v}")
 

@@ -1,8 +1,8 @@
 T1	LivingSituation 16 38	Lives with mom and dad
-E1	LivingSituation:T1 State:T3 Method:T2
+E1	LivingSituation:T1 Status:T3 Method:T2
 T2	Method 16 38	Lives with mom and dad
-T3	Status 16 21	Lives
-A1	Value T3 current
+T3	StatusTime 16 21	Lives
+A1	StatusTimeVal T3 current
 T4	Family 40 43	Dad
 E2	Family:T4 Type:T5
 T5	Type 40 43	Dad
@@ -12,20 +12,20 @@ T7	Amount 73 83	4-year-old
 T8	Type 84 87	son
 T9	LivingStatus 89 103	who is healthy
 T10	EnvironmentalExposure 111 115	cats
-E4	EnvironmentalExposure:T10 Type:T11 Amount:T12 State:T22
+E4	EnvironmentalExposure:T10 Type:T11 Amount:T12 Status:T22
 T11	Type 111 115	cats
 T12	Amount 109 110	2
 T13	EnvironmentalExposure 119 123	dogs
-E5	EnvironmentalExposure:T13 Type:T15 Amount:T14 State:T22
+E5	EnvironmentalExposure:T13 Type:T15 Amount:T14 Status:T22
 T14	Amount 117 118	2
 T15	Type 119 123	dogs
 T16	EnvironmentalExposure 127 135	chickens
-E6	EnvironmentalExposure:T16 State:T22
+E6	EnvironmentalExposure:T16 Status:T22
 T17	Type 127 135	chickens
 T18	Amount 125 126	3
 T19	EnvironmentalExposure 140 143	rog
-E7	EnvironmentalExposure:T19 Type:T20 Amount:T21 State:T22
+E7	EnvironmentalExposure:T19 Type:T20 Amount:T21 Status:T22
 T20	Type 139 143	frog
 T21	Amount 137 138	1
-T22	Status 105 108	and
-A2	Value T22 current
+T22	StatusTime 105 108	and
+A2	StatusTimeVal T22 current

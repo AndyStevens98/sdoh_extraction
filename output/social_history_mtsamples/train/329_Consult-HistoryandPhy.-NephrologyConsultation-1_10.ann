@@ -1,29 +1,29 @@
 T1	Occupation 20 54	works as a cook for a nursing home
-E1	Occupation:T1 State:T4 Type:T2 Location:T3
+E1	Occupation:T1 Status:T4 Type:T2 Location:T3
 T2	Type 31 35	cook
 T3	Location 42 54	nursing home
-T4	Status 20 25	works
-A1	Value T4 current
+T4	StatusTime 20 25	works
+A1	StatusTimeVal T4 current
 T5	MaritalStatus 56 65	is single
-E2	MaritalStatus:T5 State:T7 Type:T6
+E2	MaritalStatus:T5 Status:T7 Type:T6
 T6	Type 59 65	single
-T7	Status 56 58	is
-A2	Value T7 current
+T7	StatusTime 56 58	is
+A2	StatusTimeVal T7 current
 T8	Family 74 86	one daughter
 E3	Family:T8 Amount:T9 Type:T10
 T9	Amount 74 77	one
 T10	Type 78 87	daughter.
-T11	Status 88 93	Never
-A3	Value T11 none
+T11	StatusTime 88 93	Never
+A3	StatusTimeVal T11 none
 T12	Tobacco 94 100	smoked
-E4	Tobacco:T12 State:T11
-T14	Status 102 108	Denies
-A4	Value T14 none
+E4	Tobacco:T12 Status:T11
+T14	StatusTime 102 108	Denies
+A4	StatusTimeVal T14 none
 T15	Alcohol 113 120	alcohol
-E5	Alcohol:T15 State:T14
-T16	Status 126 134	not been
-A5	Value T16 past
-T17	Temporal 151 165	in a long time
+E5	Alcohol:T15 Status:T14
+T16	StatusTime 126 134	not been
+A5	StatusTimeVal T16 past
+T17	Time 151 165	in a long time
 T18	SexualHistory 135 150	sexually active
-E6	SexualHistory:T18 Type:T19 Time:T17 State:T16
+E6	SexualHistory:T18 Type:T19 Time:T17 Status:T16
 T19	Type 135 150	sexually active

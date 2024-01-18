@@ -1,17 +1,17 @@
 T1	Occupation 23 33	unemployed
-E1	Occupation:T1 State:T3 Method:T2
+E1	Occupation:T1 Status:T3 Method:T2
 T2	Method 23 33	unemployed
-T3	Status 19 22	was
-A1	Value T3 past
-T4	Status 38 44	denied
-A2	Value T4 none
+T3	StatusTime 19 22	was
+A1	StatusTimeVal T3 past
+T4	StatusTime 38 44	denied
+A2	StatusTimeVal T4 none
 T5	Alcohol 49 56	alcohol
-E2	Alcohol:T5 State:T4
+E2	Alcohol:T5 Status:T4
 T6	Drug 60 64	drug
-E3	Drug:T6 State:T4
-T7	Status 79 84	prior
-A3	Value T7 past
+E3	Drug:T6 Status:T4
+T7	StatusTime 79 84	prior
+A3	StatusTimeVal T7 past
 T8	Amount 86 90	mild
 T9	Tobacco 92 98	smoker
-E4	Tobacco:T9 Amount:T8 State:T7 QuitHistory:T10
+E4	Tobacco:T9 Amount:T8 Status:T7 QuitHistory:T10
 T10	QuitHistory 109 126	10 years previous

@@ -1,10 +1,10 @@
-T1	Status 355 362	did not
-A1	Value T1 none
+T1	StatusTime 355 362	did not
+A1	StatusTimeVal T1 none
 T2	Tobacco 363 368	smoke
-E1	Tobacco:T2 State:T1 ExposureHistory:T7
+E1	Tobacco:T2 Status:T1 ExposureHistory:T7
 T4	Alcohol 370 383	drink alcohol
-E2	Alcohol:T4 State:T1 ExposureHistory:T7
+E2	Alcohol:T4 Status:T1 ExposureHistory:T7
 T5	Type 392 399	illicit
 T6	Drug 400 405	drugs
-E3	Drug:T6 Type:T5 State:T1 ExposureHistory:T7
+E3	Drug:T6 Type:T5 Status:T1 ExposureHistory:T7
 T7	ExposureHistory 406 423	during pregnancy.

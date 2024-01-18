@@ -1,25 +1,25 @@
-T1	Status 25 28	non
-A1	Value T1 none
+T1	StatusTime 25 28	non
+A1	StatusTimeVal T1 none
 T2	Tobacco 28 34	smoker
-E1	Tobacco:T2 State:T1
+E1	Tobacco:T2 Status:T1
 T5	Frequency 65 80	every few weeks
 T4	Alcohol 57 64	a drink
-E2	Alcohol:T4 State:T6 Frequency:T5 Amount:T3
-T6	Status 53 56	has
-A2	Value T6 current
+E2	Alcohol:T4 Status:T6 Frequency:T5 Amount:T3
+T6	StatusTime 53 56	has
+A2	StatusTimeVal T6 current
 T7	MaritalStatus 86 97	is divorced
-E3	MaritalStatus:T7 State:T8 Type:T9
-T8	Status 86 88	is
-A3	Value T8 current
+E3	MaritalStatus:T7 Status:T8 Type:T9
+T8	StatusTime 86 88	is
+A3	StatusTimeVal T8 current
 T9	Type 89 97	divorced
 T10	Family 107 113	2 sons
 E4	Family:T10 Amount:T12 Type:T11
 T11	Type 109 113	sons
 T12	Amount 107 108	2
 T13	Occupation 119 133	is houseparent
-E5	Occupation:T13 State:T15 Type:T14 Location:T16
+E5	Occupation:T13 Status:T15 Type:T14 Location:T16
 T14	Type 122 133	houseparent
-T15	Status 119 121	is
-A4	Value T15 current
+T15	StatusTime 119 121	is
+A4	StatusTimeVal T15 current
 T16	Location 134 156	at Southern University
 T3	Amount 57 64	a drink

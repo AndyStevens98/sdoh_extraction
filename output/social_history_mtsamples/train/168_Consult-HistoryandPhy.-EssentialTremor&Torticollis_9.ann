@@ -1,23 +1,23 @@
-T1	Status 17 27	Denies any
-A1	Value T1 none
+T1	StatusTime 17 27	Denies any
+A1	StatusTimeVal T1 none
 T2	Tobacco 28 35	smoking
-E1	Tobacco:T2 State:T1
+E1	Tobacco:T2 Status:T1
 T3	Alcohol 39 46	alcohol
-E2	Alcohol:T3 State:T1
+E2	Alcohol:T3 Status:T1
 T5	MaritalStatus 52 62	is married
-E3	MaritalStatus:T5 State:T6 Time:T8 Type:T7
-T6	Status 52 54	is
-A2	Value T6 current
+E3	MaritalStatus:T5 Status:T6 Time:T8 Type:T7
+T6	StatusTime 52 54	is
+A2	StatusTimeVal T6 current
 T7	Type 55 62	married
-T8	Temporal 63 77	since 44 years
+T8	Time 63 77	since 44 years
 T9	Family 83 93	3 children
 E4	Family:T9 Amount:T10 Type:T11
 T10	Amount 83 84	3
 T11	Type 85 93	children
-T12	Status 99 111	used to work
-A3	Value T12 past
+T12	StatusTime 99 111	used to work
+A3	StatusTimeVal T12 past
 T13	Type 117 141	labor and delivery nurse
 T14	Occupation 107 111	work
-E5	Occupation:T14 State:T12 Type:T13 Time:T15 Method:T16
-T15	Temporal 142 161	up until early 2001
+E5	Occupation:T14 Status:T12 Type:T13 Time:T15 Method:T16
+T15	Time 142 161	up until early 2001
 T16	Method 171 178	retired

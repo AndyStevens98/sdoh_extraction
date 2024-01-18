@@ -1,26 +1,26 @@
-T2	Status 66 70	quit
-A1	Value T2 past
-T5	Status 80 82	No
-A2	Value T5 none
+T2	StatusTime 66 70	quit
+A1	StatusTimeVal T2 past
+T5	StatusTime 80 82	No
+A2	StatusTimeVal T5 none
 T6	Alcohol 83 94	ethanol use
-E2	Alcohol:T6 State:T5 Type:T17
+E2	Alcohol:T6 Status:T5 Type:T17
 T7	Type 98 105	illicit
 T8	Drug 106 114	drug use
-E3	Drug:T8 Type:T7 State:T5
+E3	Drug:T8 Type:T7 Status:T5
 T9	MaritalStatus 119 129	is married
-E4	MaritalStatus:T9 Type:T11 State:T10
-T10	Status 119 121	is
-A3	Value T10 current
+E4	MaritalStatus:T9 Type:T11 Status:T10
+T10	StatusTime 119 121	is
+A3	StatusTimeVal T10 current
 T11	Type 122 129	married
 T12	Occupation 158 212	used to be employed at Budd Automotors as a die setter
-E5	Occupation:T12 State:T14 Location:T15 Type:T16 Time:T13
-T13	Temporal 213 237	for about 37 to 40 years
-T14	Status 158 168	used to be
-A4	Value T14 past
+E5	Occupation:T12 Status:T14 Location:T15 Type:T16 Time:T13
+T13	Time 213 237	for about 37 to 40 years
+T14	StatusTime 158 168	used to be
+A4	StatusTimeVal T14 past
 T15	Location 181 196	Budd Automotors
 T16	Type 202 212	die setter
 T17	Type 83 89	ethano
 T3	Amount 40 52	20-pack-year
 T1	QuitHistory 71 78	in 1991
 T4	Tobacco 53 60	tobacco
-E1	Tobacco:T4 Amount:T3 State:T2 QuitHistory:T1
+E1	Tobacco:T4 Amount:T3 Status:T2 QuitHistory:T1

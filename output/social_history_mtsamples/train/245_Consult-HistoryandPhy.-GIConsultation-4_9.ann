@@ -1,25 +1,25 @@
 T1	MaritalStatus 46 53	married
-E1	MaritalStatus:T1 Type:T2 State:T3
+E1	MaritalStatus:T1 Type:T2 Status:T3
 T2	Type 46 53	married
-T3	Status 46 53	married
-A1	Value T3 current
+T3	StatusTime 46 53	married
+A1	StatusTimeVal T3 current
 T4	Amount 89 95	1 pack
 T5	Frequency 96 103	per day
-T6	Status 78 87	history o
-A2	Value T6 past
+T6	StatusTime 78 87	history o
+A2	StatusTimeVal T6 past
 T7	Tobacco 70 77	smoking
-E2	Tobacco:T7 State:T6 Amount:T4 Frequency:T5
+E2	Tobacco:T7 Status:T6 Amount:T4 Frequency:T5
 T10	Alcohol 168 175	alcohol
-E3	Alcohol:T10 State:T12
-T12	Status 148 158	no history
-A3	Value T12 none
-T13	Status 191 193	no
-A4	Value T13 none
+E3	Alcohol:T10 Status:T12
+T12	StatusTime 148 158	no history
+A3	StatusTimeVal T12 none
+T13	StatusTime 191 193	no
+A4	StatusTimeVal T13 none
 T14	Drug 202 208	drugs.
-E4	Drug:T14 Type:T15 State:T13
+E4	Drug:T14 Type:T15 Status:T13
 T15	Type 194 201	illicit
 T8	QuitHistory 126 136	1 year ago
-T9	Status 118 125	smoking
-A5	Value T9 past
+T9	StatusTime 118 125	smoking
+A5	StatusTimeVal T9 past
 T11	Tobacco 118 125	smoking
-E5	Tobacco:T11 State:T9 QuitHistory:T8
+E5	Tobacco:T11 Status:T9 QuitHistory:T8

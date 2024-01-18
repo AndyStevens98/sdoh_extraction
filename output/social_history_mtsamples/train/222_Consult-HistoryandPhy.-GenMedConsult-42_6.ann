@@ -1,29 +1,29 @@
 T1	MaritalStatus 38 45	married
-E1	MaritalStatus:T1 Type:T2 State:T5
+E1	MaritalStatus:T1 Type:T2 Status:T5
 T2	Type 38 45	married
 T3	Occupation 47 54	retired
-E2	Occupation:T3 Method:T4 State:T5
+E2	Occupation:T3 Method:T4 Status:T5
 T4	Method 47 54	retired
-T5	Status 32 37	being
-A1	Value T5 current
+T5	StatusTime 32 37	being
+A1	StatusTimeVal T5 current
 T6	Tobacco 61 68	smoking
-E3	Tobacco:T6 QuitHistory:T9 State:T7
-T7	Status 56 76	quit smoking in 1997
-A2	Value T7 past
+E3	Tobacco:T6 QuitHistory:T9 Status:T7
+T7	StatusTime 56 76	quit smoking in 1997
+A2	StatusTimeVal T7 past
 T9	QuitHistory 69 76	in 1997
 T10	Alcohol 90 97	alcohol
-E4	Alcohol:T10 Frequency:T11 State:T12
+E4	Alcohol:T10 Frequency:T11 Status:T12
 T11	Frequency 78 86	rare use
-T12	Status 83 86	use
-A3	Value T12 current
+T12	StatusTime 83 86	use
+A3	StatusTimeVal T12 current
 T13	LivingSituation 99 126	lives locally with his wife
-E5	LivingSituation:T13 Method:T14 State:T18
+E5	LivingSituation:T13 Method:T14 Status:T18
 T14	Method 99 126	lives locally with his wife
 T15	Family 122 126	wife
 E6	Family:T15 Type:T16
 T16	Type 122 126	wife
 T17	Residence 99 112	lives locally
-E7	Residence:T17 Location:T19 State:T18
-T18	Status 99 104	lives
-A4	Value T18 current
+E7	Residence:T17 Location:T19 Status:T18
+T18	StatusTime 99 104	lives
+A4	StatusTimeVal T18 current
 T19	Location 105 112	locally

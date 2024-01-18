@@ -1,23 +1,23 @@
 T1	MaritalStatus 38 45	married
-E1	MaritalStatus:T1 State:T2 Amount:T4 Type:T5
-T2	Status 38 45	married
-A1	Value T2 current
-T3	Temporal 68 90	for the past ten years
+E1	MaritalStatus:T1 Status:T2 Amount:T4 Type:T5
+T2	StatusTime 38 45	married
+A1	StatusTimeVal T2 current
+T3	Time 68 90	for the past ten years
 T4	Amount 53 67	second husband
 T5	Type 38 45	married
 T6	Family 96 109	first husband
 E2	Family:T6 Type:T7 LivingStatus:T8 Time:T9
 T7	Type 102 109	husband
 T8	LivingStatus 110 114	died
-T9	Temporal 115 122	in 1995
+T9	Time 115 122	in 1995
 T10	Family 53 67	second husband
 E3	Family:T10 Type:T11
 T11	Type 60 67	husband
 T12	Tobacco 144 151	smoking
-E4	Tobacco:T12 State:T13
-T13	Status 128 136	does not
-A2	Value T13 none
+E4	Tobacco:T12 Status:T13
+T13	StatusTime 128 136	does not
+A2	StatusTimeVal T13 none
 T15	Alcohol 173 186	drink alcohol
-E5	Alcohol:T15 State:T17
-T17	Status 164 172	does not
-A3	Value T17 none
+E5	Alcohol:T15 Status:T17
+T17	StatusTime 164 172	does not
+A3	StatusTimeVal T17 none

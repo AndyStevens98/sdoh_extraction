@@ -1,22 +1,22 @@
 T1	Occupation 34 43	homemaker
-E1	Occupation:T1 Type:T2 State:T3
+E1	Occupation:T1 Type:T2 Status:T3
 T2	Type 34 43	homemaker
-T3	Status 29 44	is a homemaker.
-A1	Value T3 current
-T4	Status 49 59	is married
-A2	Value T4 current
+T3	StatusTime 29 44	is a homemaker.
+A1	StatusTimeVal T3 current
+T4	StatusTime 49 59	is married
+A2	StatusTimeVal T4 current
 T5	MaritalStatus 52 60	married,
-E2	MaritalStatus:T5 Type:T6 State:T4
+E2	MaritalStatus:T5 Type:T6 Status:T4
 T6	Type 52 59	married
 T7	Family 66 76	2 children
 E3	Family:T7 Type:T9 Amount:T8
 T8	Amount 66 67	2
 T9	Type 68 76	children
-T11	Status 111 114	non
-A3	Value T11 none
-T12	Status 125 128	non
-A4	Value T12 none
+T11	StatusTime 111 114	non
+A3	StatusTimeVal T11 none
+T12	StatusTime 125 128	non
+A4	StatusTimeVal T12 none
 T13	Tobacco 114 119	smoke
-E4	Tobacco:T13 State:T11
+E4	Tobacco:T13 Status:T11
 T15	Alcohol 128 135	drinker
-E5	Alcohol:T15 State:T12
+E5	Alcohol:T15 Status:T12

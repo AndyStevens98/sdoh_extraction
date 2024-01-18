@@ -1,31 +1,31 @@
-T2	Status 85 89	quit
-A1	Value T2 past
-T6	Status 129 137	does not
-A2	Value T6 none
+T2	StatusTime 85 89	quit
+A1	StatusTimeVal T2 past
+T6	StatusTime 129 137	does not
+A2	StatusTimeVal T6 none
 T7	Alcohol 138 151	drink alcohol
-E2	Alcohol:T7 State:T6
+E2	Alcohol:T7 Status:T6
 T8	Type 160 167	illicit
 T9	Drug 168 173	drugs
-E3	Drug:T9 Type:T8 State:T6
+E3	Drug:T9 Type:T8 Status:T6
 T10	LivingSituation 179 190	lives alone
-E4	LivingSituation:T10 Method:T12 State:T11
-T11	Status 179 184	lives
-A3	Value T11 current
+E4	LivingSituation:T10 Method:T12 Status:T11
+T11	StatusTime 179 184	lives
+A3	StatusTimeVal T11 current
 T12	Method 179 190	lives alone
 T13	MaritalStatus 195 205	is widowed
-E5	MaritalStatus:T13 State:T15 Type:T14
+E5	MaritalStatus:T13 Status:T15 Type:T14
 T14	Type 198 205	widowed
-T15	Status 195 205	is widowed
-A4	Value T15 current
+T15	StatusTime 195 205	is widowed
+A4	StatusTimeVal T15 current
 T16	Occupation 211 233	is a retired custodian
-E6	Occupation:T16 Type:T18 Method:T17 State:T20 Location:T19
+E6	Occupation:T16 Type:T18 Method:T17 Status:T20 Location:T19
 T17	Method 216 223	retired
 T18	Type 224 233	custodian
 T19	Location 237 247	University
-T20	Status 211 213	is
-A5	Value T20 current
+T20	StatusTime 211 213	is
+A5	StatusTimeVal T20 current
 T1	Type 34 44	cigarettes
 T3	ExposureHistory 56 80	from the age of 14 to 43
 T4	Tobacco 49 55	smoked
-E1	Tobacco:T4 Type:T1 State:T2 ExposureHistory:T3 QuitHistory:T5
+E1	Tobacco:T4 Type:T1 Status:T2 ExposureHistory:T3 QuitHistory:T5
 T5	QuitHistory 90 123	at the time of her bypass surgery

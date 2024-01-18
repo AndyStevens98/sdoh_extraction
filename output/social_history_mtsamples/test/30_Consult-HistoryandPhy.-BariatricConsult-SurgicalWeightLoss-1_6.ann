@@ -1,14 +1,14 @@
 T1	MaritalStatus 17 30	She is single
-E1	MaritalStatus:T1 State:T3 Type:T2
+E1	MaritalStatus:T1 Status:T3 Type:T2
 T2	Type 24 30	single
-T3	Status 21 23	is
-A1	Value T3 current
+T3	StatusTime 21 23	is
+A1	StatusTimeVal T3 current
 T4	Alcohol 36 50	drinks alcohol
-E2	Alcohol:T4 State:T6 Frequency:T5
+E2	Alcohol:T4 Status:T6 Frequency:T5
 T5	Frequency 51 62	once a week
-T6	Status 32 42	She drinks
-A2	Value T6 current
-T7	Status 68 76	does not
-A3	Value T7 none
+T6	StatusTime 32 42	She drinks
+A2	StatusTimeVal T6 current
+T7	StatusTime 68 76	does not
+A3	StatusTimeVal T7 none
 T8	Tobacco 77 82	smoke
-E3	Tobacco:T8 State:T7
+E3	Tobacco:T8 Status:T7

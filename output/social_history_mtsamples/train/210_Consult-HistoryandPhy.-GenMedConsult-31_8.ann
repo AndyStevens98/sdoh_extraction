@@ -1,12 +1,12 @@
 T1	MaritalStatus 28 38	is married
-E1	MaritalStatus:T1 State:T2 Type:T3
-T2	Status 28 30	is
-A1	Value T2 current
+E1	MaritalStatus:T1 Status:T2 Type:T3
+T2	StatusTime 28 30	is
+A1	StatusTimeVal T2 current
 T3	Type 31 38	married
 T4	LivingSituation 40 62	lives with her husband
-E2	LivingSituation:T4 State:T5 Method:T6
-T5	Status 40 45	lives
-A2	Value T5 current
+E2	LivingSituation:T4 Status:T5 Method:T6
+T5	StatusTime 40 45	lives
+A2	StatusTimeVal T5 current
 T6	Method 40 62	lives with her husband
 T7	Family 55 62	husband
 E3	Family:T7 Type:T8
@@ -20,11 +20,11 @@ T13	Family 100 120	4 surviving children
 E5	Family:T13 Amount:T14 LivingStatus:T15
 T14	Amount 100 101	4
 T15	LivingStatus 102 120	surviving children
-T16	Status 122 132	No history
-A3	Value T16 none
+T16	StatusTime 122 132	No history
+A3	StatusTimeVal T16 none
 T17	Tobacco 136 143	tobacco
-E6	Tobacco:T17 State:T16
-T18	Status 149 159	No history
-A4	Value T18 none
+E6	Tobacco:T17 Status:T16
+T18	StatusTime 149 159	No history
+A4	StatusTimeVal T18 none
 T19	Alcohol 163 170	alcohol
-E7	Alcohol:T19 State:T18
+E7	Alcohol:T19 Status:T18

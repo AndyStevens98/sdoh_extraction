@@ -1,30 +1,30 @@
 T1	Tobacco 27 33	smokes
-E1	Tobacco:T1 State:T2 Amount:T3 Type:T4 Frequency:T5
-T2	Status 21 26	still
-A1	Value T2 current
+E1	Tobacco:T1 Status:T2 Amount:T3 Type:T4 Frequency:T5
+T2	StatusTime 21 26	still
+A1	StatusTimeVal T2 current
 T3	Amount 34 42	one pack
 T4	Type 46 56	cigarettes
 T5	Frequency 57 62	a day
 T6	Frequency 95 107	occasionally
 T7	Alcohol 113 120	alcohol
-E2	Alcohol:T7 Frequency:T6 State:T8
-T8	Status 108 112	uses
-A2	Value T8 current
-T9	Status 126 135	has never
-A3	Value T9 none
+E2	Alcohol:T7 Frequency:T6 Status:T8
+T8	StatusTime 108 112	uses
+A2	StatusTimeVal T8 current
+T9	StatusTime 126 135	has never
+A3	StatusTimeVal T9 none
 T10	Type 141 148	illicit
 T11	Drug 149 154	drugs
-E3	Drug:T11 Type:T10 State:T9
+E3	Drug:T11 Type:T10 Status:T9
 T12	MaritalStatus 163 170	married
-E4	MaritalStatus:T12 State:T13 Type:T14
-T13	Status 160 162	is
-A4	Value T13 current
+E4	MaritalStatus:T12 Status:T13 Type:T14
+T13	StatusTime 160 162	is
+A4	StatusTimeVal T13 current
 T14	Type 163 170	married
 T15	Occupation 172 186	is a housewife
-E5	Occupation:T15 State:T17 Type:T16
+E5	Occupation:T15 Status:T17 Type:T16
 T16	Type 177 186	housewife
-T17	Status 172 174	is
-A5	Value T17 current
+T17	StatusTime 172 174	is
+A5	StatusTimeVal T17 current
 T18	Family 192 209	has four children
 E6	Family:T18 Amount:T19 Type:T20
 T19	Amount 196 200	four

@@ -173,13 +173,13 @@ def adj_tokens(tokens, offsets, by_sent=True):
 
         tokens_out = []
         offsets_out = []
-        for T, O in zip(tokens, offsets):
+        for token, offset in zip(tokens, offsets):
 
-            assert len(T) == len(O)
+            assert len(token) == len(offset)
 
-            for t, o in zip(T, O):
-                tokens_out.append(t)
-                offsets_out.append(o)
+            for tok, off in zip(token, offset):
+                tokens_out.append(tok)
+                offsets_out.append(off)
 
         return (tokens_out, offsets_out)
 

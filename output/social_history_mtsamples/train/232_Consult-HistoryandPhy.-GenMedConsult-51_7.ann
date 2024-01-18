@@ -1,18 +1,18 @@
 T1	MaritalStatus 31 38	widowed
-E1	MaritalStatus:T1 Type:T2 State:T3
+E1	MaritalStatus:T1 Type:T2 Status:T3
 T2	Type 31 38	widowed
-T3	Status 28 30	is
-A1	Value T3 current
+T3	StatusTime 28 30	is
+A1	StatusTimeVal T3 current
 T5	Type 53 61	engineer
 T6	Method 45 52	retired
-T7	Status 66 72	denies
-A2	Value T7 none
+T7	StatusTime 66 72	denies
+A2	StatusTimeVal T7 none
 T8	Tobacco 84 91	smoking
-E3	Tobacco:T8 Type:T9 State:T7
+E3	Tobacco:T8 Type:T9 Status:T7
 T9	Type 73 83	cigarettes
 T11	Alcohol 95 102	alcohol
-E4	Alcohol:T11 State:T7
-T12	Status 45 52	retired
-A3	Value T12 current
+E4	Alcohol:T11 Status:T7
+T12	StatusTime 45 52	retired
+A3	StatusTimeVal T12 current
 T4	Occupation 53 62	engineer.
-E2	Occupation:T4 Method:T6 State:T12 Type:T5
+E2	Occupation:T4 Method:T6 Status:T12 Type:T5

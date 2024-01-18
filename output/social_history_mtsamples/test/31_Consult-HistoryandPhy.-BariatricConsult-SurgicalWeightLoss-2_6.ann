@@ -1,28 +1,28 @@
 T1	MaritalStatus 32 39	married
-E1	MaritalStatus:T1 Type:T2 State:T3
+E1	MaritalStatus:T1 Type:T2 Status:T3
 T2	Type 32 39	married
-T3	Status 29 39	is married
-A1	Value T3 current
+T3	StatusTime 29 39	is married
+A1	StatusTimeVal T3 current
 T4	Occupation 51 65	office manager
-E2	Occupation:T4 Type:T5 State:T6 Location:T7
+E2	Occupation:T4 Type:T5 Status:T6 Location:T7
 T5	Type 51 65	office manager
-T6	Status 45 65	is an office manager
-A2	Value T6 current
+T6	StatusTime 45 65	is an office manager
+A2	StatusTimeVal T6 current
 T7	Location 72 86	gravel company
 T8	Family 92 98	spouse
 E3	Family:T8 Type:T9 MedicalCondition:T10
 T9	Type 92 98	spouse
 T10	MedicalCondition 107 117	overweight
 T11	Alcohol 123 129	drinks
-E4	Alcohol:T11 State:T13 Frequency:T12
+E4	Alcohol:T11 Status:T13 Frequency:T12
 T12	Frequency 130 147	on a weekly basis
-T13	Status 123 129	drinks
-A3	Value T13 current
+T13	StatusTime 123 129	drinks
+A3	StatusTimeVal T13 current
 T14	Tobacco 156 162	smokes
-E5	Tobacco:T14 Type:T17 Amount:T16 Frequency:T18 ExposureHistory:T19 State:T15
+E5	Tobacco:T14 Type:T17 Amount:T16 Frequency:T18 ExposureHistory:T19 Status:T15
 T16	Amount 169 178	two packs
 T17	Type 182 192	cigarettes
 T18	Frequency 193 221	over a week's period of time
 T19	ExposureHistory 241 259	for about 35 years
-T15	Status 156 162	smokes
-A4	Value T15 current
+T15	StatusTime 156 162	smokes
+A4	StatusTimeVal T15 current

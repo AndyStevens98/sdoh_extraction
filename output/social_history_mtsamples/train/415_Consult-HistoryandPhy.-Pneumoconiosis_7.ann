@@ -1,4 +1,4 @@
-T1	Status 29 48	had been previously
-A1	Value T1 past
+T1	StatusTime 29 48	had been previously
+A1	StatusTimeVal T1 past
 T2	Tobacco 51 58	smoker.
-E1	Tobacco:T2 State:T1
+E1	Tobacco:T2 Status:T1
