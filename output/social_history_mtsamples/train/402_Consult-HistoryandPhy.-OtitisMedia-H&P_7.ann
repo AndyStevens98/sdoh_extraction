@@ -1,0 +1,3 @@
+T1	Family 30 35	child
+E1	Family:T1 Type:T2
+T2	Type 30 35	child

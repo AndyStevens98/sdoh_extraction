@@ -1,0 +1,13 @@
+T1	MaritalStatus 20 30	is married
+E1	MaritalStatus:T1 State:T3 Type:T2
+T2	Type 23 30	married
+T3	Status 20 22	is
+A1	Value T3 current
+T4	LivingSituation 36 57	lives with her spouse
+E2	LivingSituation:T4 Method:T5 State:T6
+T5	Method 36 57	lives with her spouse
+T6	Status 36 41	lives
+A2	Value T6 current
+T7	Family 51 57	spouse
+E3	Family:T7 Type:T8
+T8	Type 51 57	spouse

@@ -1,9 +1,3 @@
-
-
-
-
-
-
 def remove_white_space_at_ends(text, start, end):
 
     # leading white space

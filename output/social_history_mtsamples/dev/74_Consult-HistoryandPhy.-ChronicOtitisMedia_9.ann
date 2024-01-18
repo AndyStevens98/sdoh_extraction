@@ -1,0 +1,5 @@
+T2	Status 88 90	no
+A1	Value T2 none
+T3	Type 91 101	secondhand
+T1	Tobacco 102 109	tobacco
+E1	Tobacco:T1 State:T2 Type:T3

@@ -1,0 +1,40 @@
+T1	MaritalStatus 7 14	Divorce
+E1	MaritalStatus:T1 State:T3 Type:T2
+T2	Type 7 14	Divorce
+T3	Status 7 14	Divorce
+A1	Value T3 current
+T4	LivingSituation 19 29	live alone
+E2	LivingSituation:T4 State:T6 Method:T5
+T5	Method 19 29	live alone
+T6	Status 19 23	live
+A2	Value T6 current
+T7	Method 31 38	retired
+T8	Occupation 31 52	retired postal worker
+E3	Occupation:T8 Method:T7 Type:T9
+T9	Type 39 52	postal worker
+T10	Family 58 68	3 children
+E4	Family:T10 Amount:T11 Type:T12
+T11	Amount 58 59	3
+T12	Type 60 68	children
+T13	Family 72 85	grandchildren
+E5	Family:T13 Amount:T15 Type:T14
+T14	Type 72 85	grandchildren
+T15	Amount 70 71	7
+T16	Tobacco 90 96	smokes
+E6	Tobacco:T16 Amount:T18 Frequency:T19 Type:T20 State:T28 ExposureHistory:T21
+T18	Amount 97 103	1 pack
+T19	Frequency 104 109	a day
+T20	Type 113 120	Newport
+T21	ExposureHistory 121 133	for 30 years
+T22	Amount 143 149	social
+T23	Alcohol 150 157	drinker
+E7	Alcohol:T23 State:T24 Amount:T22
+T24	Status 150 157	drinker
+A3	Value T24 current
+T25	Status 162 168	denies
+A4	Value T25 none
+T27	Drug 181 185	drug
+E8	Drug:T27 State:T25 Type:T17
+T28	Status 90 96	smokes
+A6	Value T28 current
+T17	Type 173 180	illicit

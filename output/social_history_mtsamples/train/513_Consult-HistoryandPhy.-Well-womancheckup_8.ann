@@ -1,0 +1,18 @@
+T1	PhysicalActivity 183 187	walk
+E1	PhysicalActivity:T1 State:T5 Type:T2 Frequency:T3 Amount:T4
+T2	Type 183 187	walk
+T3	Frequency 188 201	every evening
+T4	Amount 202 215	for one hour.
+T5	Status 183 187	walk
+A1	Value T5 current
+T6	Family 90 97	husband
+E2	Family:T6 Type:T7 Other:T8
+T7	Type 90 97	husband
+T8	Other 98 125	hurt his hand and shoulder,
+T9	Drug 40 46	coffee
+E3	Drug:T9 Amount:T12 Frequency:T13 Type:T10 State:T11
+T10	Type 40 46	coffee
+T11	Status 20 26	drinks
+A2	Value T11 current
+T12	Amount 27 36	four cups
+T13	Frequency 47 52	a day

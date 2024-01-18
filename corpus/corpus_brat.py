@@ -1,12 +1,10 @@
 
 
-import numpy as np
 import pandas as pd
 from tqdm import tqdm
 import os
 import re
 from collections import OrderedDict, Counter
-import hashlib
 import logging
 import json
 import spacy
@@ -18,12 +16,11 @@ import string
 
 
 from spert_utils.spert_io import spert2doc_dict, spert_doc2brat_dicts, spert_doc2brat_dicts_multi
-from config.constants import ENCODING, ARG_1, ARG_2, ROLE, TYPE, SUBTYPE, EVENT_TYPE, ENTITIES, COUNT, RELATIONS, ENTITIES, EVENTS
-from config.constants import SPACY_MODEL, SUBTYPE_DEFAULT, TRIGGER
+from config.constants import ENCODING, ARG_1, ARG_2, ROLE, TYPE, SUBTYPE, EVENT_TYPE, ENTITIES, COUNT, RELATIONS, EVENTS
+from config.constants import SPACY_MODEL
 from corpus.corpus import Corpus
 from corpus.document_brat import DocumentBrat
 from corpus.brat import get_brat_files, get_unique_arg, get_files, TEXT_FILE_EXT
-from corpus.tokenization import get_tokenizer, map2ascii
 from utils.proj_setup import make_and_clear
 
 
@@ -255,7 +252,7 @@ class CorpusBrat(Corpus):
         Get events by document
         """
 
-        logging.warn(f"events2spert")
+        logging.warn("events2spert")
 
         y = []
         entity_counter = Counter()
@@ -284,14 +281,14 @@ class CorpusBrat(Corpus):
         df = pd.DataFrame(counts, columns=["type", "keep", "count"])
         df["frequency"] = df["count"] / df["count"].sum()
         df = df.sort_values(["type", "keep"])
-        logging.info(f"")
+        logging.info("")
         logging.info(f"Entity counts:\n{df}")
 
         counts = [(head, tail, keep, count) for (head, tail, keep), count in relation_counter.items()]
         df = pd.DataFrame(counts, columns=["head", "tail", "keep", "count"])
         df["frequency"] = df["count"] / df["count"].sum()
         df = df.sort_values(["head", "tail", "keep"])
-        logging.info(f"")
+        logging.info("")
         logging.info(f"Relation counts:\n{df}")
 
 
@@ -648,7 +645,7 @@ class CorpusBrat(Corpus):
 
         n = len(docs)
 
-        logging.info(f"Duplicate check")
+        logging.info("Duplicate check")
         pbar = tqdm(total=n*n, desc='Duplicate check')
 
         rows = []
@@ -703,7 +700,7 @@ class CorpusBrat(Corpus):
         Get events by document
         """
 
-        logging.warn(f"events2spert")
+        logging.warn("events2spert")
 
         y = []
         entity_counter = Counter()
@@ -735,14 +732,14 @@ class CorpusBrat(Corpus):
         df = pd.DataFrame(counts, columns=["type", "keep", "count"])
         df["frequency"] = df["count"] / df["count"].sum()
         df = df.sort_values(["type", "keep"])
-        logging.info(f"")
+        logging.info("")
         logging.info(f"Entity counts:\n{df}")
 
         counts = [(head, tail, keep, count) for (head, tail, keep), count in relation_counter.items()]
         df = pd.DataFrame(counts, columns=["head", "tail", "keep", "count"])
         df["frequency"] = df["count"] / df["count"].sum()
         df = df.sort_values(["head", "tail", "keep"])
-        logging.info(f"")
+        logging.info("")
         logging.info(f"Relation counts:\n{df}")
 
 
@@ -758,10 +755,10 @@ class CorpusBrat(Corpus):
         counts = [(event_type, arg_type, v) for (event_type, arg_type), v in counts.items()]
         df = pd.DataFrame(counts, columns=["Event", "Argument", "Count"])
 
-        logging.info(f"")
-        logging.info(f"Prune invalid connections")
+        logging.info("")
+        logging.info("Prune invalid connections")
         logging.info(f"Pruned counts:\n{df}")
-        logging.info(f"")
+        logging.info("")
 
         if path is not None:
             f = os.path.join(path, "pruned_arguments.csv")

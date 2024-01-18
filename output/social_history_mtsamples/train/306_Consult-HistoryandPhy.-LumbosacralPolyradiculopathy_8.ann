@@ -1,0 +1,18 @@
+T1	Type 34 48	civil engineer
+T2	Method 64 79	works from home
+T3	Occupation 64 69	works
+E1	Occupation:T3 Method:T2 State:T4 Type:T1 Extent:T5
+T4	Status 54 63	currently
+A1	Value T4 current
+T5	Extent 96 119	approximately half time
+T6	Family 259 263	baby
+E2	Family:T6 Type:T7
+T7	Type 259 263	baby
+T8	Status 269 277	does not
+A2	Value T8 none
+T10	Tobacco 278 283	smoke
+E3	Tobacco:T10 State:T8
+T11	Status 288 296	does not
+A3	Value T11 none
+T12	Alcohol 297 302	drink
+E4	Alcohol:T12 State:T11

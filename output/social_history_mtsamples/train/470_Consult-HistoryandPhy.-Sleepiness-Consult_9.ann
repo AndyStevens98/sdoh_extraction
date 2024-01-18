@@ -1,0 +1,15 @@
+T1	Status 140 150	No history
+A1	Value T1 none
+T2	Alcohol 154 161	alcohol
+E1	Alcohol:T2 Amount:T3 State:T1
+T3	Amount 162 167	abuse
+T4	Tobacco 171 178	smoking
+E2	Tobacco:T4 State:T1
+T6	LivingSituation 21 43	lives with her husband
+E3	LivingSituation:T6 Method:T7 State:T8
+T7	Method 21 44	lives with her husband,
+T8	Status 21 26	lives
+A2	Value T8 current
+T9	Family 36 44	husband,
+E4	Family:T9 
+T10	Type 36 43	husband

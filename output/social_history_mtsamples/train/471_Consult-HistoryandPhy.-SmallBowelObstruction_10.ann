@@ -1,0 +1,33 @@
+T1	Family 61 67	father
+E1	Family:T1 Type:T2 Other:T3
+T2	Type 61 67	father
+T3	Other 68 84	was an alcoholic
+T4	Residence 23 55	born and raised in San Francisco
+E2	Residence:T4 Method:T6 Location:T5
+T5	Location 42 55	San Francisco
+T6	Method 23 38	born and raised
+T7	Status 19 22	was
+A1	Value T7 past
+T8	LivingSituation 99 121	lives with his sister,
+E3	LivingSituation:T8 State:T10 Method:T9
+T9	Method 99 120	lives with his sister
+T10	Status 99 104	lives
+A2	Value T10 current
+T11	Status 126 134	does not
+A3	Value T11 none
+T12	Occupation 135 139	work
+E4	Occupation:T12 State:T11
+T13	Tobacco 211 217	smokes
+E5	Tobacco:T13 Amount:T15 Type:T16 Frequency:T17 State:T22
+T15	Amount 218 224	1 to 2
+T16	Type 225 235	cigarettes
+T17	Frequency 236 243	per day
+T18	Alcohol 249 255	drinks
+E6	Alcohol:T18 Amount:T19 Frequency:T20 State:T21 Type:T23
+T19	Amount 256 265	40 ounces
+T20	Frequency 274 282	per day.
+T21	Status 249 255	drinks
+A4	Value T21 current
+T22	Status 211 217	smokes
+A5	Value T22 current
+T23	Type 269 273	beer

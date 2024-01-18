@@ -1,0 +1,15 @@
+T1	Residence 29 80	resides full time at ABC supervised living facility
+E1	Residence:T1 State:T5 Location:T3 Type:T4 Method:T2
+T3	Location 50 80	ABC supervised living facility
+T4	Type 54 80	supervised living facility
+T5	Status 29 36	resides
+A1	Value T5 current
+T2	Method 37 46	full time
+T6	Status 88 91	non
+A2	Value T6 none
+T7	Status 99 102	non
+A3	Value T7 none
+T8	Tobacco 91 98	smoker,
+E2	Tobacco:T8 State:T6
+T10	Alcohol 102 109	drinker
+E3	Alcohol:T10 State:T7

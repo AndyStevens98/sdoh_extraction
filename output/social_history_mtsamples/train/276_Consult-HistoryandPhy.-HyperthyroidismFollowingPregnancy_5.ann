@@ -1,0 +1,15 @@
+T1	Family 26 30	baby
+E1	Family:T1 Type:T2
+T2	Type 26 30	baby
+T3	Tobacco 52 58	smokes
+E2	Tobacco:T3 Amount:T5 Frequency:T6 State:T7
+T5	Amount 61 70	half pack
+T6	Frequency 71 76	a day
+T7	Status 52 58	smokes
+A1	Value T7 current
+T8	Status 82 88	denies
+A2	Value T8 none
+T9	Alcohol 89 96	alcohol
+E3	Alcohol:T9 State:T8
+T10	Drug 101 105	drug
+E4	Drug:T10 State:T8

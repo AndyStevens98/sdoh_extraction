@@ -1,0 +1,6 @@
+T1	Status 16 24	Negative
+A1	Value T1 none
+T2	Tobacco 29 36	smoking
+E1	Tobacco:T2 State:T1
+T3	Alcohol 41 49	drinking
+E2	Alcohol:T3 State:T1

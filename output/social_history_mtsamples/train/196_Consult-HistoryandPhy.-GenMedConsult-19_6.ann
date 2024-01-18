@@ -1,0 +1,14 @@
+T1	Family 277 291	Biological Mom
+E1	Family:T1 Type:T2
+T2	Type 277 291	Biological Mom
+T3	Family 296 303	Grandma
+E2	Family:T3 Type:T4
+T4	Type 296 303	Grandma
+T5	LivingSituation 37 58	she is in foster care
+E3	LivingSituation:T5 Method:T6 State:T7
+T6	Method 37 58	she is in foster care
+T7	Status 37 46	she is in
+A1	Value T7 current
+T8	Family 60 70	Foster mom
+E4	Family:T8 Type:T9
+T9	Type 60 70	Foster mom

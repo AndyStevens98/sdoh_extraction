@@ -1,0 +1,18 @@
+T1	Tobacco 24 29	smoke
+E1	Tobacco:T1 State:T6 Type:T5 Frequency:T4 Amount:T3
+T4	Frequency 54 61	per day
+T5	Type 43 53	cigarettes
+T6	Status 19 29	does smoke
+A1	Value T6 current
+T7	Status 70 72	no
+A2	Value T7 none
+T8	Alcohol 73 80	alcohol
+E2	Alcohol:T8 State:T7
+T9	Drug 84 88	drug
+E3	Drug:T9 State:T7
+T10	Occupation 97 110	is a painter.
+E4	Occupation:T10 Type:T11 State:T12
+T11	Type 102 109	painter
+T12	Status 97 99	is
+A3	Value T12 current
+T3	Amount 30 39	two packs

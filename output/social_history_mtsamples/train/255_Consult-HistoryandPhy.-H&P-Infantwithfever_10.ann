@@ -1,0 +1,16 @@
+T1	LivingSituation 27 117	lives with his mother and father, both are teenagers, unmarried, who are not well educated
+E1	LivingSituation:T1 State:T3 Method:T2
+T2	Method 27 117	lives with his mother and father, both are teenagers, unmarried, who are not well educated
+T3	Status 27 32	lives
+A1	Value T3 current
+T4	Family 42 48	mother
+E2	Family:T4 Type:T7 Amount:T8
+T5	Family 53 59	father
+E3	Family:T5 Type:T6 Amount:T8
+T6	Type 53 59	father
+T7	Type 42 48	mother
+T8	Amount 70 79	teenagers
+T9	Family 119 130	Grandmother
+E4	Family:T9 Type:T10 Other:T11
+T10	Type 119 130	Grandmother
+T11	Other 131 148	is a heavy smoker

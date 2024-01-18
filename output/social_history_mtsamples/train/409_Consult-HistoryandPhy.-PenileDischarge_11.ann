@@ -1,0 +1,22 @@
+T1	LivingSituation 29 40	lives alone
+E1	LivingSituation:T1 Method:T3 State:T2
+T2	Status 29 34	lives
+A1	Value T2 current
+T3	Method 29 40	lives alone
+T4	Occupation 45 58	is unemployed
+E2	Occupation:T4 Type:T6 State:T5 Method:T7
+T5	Status 45 47	is
+A2	Value T5 current
+T6	Type 48 58	unemployed
+T7	Method 60 68	disabled
+T8	Status 73 87	has history of
+A3	Value T8 past
+T9	Tobacco 88 95	tobacco
+E3	Tobacco:T9 State:T8
+T10	Status 116 122	denies
+A4	Value T10 none
+T11	Alcohol 123 130	alcohol
+E4	Alcohol:T11 State:T10 Amount:T13
+T12	Drug 134 138	drug
+E5	Drug:T12 State:T10 Amount:T13
+T13	Amount 139 145	abuse.

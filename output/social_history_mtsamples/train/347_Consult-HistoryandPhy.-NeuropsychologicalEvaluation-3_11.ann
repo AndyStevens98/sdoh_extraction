@@ -1,0 +1,32 @@
+T1	Occupation 673 679	worked
+E1	Occupation:T1 State:T4 Type:T2 Time:T3
+T2	Type 685 697	tax attorney
+T3	Temporal 698 719	for the past 48 years
+T4	Status 669 679	has worked
+A1	Value T4 current
+T5	MaritalStatus 871 878	married
+E2	MaritalStatus:T5 Type:T7 Time:T6 State:T8
+T6	Temporal 879 900	for the past 36 years
+T7	Type 871 878	married
+T8	Status 859 870	He has been
+A2	Value T8 current
+T9	Family 908 912	wife
+E3	Family:T9 Type:T10
+T10	Type 908 912	wife
+T11	Family 951 964	four children
+E4	Family:T11 Amount:T12 Type:T13
+T12	Amount 951 955	four
+T13	Type 956 964	children
+T14	PhysicalActivity 1061 1068	dancing
+E5	PhysicalActivity:T14 Type:T15 Amount:T16 Frequency:T17
+T15	Type 1061 1068	dancing
+T16	Amount 1069 1087	four to five times
+T17	Frequency 1088 1094	a week
+T18	PhysicalActivity 1096 1101	swims
+E6	PhysicalActivity:T18 Type:T19 Frequency:T20
+T19	Type 1096 1101	swims
+T20	Frequency 1102 1107	daily
+T21	PhysicalActivity 1109 1119	plays golf
+E7	PhysicalActivity:T21 Type:T22 Frequency:T23
+T22	Type 1109 1119	plays golf
+T23	Frequency 1120 1129	regularly

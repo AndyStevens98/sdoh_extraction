@@ -1,0 +1,19 @@
+T1	MaritalStatus 23 31	divorced
+E1	MaritalStatus:T1 Type:T3 State:T2
+T2	Status 20 22	is
+A1	Value T2 current
+T3	Type 23 31	divorced
+T4	LivingSituation 37 66	does not have support at home
+E2	LivingSituation:T4 Method:T5 State:T6
+T5	Method 37 66	does not have support at home
+T6	Status 37 50	does not have
+A2	Value T6 current
+T7	Status 72 78	denies
+A3	Value T7 none
+T8	Tobacco 79 86	tobacco
+E3	Tobacco:T8 State:T7
+T9	Alcohol 88 95	alcohol
+E4	Alcohol:T9 State:T7
+T10	Drug 109 113	drug
+E5	Drug:T10 Type:T11 State:T7
+T11	Type 101 108	illicit

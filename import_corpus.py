@@ -15,6 +15,7 @@ Example usage
 python import_corpus.py --source /home/lybarger/data/social_determinants_challenge/ --output_file /home/lybarger/sdoh_challenge/output/corpus.pkl
 
 '''
+logging.basicConfig(level=logging.INFO)
 
 
 def tag_function(id, subset_position=0, source_position=1):
@@ -60,4 +61,4 @@ if __name__ == '__main__':
 
     args, _ = arg_parser.parse_known_args()
 
-    sys.exit(main(args)) 
+    sys.exit(main(args))

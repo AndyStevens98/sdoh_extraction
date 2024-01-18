@@ -1,32 +1,24 @@
 from __future__ import division, print_function, unicode_literals
 
+import argparse
+import logging
 import os
-import re
-import numpy as np
-import json
+import shutil
+import sys
+from collections import OrderedDict
+
 import joblib
 import pandas as pd
-pd.set_option('display.max_columns', None)
-pd.set_option('display.width', None)
-from collections import OrderedDict
-import logging
-from sklearn.model_selection import train_test_split
-import sys
-import shutil
-import argparse
+from brat_scoring.scoring import micro_average_subtypes, score_docs
 
-
-from brat_scoring.scoring import score_docs, micro_average_subtypes
-
-import config.paths as paths
-
-from utils.misc import get_include
-from spert_utils.config_setup import dict_to_config_file, get_prediction_file
-from spert_utils.spert_io import merge_spert_files
-from spert_utils.config_setup import get_dataset_stats
 import config.constants as C
 from corpus.corpus_brat import CorpusBrat
+from spert_utils.config_setup import dict_to_config_file, get_dataset_stats
+from spert_utils.spert_io import merge_spert_files
+from utils.misc import get_include
 
+pd.set_option('display.max_columns', None)
+pd.set_option('display.width', None)
 
 '''
 
@@ -48,7 +40,7 @@ def get_scoring_def():
     # Scoring:
     scoring = OrderedDict()
     scoring["n2c2"] = dict(score_trig=C.OVERLAP, score_span=C.EXACT, score_labeled=C.LABEL)
-    return scoring   
+    return scoring
 
 
 def main(args):
@@ -84,25 +76,25 @@ def main(args):
 
 
     if args.mode == C.EVAL:
-        assert args.source_file is not None, f'''if mode == "eval", then args.source_file cannot be None'''
+        assert args.source_file is not None, '''if mode == "eval", then args.source_file cannot be None'''
         assert os.path.exists(args.source_file), f'''args.source_file does not exist: {args.source_file}'''
         if args.source_dir is not None:
-            logging.warn(f'''if mode == "eval", then args.source_dir must be None. ignoring args.source_dir''')
+            logging.warn('''if mode == "eval", then args.source_dir must be None. ignoring args.source_dir''')
 
         # load corpus
         corpus = joblib.load(args.source_file)
 
     elif args.mode == C.PREDICT:
         if args.source_file is not None:
-            logging.warn(f'''if mode == "predict", then args.source_file must be None. ignoring_args.source_file''')
-        assert args.source_dir is not None,          f'''if mode == "predict", then args.source_dir cannot be None'''
+            logging.warn('''if mode == "predict", then args.source_file must be None. ignoring_args.source_file''')
+        assert args.source_dir is not None,          '''if mode == "predict", then args.source_dir cannot be None'''
         assert os.path.exists(args.source_dir),  f'''args.source_dir does not exist: {args.source_dir}'''
 
         corpus = CorpusBrat()
         corpus.import_text_dir(args.source_dir)
 
     else:
-        raise ValueError(f"Invalid mode: {mode}")
+        raise ValueError(f"Invalid mode: {args.mode}")
 
 
     f = os.path.join(model_config["model_path"], C.LABEL_DEFINITION_FILE)
@@ -167,7 +159,7 @@ def main(args):
     merge_spert_files(model_config["dataset_path"], predict_file, merged_file)
 
 
-    logging.info(f"Scoring predictions")
+    logging.info("Scoring predictions")
     logging.info(f"Gold file:                     {model_config['dataset_path']}")
     logging.info(f"Prediction file, original:     {predict_file}")
     logging.info(f"Prediction file, merged_file:  {merged_file}")
@@ -251,9 +243,9 @@ if __name__ == '__main__':
     arg_parser.add_argument('--store_examples', default=True,  action='store_false', help="store examples?")
     arg_parser.add_argument('--sampling_processes', type=int, default=4, help="number of sampling processes")
     arg_parser.add_argument('--max_pairs', type=int, default=1000, help="maximum relation pairs")
-    arg_parser.add_argument('--no_overlapping', default=True, action='store_false', help="disallow overlapping spans")                
-    arg_parser.add_argument('--device', type=int, default=0, help="GPU device")    
-    arg_parser.add_argument('--save_brat', default=True, action='store_false', help="save predictions in brat format")                
+    arg_parser.add_argument('--no_overlapping', default=True, action='store_false', help="disallow overlapping spans")
+    arg_parser.add_argument('--device', type=int, default=0, help="GPU device")
+    arg_parser.add_argument('--save_brat', default=True, action='store_false', help="save predictions in brat format")
     args, _ = arg_parser.parse_known_args()
 
-    sys.exit(main(args)) 
+    sys.exit(main(args))

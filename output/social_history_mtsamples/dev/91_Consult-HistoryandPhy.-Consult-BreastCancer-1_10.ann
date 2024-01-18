@@ -1,0 +1,6 @@
+T1	Occupation 28 53	works as a school teacher
+E1	Occupation:T1 State:T4 Type:T2 Location:T3
+T2	Type 39 53	school teacher
+T3	Location 67 78	high school
+T4	Status 28 33	works
+A1	Value T4 current

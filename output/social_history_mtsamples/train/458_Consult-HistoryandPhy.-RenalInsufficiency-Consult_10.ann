@@ -1,0 +1,13 @@
+T1	Status 28 34	denies
+A1	Value T1 none
+T2	Alcohol 39 46	alcohol
+E1	Alcohol:T2 State:T1
+T3	Method 48 50	IV
+T4	Drug 51 55	drug
+E2	Drug:T4 Amount:T5 State:T1 Method:T3
+T5	Amount 56 61	abuse
+T6	Tobacco 63 70	tobacco
+E3	Tobacco:T6 State:T1
+T7	Type 79 91	recreational
+T8	Drug 92 97	drugs
+E4	Drug:T8 Type:T7 State:T1

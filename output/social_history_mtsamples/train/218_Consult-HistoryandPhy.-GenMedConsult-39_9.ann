@@ -1,0 +1,18 @@
+T1	Status 16 18	No
+A1	Value T1 none
+T2	Tobacco 19 26	tobacco
+E1	Tobacco:T2 State:T1
+T3	Frequency 32 42	occasional
+T4	Status 32 42	occasional
+A2	Value T4 current
+T5	Alcohol 43 47	EtOH
+E2	Alcohol:T5 Frequency:T3 State:T4
+T6	Status 49 57	no known
+A3	Value T6 none
+T7	Drug 58 62	drug
+E3	Drug:T7 State:T6
+T8	Occupation 68 73	works
+E4	Occupation:T8 Type:T9 State:T10
+T9	Type 79 96	real estate agent
+T10	Status 68 73	works
+A4	Value T10 current

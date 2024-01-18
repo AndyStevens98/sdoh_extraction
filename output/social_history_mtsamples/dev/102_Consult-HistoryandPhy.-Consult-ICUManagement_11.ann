@@ -1,0 +1,6 @@
+T1	Tobacco 25 32	tobacco
+E1	Tobacco:T1 State:T3
+T2	Alcohol 48 55	alcohol
+E2	Alcohol:T2 State:T3
+T3	Status 16 24	Includes
+A1	Value T3 current

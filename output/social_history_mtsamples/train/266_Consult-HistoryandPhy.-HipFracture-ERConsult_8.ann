@@ -1,0 +1,23 @@
+T1	Status 17 23	Denies
+A1	Value T1 none
+T2	Tobacco 28 35	tobacco
+E1	Tobacco:T2 State:T1
+T3	Alcohol 39 46	alcohol
+E2	Alcohol:T3 State:T1
+T4	MaritalStatus 56 67	is divorced
+E3	MaritalStatus:T4 State:T5 Type:T6
+T5	Status 56 58	is
+A2	Value T5 current
+T6	Type 59 67	divorced
+T7	Family 73 83	2 children
+E4	Family:T7 Amount:T8 Type:T9
+T8	Amount 73 74	2
+T9	Type 75 83	children
+T10	LivingSituation 89 107	lives with her son
+E5	LivingSituation:T10 State:T12 Method:T11
+T11	Method 89 107	lives with her son
+T12	Status 89 94	lives
+A3	Value T12 current
+T13	Family 104 107	son
+E6	Family:T13 Type:T14
+T14	Type 104 108	son.

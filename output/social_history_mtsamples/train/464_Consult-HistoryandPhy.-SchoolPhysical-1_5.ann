@@ -1,0 +1,19 @@
+T1	PhysicalActivity 181 193	cheerleading
+E1	PhysicalActivity:T1 Type:T8 State:T9
+T2	PhysicalActivity 195 200	track
+E2	PhysicalActivity:T2 Type:T7 State:T9
+T3	PhysicalActivity 202 212	volleyball
+E3	PhysicalActivity:T3 Type:T6 State:T9
+T4	PhysicalActivity 218 228	basketball
+E4	PhysicalActivity:T4 Type:T5 State:T9
+T5	Type 218 228	basketball
+T6	Type 202 212	volleyball
+T7	Type 195 200	track
+T8	Type 181 193	cheerleading
+T9	Status 161 180	will be involved in
+A1	Value T9 future
+T10	Residence 114 119	Texas
+E5	Residence:T10 Location:T11 State:T12
+T11	Location 114 119	Texas
+T12	Status 89 93	will
+A2	Value T12 future

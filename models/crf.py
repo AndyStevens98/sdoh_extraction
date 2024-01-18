@@ -1,34 +1,18 @@
-
-
-import torch
-import torch.utils.data as data_utils
-import torch.autograd as autograd
-import torch.nn as nn
-import torch.optim as optim
-import torch.nn.functional as F
-from torch.utils.data import Dataset, DataLoader
-
-
-from allennlp.modules.seq2seq_encoders import Seq2SeqEncoder, PytorchSeq2SeqWrapper
-from allennlp.modules.attention import BilinearAttention
-from allennlp.modules.conditional_random_field import ConditionalRandomField
-from allennlp.modules.span_extractors import SelfAttentiveSpanExtractor, EndpointSpanExtractor
-
-from tqdm import tqdm
-import numpy as np
 import logging
-from tqdm import tqdm
-import joblib
-import math
+import re
 from collections import OrderedDict
 
-# from corpus.event import BIO_to_span_seq
-# from models.utils import create_mask
-
-from models.utils import loss_reduction
+import numpy as np
+import torch
+import torch.nn as nn
+from allennlp.modules.conditional_random_field import ConditionalRandomField
+from allennlp.modules.span_extractors import EndpointSpanExtractor
 
 import config.constants as C
 
+# from corpus.event import BIO_to_span_seq
+# from models.utils import create_mask
+from models.utils import loss_reduction
 
 BIO_DEFAULT = True
 PAD_START = True

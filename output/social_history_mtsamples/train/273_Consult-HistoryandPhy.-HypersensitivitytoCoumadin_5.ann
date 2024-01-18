@@ -1,0 +1,27 @@
+T1	Residence 63 91	lived in Arizona for 4 years
+E1	Residence:T1 State:T2 Location:T3 Time:T4
+T2	Status 63 71	lived in
+A1	Value T2 current
+T3	Location 72 79	Arizona
+T4	Temporal 80 91	for 4 years
+T5	Family 105 115	2 children
+E2	Family:T5 LivingStatus:T8 Amount:T7 Type:T6
+T6	Type 107 116	children;
+T7	Amount 105 106	2
+T8	LivingStatus 126 144	only one is living
+T9	Family 154 163	one child
+E3	Family:T9 Amount:T10 Type:T11 MedicalCondition:T13 LivingStatus:T12
+T10	Amount 154 157	one
+T11	Type 158 163	child
+T12	LivingStatus 164 209	died from complications of ulcerative colitis
+T13	MedicalCondition 191 210	ulcerative colitis.
+T14	Occupation 240 249	homemaker
+E4	Occupation:T14 State:T16 Type:T15
+T15	Type 240 249	homemaker
+T16	Status 215 237	has been predominantly
+A2	Value T16 current
+T17	Status 271 284	has done some
+A3	Value T17 past
+T18	Occupation 285 307	domestic cleaning work
+E5	Occupation:T18 Type:T19 State:T17
+T19	Type 285 307	domestic cleaning work

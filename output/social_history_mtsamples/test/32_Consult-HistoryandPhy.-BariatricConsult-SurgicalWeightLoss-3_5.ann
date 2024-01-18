@@ -1,0 +1,9 @@
+T1	Family 42 59	one adopted child
+E1	Family:T1 Amount:T2 Type:T3
+T2	Amount 42 45	one
+T3	Type 46 59	adopted child
+T4	MaritalStatus 25 38	single mother
+E2	MaritalStatus:T4 State:T6 Type:T5
+T5	Type 25 38	single mother
+T6	Status 20 24	is a
+A1	Value T6 current

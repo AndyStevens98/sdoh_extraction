@@ -1,0 +1,13 @@
+T1	Status 17 27	History of
+A1	Value T1 past
+T2	Tobacco 28 35	tobacco
+E1	Tobacco:T2 State:T1 ExposureHistory:T4 QuitHistory:T3
+T6	Alcohol 85 92	Alcohol
+E2	Alcohol:T6 Amount:T7 Frequency:T8 State:T9 Type:T5
+T7	Amount 93 103	one to two
+T8	Frequency 111 118	monthly
+T9	Status 111 119	monthly.
+A2	Value T9 current
+T4	ExposureHistory 52 60	20 years
+T3	QuitHistory 71 83	30 years ago
+T5	Type 104 110	drinks

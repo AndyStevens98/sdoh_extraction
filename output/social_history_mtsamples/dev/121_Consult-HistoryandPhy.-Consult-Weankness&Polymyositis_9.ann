@@ -1,0 +1,31 @@
+T1	MaritalStatus 25 30	widow
+E1	MaritalStatus:T1 Type:T2 State:T3
+T2	Type 25 30	widow
+T3	Status 20 22	is
+A1	Value T3 current
+T4	Family 40 50	8 children
+E2	Family:T4 LivingStatus:T7 Amount:T5 Type:T6
+T5	Amount 40 41	8
+T6	Type 42 50	children
+T7	LivingStatus 51 93	that are healthy with the exception of one
+T8	MedicalCondition 90 144	one who has coronary artery disease and has had bypass
+T9	Family 90 93	one
+E3	Family:T9 MedicalCondition:T8 LivingStatus:T12 Amount:T16
+T10	Family 159 164	a son
+E4	Family:T10 MedicalCondition:T11 LivingStatus:T13 Type:T14 Amount:T15
+T11	MedicalCondition 165 190	with lumbar spine disease
+T12	LivingStatus 102 144	coronary artery disease and has had bypass
+T13	LivingStatus 170 190	lumbar spine disease
+T14	Type 161 164	son
+T15	Amount 159 160	a
+T16	Amount 90 93	one
+T17	Status 192 194	No
+A2	Value T17 none
+T18	Tobacco 195 202	tobacco
+E5	Tobacco:T18 Amount:T22 State:T17
+T19	Alcohol 204 211	alcohol
+E6	Alcohol:T19 Amount:T22 State:T17
+T20	Drug 218 222	drug
+E7	Drug:T20 Amount:T22 State:T17 Method:T21
+T21	Method 215 217	IV
+T22	Amount 223 228	abuse

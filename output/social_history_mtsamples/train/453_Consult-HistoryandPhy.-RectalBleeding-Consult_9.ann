@@ -1,0 +1,9 @@
+T1	Status 17 19	No
+A1	Value T1 none
+T2	Tobacco 20 27	tobacco
+E1	Tobacco:T2 State:T1
+T3	Alcohol 29 36	alcohol
+E2	Alcohol:T3 State:T1
+T4	Method 40 42	IV
+T5	Drug 43 47	drug
+E3	Drug:T5 Method:T4 State:T1

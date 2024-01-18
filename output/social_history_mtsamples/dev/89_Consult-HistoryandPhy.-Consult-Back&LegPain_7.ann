@@ -1,0 +1,14 @@
+T1	MaritalStatus 24 31	married
+E1	MaritalStatus:T1 Type:T3 State:T2
+T2	Status 21 23	is
+A1	Value T2 current
+T3	Type 24 31	married
+T4	Occupation 33 41	retired.
+E2	Occupation:T4 Method:T5 State:T2
+T5	Method 33 40	retired
+T6	Status 42 48	Denies
+A2	Value T6 none
+T7	Tobacco 49 56	tobacco
+E3	Tobacco:T7 State:T6
+T8	Alcohol 60 67	ethanol
+E4	Alcohol:T8 State:T6

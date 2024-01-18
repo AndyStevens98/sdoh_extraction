@@ -1,31 +1,17 @@
-
-
-
-import json
-import os
-import joblib
-import re
-import shutil
-import pandas as pd
-from multiprocessing import Pool
-import traceback
-from tqdm import tqdm
-import numpy as np
-from collections import OrderedDict, Counter
-import logging
-from pathlib import Path
 import itertools
+import logging
+import os
+import traceback
+from collections import Counter, OrderedDict
 
+import pandas as pd
 from sklearn.model_selection import train_test_split
 
-
-from corpus.tokenization import get_tokenizer, get_tokens
+from config.constants import DEV, ENCODING, ID, SUBSET, TEST, TRAIN
+from corpus.brat import write_ann, write_txt
 from corpus.document import Document
-from config.constants import ENCODING, TEXT_FILE_EXT, ANN_FILE_EXT, QC, ID, SUBSET, TRAIN, TEST, DEV
-from corpus.brat import write_txt, write_ann
-from utils.proj_setup import make_and_clear
+from corpus.tokenization import get_tokens
 from utils.random_sample import random_sample
-
 
 
 def batch_documents(doc):
@@ -292,7 +278,7 @@ class Corpus:
                 exclude = None):
 
 
-        logging.info(f"Split assignment")
+        logging.info("Split assignment")
 
 
         ids = [doc.id for doc in self.docs(include=include, exclude=exclude)]
@@ -322,8 +308,8 @@ class Corpus:
 
             df = pd.DataFrame(train + dev + test, columns=[ID, SUBSET])
 
-            logging.info(f"Generating NEW random assignments ")
-            logging.info(f"Random assignment: ")
+            logging.info("Generating NEW random assignments ")
+            logging.info("Random assignment: ")
             logging.info(f"\ttrain_size:   {train_size}")
             logging.info(f"\tdev_size:     {dev_size}")
             logging.info(f"\ttest_size:    {test_size}")
@@ -378,13 +364,13 @@ class Corpus:
 
         annotators = sorted(list(annotators))
 
-        logging.info(f"Adding annotator tags")
+        logging.info("Adding annotator tags")
         logging.info(f"Annotator count: {len(annotators)}")
         logging.info(f"Annotators:      {annotators}")
-        logging.info(f"Annotator distribution:")
+        logging.info("Annotator distribution:")
         for annotator in annotators:
             n = len(self.docs(include=annotator))
-            #logging.info(f"\t{annotator} - {n}")
+            logging.info(f"\t{annotator} - {n}")
 
         return annotators
 
@@ -454,7 +440,7 @@ class Corpus:
         assert len(sampled_docs) == size
 
         # Write sampled files
-        if not path is None:
+        if path is not None:
 
             assert annotators is not None
 

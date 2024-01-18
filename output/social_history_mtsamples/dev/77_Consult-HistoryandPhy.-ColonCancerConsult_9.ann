@@ -1,0 +1,35 @@
+T1	Status 123 131	does not
+A1	Value T1 past
+T2	Tobacco 132 137	smoke
+E1	Tobacco:T2 State:T1
+T5	Amount 151 162	two glasses
+T6	Frequency 171 178	per day
+T8	Status 143 150	She has
+A2	Value T8 current
+T9	MaritalStatus 212 219	married
+E3	MaritalStatus:T9 Type:T11 State:T10
+T10	Status 209 219	is married
+A3	Value T10 current
+T11	Type 212 219	married
+T12	Occupation 273 278	works
+E4	Occupation:T12 Type:T13 State:T14
+T13	Type 285 296	esthetician
+T14	Status 273 278	works
+A4	Value T14 current
+T15	Status 20 26	smoked
+A5	Value T15 past
+T16	Type 27 37	cigarettes
+T17	Amount 38 46	socially
+T18	ExposureHistory 47 63	while in her 20s
+T19	Amount 65 71	A pack
+T20	Type 75 85	cigarettes
+T21	Frequency 97 117	for more than a week
+T22	Tobacco 86 91	would
+E6	Tobacco:T22 State:T23 Amount:T19 Type:T20 Frequency:T21
+T23	Status 86 91	would
+A6	Value T23 past
+T4	Tobacco 20 26	smoked
+E5	Tobacco:T4 State:T15 Type:T16 Amount:T17 ExposureHistory:T18
+T3	Type 166 170	wine
+T24	Alcohol 147 150	has
+E2	Alcohol:T24 State:T8 Amount:T5 Type:T3 Frequency:T6

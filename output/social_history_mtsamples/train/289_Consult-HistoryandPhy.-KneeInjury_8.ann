@@ -1,0 +1,26 @@
+T1	MaritalStatus 28 37	is single
+E1	MaritalStatus:T1 State:T2 Type:T3
+T2	Status 28 30	is
+A1	Value T2 current
+T3	Type 31 37	single
+T4	Occupation 43 65	is a full-time student
+E2	Occupation:T4 State:T5 Type:T6 Location:T7
+T5	Status 43 45	is
+A2	Value T5 current
+T6	Type 48 65	full-time student
+T7	Location 69 79	University
+T8	Status 86 88	no
+A3	Value T8 none
+T9	Tobacco 89 96	tobacco
+E3	Tobacco:T9 State:T8
+T10	Alcohol 98 105	alcohol
+E4	Alcohol:T10 State:T8
+T11	Type 110 117	illicit
+T12	Drug 118 123	drugs
+E5	Drug:T12 Type:T11 State:T8
+T13	PhysicalActivity 129 138	exercises
+E6	PhysicalActivity:T13 State:T16 Frequency:T14 Type:T15
+T14	Frequency 139 146	weekly,
+T15	Type 154 160	tennis
+T16	Status 129 138	exercises
+A4	Value T16 current

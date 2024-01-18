@@ -1,6 +1,3 @@
-
-
-
 from corpus.document_brat import DocumentBrat
 
 

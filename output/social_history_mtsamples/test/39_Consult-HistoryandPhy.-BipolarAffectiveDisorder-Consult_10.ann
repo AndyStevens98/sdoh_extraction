@@ -1,0 +1,12 @@
+T1	LivingSituation 47 69	lives with her husband
+E1	LivingSituation:T1 
+T2	Method 47 69	lives with her husband
+T3	Status 47 52	lives
+A1	Value T3 current
+T4	Family 62 69	husband
+E2	Family:T4 Type:T5
+T5	Type 62 69	husband
+T6	Family 141 152	2 brothers.
+E3	Family:T6 Type:T8 Amount:T7
+T7	Amount 141 142	2
+T8	Type 143 151	brothers

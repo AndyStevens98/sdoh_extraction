@@ -1,0 +1,28 @@
+T1	MaritalStatus 32 39	married
+E1	MaritalStatus:T1 Type:T2 State:T3
+T2	Type 32 39	married
+T3	Status 29 39	is married
+A1	Value T3 current
+T4	LivingSituation 44 65	lives with his spouse
+E2	LivingSituation:T4 Method:T6 State:T5
+T5	Status 44 49	lives
+A2	Value T5 current
+T6	Method 44 65	lives with his spouse
+T7	Family 59 65	spouse
+E3	Family:T7 Type:T8
+T8	Type 59 65	spouse
+T9	Status 74 84	history of
+A3	Value T9 current
+T10	Tobacco 85 92	tobacco
+E4	Tobacco:T10 State:T9
+T12	Status 118 128	history of
+A4	Value T12 current
+T13	Alcohol 129 136	alcohol
+E5	Alcohol:T13 State:T12 Amount:T14
+T14	Amount 137 142	abuse
+T15	Status 144 154	No history
+A5	Value T15 none
+T16	Drug 166 170	drug
+E6	Drug:T16 Amount:T17 Type:T18 State:T15
+T17	Amount 171 176	abuse
+T18	Type 158 165	illicit

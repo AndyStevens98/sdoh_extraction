@@ -1,0 +1,9 @@
+T1	Residence 33 68	resident of Lake Harris Port Square
+E1	Residence:T1 State:T3 Location:T2
+T2	Location 45 68	Lake Harris Port Square
+T3	Status 28 44	is a resident of
+A1	Value T3 current
+T4	Status 78 91	no history of
+A2	Value T4 none
+T5	Alcohol 92 99	alcohol
+E2	Alcohol:T5 State:T4

@@ -1,0 +1,26 @@
+T1	LivingSituation 20 31	lives alone
+E1	LivingSituation:T1 State:T2 Method:T3
+T2	Status 20 25	lives
+A1	Value T2 current
+T3	Method 20 31	lives alone
+T4	Status 102 108	denies
+A2	Value T4 none
+T5	Alcohol 109 116	alcohol
+E2	Alcohol:T5 State:T4
+T6	Tobacco 118 125	tobacco
+E3	Tobacco:T6 State:T4
+T7	Type 130 137	illicit
+T8	Drug 138 142	drug
+E4	Drug:T8 Type:T7 State:T4
+T9	Occupation 154 165	now retired
+E5	Occupation:T9 Method:T10 State:T11
+T10	Method 158 165	retired
+T11	Status 154 157	now
+A3	Value T11 current
+T12	PhysicalActivity 189 226	walks about four miles every few days
+E6	PhysicalActivity:T12 Frequency:T15 Amount:T14 Type:T13 State:T16
+T13	Type 189 194	walks
+T14	Amount 195 211	about four miles
+T15	Frequency 212 226	every few days
+T16	Status 170 172	is
+A4	Value T16 current

@@ -1,0 +1,13 @@
+T1	Tobacco 24 30	smoker
+E1	Tobacco:T1 State:T2
+T2	Status 17 23	Active
+A1	Value T2 current
+T4	Status 32 40	Does not
+A2	Value T4 none
+T5	Alcohol 41 57	consume alcohol.
+E2	Alcohol:T5 State:T4
+T6	Status 58 71	No history of
+A3	Value T6 none
+T7	Type 72 84	recreational
+T8	Drug 85 93	drug use
+E3	Drug:T8 Type:T7 State:T6

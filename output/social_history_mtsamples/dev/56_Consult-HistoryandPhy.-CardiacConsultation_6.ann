@@ -1,0 +1,16 @@
+T1	MaritalStatus 28 38	is married
+E1	MaritalStatus:T1 Type:T2 State:T3
+T2	Type 31 38	married
+T3	Status 28 30	is
+A1	Value T3 current
+T4	LivingSituation 40 62	Lives with her husband
+E2	LivingSituation:T4 State:T6 Method:T5
+T5	Method 40 62	Lives with her husband
+T6	Status 40 45	Lives
+A2	Value T6 current
+T7	Method 73 80	retired
+T8	Location 86 89	ABC
+T9	Occupation 73 89	retired from ABC
+E3	Occupation:T9 Location:T8 State:T10 Method:T7
+T10	Status 73 80	retired
+A3	Value T10 past

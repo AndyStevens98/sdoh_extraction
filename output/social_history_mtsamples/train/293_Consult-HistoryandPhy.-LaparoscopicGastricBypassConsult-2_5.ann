@@ -1,0 +1,24 @@
+T1	Status 19 31	is currently
+A1	Value T1 current
+T2	MaritalStatus 32 38	single
+E1	MaritalStatus:T2 Type:T3 State:T1
+T3	Type 32 38	single
+T4	Amount 53 63	ten drinks
+T5	Frequency 64 70	a year
+T6	Status 40 46	He has
+A2	Value T6 current
+T7	Alcohol 53 71	ten drinks a year.
+E2	Alcohol:T7 State:T6 Amount:T4 Frequency:T5
+T8	Status 132 142	now smokes
+A3	Value T8 current
+T9	Amount 143 158	less than three
+T10	Frequency 170 175	a day
+T11	Type 159 169	cigarettes
+T13	QuitHistory 100 127	up until several months ago
+T14	Tobacco 136 142	smokes
+E3	Tobacco:T14 State:T8 Frequency:T10 Type:T11 Amount:T9
+T12	Tobacco 79 85	smoked
+E4	Tobacco:T12 Amount:T15 State:T16 QuitHistory:T13
+T15	Amount 86 99	significantly
+T16	Status 75 78	had
+A4	Value T16 past

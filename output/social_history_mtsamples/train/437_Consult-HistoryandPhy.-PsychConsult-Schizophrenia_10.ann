@@ -1,0 +1,8 @@
+T1	LivingSituation 47 69	lives with his partner
+E1	LivingSituation:T1 Method:T2
+T2	Method 47 69	lives with his partner
+T3	Occupation 71 87	He is unemployed
+E2	Occupation:T3 Method:T5 State:T4
+T4	Status 74 76	is
+A1	Value T4 current
+T5	Method 77 87	unemployed

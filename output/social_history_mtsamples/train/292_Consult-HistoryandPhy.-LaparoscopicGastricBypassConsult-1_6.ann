@@ -1,0 +1,22 @@
+T1	MaritalStatus 33 39	single
+E1	MaritalStatus:T1 State:T2
+T2	Status 23 32	currently
+A1	Value T2 current
+T3	Alcohol 51 58	alcohol
+E2	Alcohol:T3 State:T5 Amount:T4 Frequency:T6
+T5	Status 44 50	drinks
+A2	Value T5 current
+T4	Amount 59 78	ten to twelve drink
+T6	Frequency 80 86	a week
+T8	Tobacco 154 160	smokes
+E3	Tobacco:T8 Amount:T11 State2:T10 Frequency:T12 ExposureHistory:T15
+T13	Status 221 236	stopped smoking
+A3	Value T13 past
+T14	QuitHistory 237 259	for the past two weeks
+T11	Amount 161 180	one and a half pack
+T10	Status 154 160	smokes
+A4	Value T10 current
+T12	Frequency 181 186	a day
+T15	ExposureHistory 187 199	for 15 years
+T16	Tobacco 208 211	has
+E4	Tobacco:T16 State:T13 QuitHistory:T14

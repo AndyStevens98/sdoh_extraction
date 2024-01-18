@@ -1,0 +1,12 @@
+T1	Family 31 37	mother
+E1	Family:T1 Amount:T3 Type:T2
+T2	Type 31 37	mother
+T3	Amount 41 47	age 66
+T4	Family 49 55	father
+E2	Family:T4 Type:T5 Amount:T6
+T5	Type 49 55	father
+T6	Amount 59 65	age 70
+T7	Family 81 88	brother
+E3	Family:T7 Type:T8 Amount:T9
+T8	Type 81 88	brother
+T9	Amount 89 95	age 44

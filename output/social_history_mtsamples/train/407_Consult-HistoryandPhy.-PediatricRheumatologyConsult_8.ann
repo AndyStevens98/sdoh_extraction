@@ -1,0 +1,23 @@
+T1	LivingSituation 20 57	lives with mom, dad, brother, sister,
+E1	LivingSituation:T1 
+T2	Status 20 25	lives
+A1	Value T2 current
+T3	Method 20 56	lives with mom, dad, brother, sister
+T4	Family 31 34	mom
+E2	Family:T4 Type:T7 LivingStatus:T6
+T5	Type 36 40	dad,
+T6	LivingStatus 62 82	everybody is healthy
+T7	Type 31 34	mom
+T8	Family 36 39	dad
+E3	Family:T8 Type:T5 LivingStatus:T6
+T9	Family 41 48	brother
+E4	Family:T9 Type:T11 LivingStatus:T6
+T10	Family 50 57	sister,
+E5	Family:T10 Type:T12 LivingStatus:T6
+T11	Type 41 48	brother
+T12	Type 50 56	sister
+T13	Residence 89 103	live in Easton
+E6	Residence:T13 Location:T15 State:T14
+T14	Status 89 93	live
+A2	Value T14 current
+T15	Location 97 103	Easton

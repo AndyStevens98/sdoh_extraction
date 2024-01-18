@@ -1,0 +1,19 @@
+T1	MaritalStatus 20 30	is married
+E1	MaritalStatus:T1 State:T2 Type:T3
+T2	Status 20 22	is
+A1	Value T2 current
+T3	Type 23 30	married
+T4	Family 39 44	1 son
+E2	Family:T4 Amount:T5 Type:T6
+T5	Amount 39 40	1
+T6	Type 41 44	son
+T7	Family 55 62	brother
+E3	Family:T7 Type:T8 LivingStatus:T9
+T8	Type 55 62	brother
+T9	LivingStatus 67 77	is healthy
+T10	Status 88 101	no history of
+A2	Value T10 none
+T11	Tobacco 102 109	tobacco
+E4	Tobacco:T11 State:T10
+T12	Alcohol 117 124	alcohol
+E5	Alcohol:T12 State:T10

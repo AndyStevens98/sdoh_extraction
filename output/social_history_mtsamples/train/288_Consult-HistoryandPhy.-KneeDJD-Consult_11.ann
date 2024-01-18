@@ -1,0 +1,25 @@
+T1	MaritalStatus 17 24	Married
+E1	MaritalStatus:T1 State:T3 Type:T2
+T2	Type 17 24	Married
+T3	Status 17 24	Married
+A1	Value T3 current
+T4	Occupation 29 39	is retired
+E2	Occupation:T4 State:T5 Method:T6 Type:T7
+T5	Status 29 31	is
+A2	Value T5 current
+T6	Method 32 39	retired
+T8	Status 111 113	No
+A3	Value T8 none
+T9	Tobacco 114 121	tobacco
+E3	Tobacco:T9 State:T8
+T10	Alcohol 125 133	alcohol.
+E4	Alcohol:T10 State:T8
+T11	Temporal 141 151	until 2003
+T12	Status 141 152	until 2003.
+A4	Value T12 past
+T13	Method 134 140	Chewed
+T7	Type 60 66	driver
+T14	Tobacco 134 140	Chewed
+E5	Tobacco:T14 Method:T13 State:T15
+T15	Status 134 140	Chewed
+A5	Value T15 past

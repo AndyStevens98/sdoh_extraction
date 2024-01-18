@@ -1,0 +1,36 @@
+T1	MaritalStatus 24 33	is single
+E1	MaritalStatus:T1 Type:T3 State:T2
+T2	Status 24 26	is
+A1	Value T2 current
+T3	Type 27 33	single
+T4	LivingSituation 41 52	lives alone
+E2	LivingSituation:T4 State:T5 Method:T6
+T5	Status 41 46	lives
+A2	Value T5 current
+T6	Method 41 52	lives alone
+T7	Status 57 59	is
+A3	Value T7 current
+T8	SexualHistory 60 72	heterosexual
+E3	SexualHistory:T8 Type:T9 State:T7 History:T10
+T9	Type 60 72	heterosexual
+T11	Occupation 141 159	works as a plumber
+E4	Occupation:T11 State:T12 Type:T13 Time:T14
+T12	Status 141 146	works
+A4	Value T12 current
+T13	Type 152 159	plumber
+T14	Temporal 160 181	over the last 5 years
+T15	Tobacco 186 192	smokes
+E5	Tobacco:T15 Frequency:T18 State:T20
+T16	Alcohol 197 203	drinks
+E6	Alcohol:T16 Frequency:T18 State:T21
+T18	Frequency 204 216	occasionally
+T19	Status 221 227	denies
+A5	Value T19 none
+T20	Status 186 192	smokes
+A6	Value T20 current
+T21	Status 197 203	drinks
+A7	Value T21 current
+T22	Method 243 245	IV
+T23	Drug 246 250	drug
+E7	Drug:T23 State:T19 Method:T22
+T10	History 81 136	a history of sexual encounter with prostitutes in Japan

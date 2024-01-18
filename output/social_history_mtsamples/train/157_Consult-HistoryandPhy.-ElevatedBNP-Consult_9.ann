@@ -1,0 +1,9 @@
+T1	Status 20 28	does not
+A1	Value T1 none
+T2	Tobacco 29 34	smoke
+E1	Tobacco:T2 State:T1
+T4	Alcohol 36 42	Drinks
+E2	Alcohol:T4 Frequency:T5 State:T6
+T5	Frequency 43 55	occasionally
+T6	Status 36 42	Drinks
+A2	Value T6 current

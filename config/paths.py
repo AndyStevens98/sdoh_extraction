@@ -1,6 +1,3 @@
-
-
-
 import os
 
 username = os.getlogin()

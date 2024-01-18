@@ -1,0 +1,15 @@
+T1	LivingSituation 27 68	lives with her mom, dad, and two siblings
+E1	LivingSituation:T1 State:T3 Method:T2
+T2	Method 27 68	lives with her mom, dad, and two siblings
+T3	Status 27 32	lives
+A1	Value T3 current
+T4	Family 42 45	mom
+E2	Family:T4 Type:T10
+T5	Family 47 50	dad
+E3	Family:T5 Type:T9
+T6	Family 60 69	siblings.
+E4	Family:T6 Type:T8 Amount:T7
+T7	Amount 56 59	two
+T8	Type 60 68	siblings
+T9	Type 47 50	dad
+T10	Type 42 45	mom

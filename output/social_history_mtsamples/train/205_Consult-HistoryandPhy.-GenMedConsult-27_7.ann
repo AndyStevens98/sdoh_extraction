@@ -1,0 +1,5 @@
+T1	Residence 38 74	residing at South Valley Care Center
+E1	Residence:T1 State:T3 Type:T2
+T2	Type 50 74	South Valley Care Center
+T3	Status 38 46	residing
+A1	Value T3 current

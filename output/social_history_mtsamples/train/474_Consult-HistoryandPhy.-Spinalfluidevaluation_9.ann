@@ -1,0 +1,5 @@
+T1	Residence 50 63	lives at home
+E1	Residence:T1 State:T3 Type:T2
+T2	Type 59 63	home
+T3	Status 50 55	lives
+A1	Value T3 current

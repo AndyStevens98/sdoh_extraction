@@ -1,0 +1,14 @@
+T1	LivingSituation 29 54	lives in a board and care
+E1	LivingSituation:T1 Method:T2 State:T3
+T2	Method 29 54	lives in a board and care
+T3	Status 29 34	lives
+A1	Value T3 current
+T4	Status 56 58	No
+A2	Value T4 none
+T5	Tobacco 59 66	tobacco
+E2	Tobacco:T5 State:T4
+T6	Alcohol 68 75	alcohol
+E3	Alcohol:T6 State:T4
+T7	Method 79 81	IV
+T8	Drug 82 86	drug
+E4	Drug:T8 State:T4 Method:T7

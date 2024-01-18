@@ -1,0 +1,19 @@
+T1	Status 24 27	non
+A1	Value T1 none
+T2	Type 28 37	cigarette
+T3	Tobacco 38 44	smoker
+E1	Tobacco:T3 Type:T2 State:T1
+T5	Status 49 52	non
+A2	Value T5 none
+T6	Alcohol 53 57	ETOH
+E2	Alcohol:T6 State:T5 Type:T4
+T7	MaritalStatus 67 78	is divorced
+E3	MaritalStatus:T7 Type:T9 State:T8
+T8	Status 67 69	is
+A3	Value T8 current
+T9	Type 70 78	divorced
+T10	Family 87 101	three children
+E4	Family:T10 Type:T12 Amount:T11
+T11	Amount 87 92	three
+T12	Type 93 101	children
+T4	Type 53 57	ETOH

@@ -1,0 +1,39 @@
+T1	LivingSituation 19 24	lives
+E1	LivingSituation:T1 State:T2 Method:T3
+T2	Status 19 24	lives
+A1	Value T2 current
+T3	Method 25 30	alone
+T4	Occupation 35 40	works
+E2	Occupation:T4 State:T5 Extent:T6 Type:T7 Location:T8
+T5	Status 35 40	works
+A2	Value T5 current
+T6	Extent 41 50	full time
+T7	Type 54 69	Human Resources
+T8	Location 78 95	State of Maryland
+T9	Alcohol 118 127	alcoholic
+E3	Alcohol:T9 State:T10 QuitHistory:T11
+T10	Status 111 114	was
+A3	Value T10 past
+T12	Tobacco 160 167	smoking
+E4	Tobacco:T12 State:T13 Type:T14 QuitHistory:T17 ExposureHistory:T16
+T13	Status 155 159	quit
+A4	Value T13 past
+T14	Type 168 178	cigarettes
+T16	ExposureHistory 194 213	16 years of smoking
+T17	QuitHistory 182 186	1984
+T18	Drug 243 251	drug use
+E5	Drug:T18 State:T19 Type:T20
+T19	Status 224 231	history
+A5	Value T19 current
+T20	Type 235 242	illicit
+T21	Drug 267 275	drug use
+E6	Drug:T21 State:T22 Method:T23
+T22	Status 257 263	denies
+A6	Value T22 none
+T23	Method 264 266	IV
+T24	InfectiousDiseases 291 307	HIV risk factors
+E7	InfectiousDiseases:T24 State:T25 Type:T26
+T25	Status 280 286	denies
+A7	Value T25 none
+T26	Type 291 294	HIV
+T11	QuitHistory 141 145	1984

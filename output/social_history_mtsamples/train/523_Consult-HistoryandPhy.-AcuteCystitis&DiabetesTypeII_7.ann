@@ -1,0 +1,7 @@
+T1	Status 16 32	No known history
+A1	Value T1 none
+T2	Drug 36 40	drug
+E1	Drug:T2 Amount:T4 State:T1
+T3	Alcohol 44 51	alcohol
+E2	Alcohol:T3 Amount:T4 State:T1
+T4	Amount 52 57	abuse

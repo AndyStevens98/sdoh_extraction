@@ -1,11 +1,6 @@
-
-
-
-
-
 import torch
 import torch.nn as nn
-from allennlp.modules.seq2seq_encoders import Seq2SeqEncoder, PytorchSeq2SeqWrapper
+from allennlp.modules.seq2seq_encoders import PytorchSeq2SeqWrapper
 from allennlp.modules.layer_norm import LayerNorm
 
 

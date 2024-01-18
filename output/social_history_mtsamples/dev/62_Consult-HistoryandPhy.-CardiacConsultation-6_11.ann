@@ -1,0 +1,27 @@
+T1	MaritalStatus 29 39	is married
+E1	MaritalStatus:T1 State:T2 Type:T3
+T2	Status 29 40	is married,
+A1	Value T2 current
+T3	Type 32 39	married
+T4	LivingSituation 41 63	lives with her husband
+E2	LivingSituation:T4 State:T6 Method:T5
+T5	Method 41 63	lives with her husband
+T6	Status 41 46	lives
+A2	Value T6 current
+T7	Status 74 86	lifetime non
+A3	Value T7 none
+T8	Status 94 97	non
+A4	Value T8 none
+T9	Tobacco 86 92	smoker
+E3	Tobacco:T9 State:T7
+T11	Alcohol 97 104	drinker
+E4	Alcohol:T11 State:T8
+T12	Status 114 130	not been getting
+A5	Value T12 past
+T13	PhysicalActivity 131 147	regular exercise
+E5	PhysicalActivity:T13 Type:T14 State:T12 Time:T15
+T14	Type 131 147	regular exercise
+T15	Temporal 148 175	for approximately two years
+T16	Family 56 63	husband
+E6	Family:T16 Type:T17
+T17	Type 56 63	husband

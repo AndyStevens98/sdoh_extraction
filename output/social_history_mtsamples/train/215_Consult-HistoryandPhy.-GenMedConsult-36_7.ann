@@ -1,0 +1,51 @@
+T1	MaritalStatus 27 34	married
+E1	MaritalStatus:T1 Type:T2 State:T3
+T2	Type 27 34	married
+T3	Status 24 34	is married
+A1	Value T3 current
+T4	LivingSituation 39 49	lives with
+E2	LivingSituation:T4 State:T6 Method:T5
+T5	Method 39 76	lives with her husband and 2 children
+T6	Status 39 44	lives
+A2	Value T6 current
+T7	Family 54 61	husband
+E3	Family:T7 Type:T8
+T8	Type 54 61	husband
+T9	Family 66 76	2 children
+E4	Family:T9 Amount:T10 Type:T11
+T10	Amount 66 67	2
+T11	Type 68 76	children
+T12	Occupation 78 83	Works
+E5	Occupation:T12 State:T13 Location:T14
+T13	Status 78 83	Works
+A3	Value T13 current
+T14	Location 89 104	business office
+T15	Tobacco 117 124	tobacco
+E6	Tobacco:T15 State:T19
+T16	Alcohol 126 133	alcohol
+E7	Alcohol:T16 State:T19
+T17	Drug 146 150	drug
+E8	Drug:T17 Type:T18 State:T19
+T18	Type 138 145	illicit
+T19	Status 106 116	Denies any
+A4	Value T19 none
+T20	InfectiousDiseases 182 211	sexually transmitted diseases
+E9	InfectiousDiseases:T20 State:T21
+T21	Status 168 178	No history
+A5	Value T21 none
+T22	Status 213 229	Denies exposures
+A6	Value T22 none
+T23	EnvironmentalExposure 233 241	asbestos
+E10	EnvironmentalExposure:T23 State:T22 Type:T28
+T24	EnvironmentalExposure 243 252	chemicals
+E11	EnvironmentalExposure:T24 State:T22 Type:T29
+T25	EnvironmentalExposure 257 273	industrial gases
+E12	EnvironmentalExposure:T25 State:T22 Type:T30
+T26	EnvironmentalExposure 285 291	travel
+E13	EnvironmentalExposure:T26 State:T27 Type:T31
+T27	Status 275 284	No recent
+A7	Value T27 none
+T28	Type 233 241	asbestos
+T29	Type 243 252	chemicals
+T30	Type 257 273	industrial gases
+T31	Type 285 291	travel

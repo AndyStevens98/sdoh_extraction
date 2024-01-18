@@ -1,0 +1,8 @@
+T1	Status 58 66	does not
+A1	Value T1 none
+T2	Tobacco 67 72	smoke
+E1	Tobacco:T2 State:T1
+T4	Status 77 85	does not
+A2	Value T4 none
+T5	Alcohol 86 100	drink alcohol.
+E2	Alcohol:T5 State:T4

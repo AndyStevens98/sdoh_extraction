@@ -1,0 +1,18 @@
+T1	MaritalStatus 29 39	is married
+E1	MaritalStatus:T1 
+T2	Status 29 31	is
+A1	Value T2 current
+T3	Type 32 39	married
+T4	Family 50 64	adult children
+E2	Family:T4 Type:T6 Amount:T5
+T5	Amount 45 49	four
+T6	Type 50 64	adult children
+T7	Status 97 100	non
+A2	Value T7 none
+T8	Tobacco 100 106	smoker
+E3	Tobacco:T8 State:T7
+T10	Amount 108 114	social
+T11	Alcohol 115 130	alcohol drinker
+E4	Alcohol:T11 State:T12 Amount:T10
+T12	Status 123 130	drinker
+A3	Value T12 current

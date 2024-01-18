@@ -1,0 +1,16 @@
+T1	MaritalStatus 17 24	Married
+E1	MaritalStatus:T1 State:T2 Type:T3
+T2	Status 17 24	Married
+A1	Value T2 current
+T3	Type 17 24	Married
+T4	LivingSituation 29 44	lives with wife
+E2	LivingSituation:T4 Method:T5 State:T6
+T5	Method 29 44	lives with wife
+T6	Status 29 34	lives
+A2	Value T6 current
+T7	Status 56 58	No
+A3	Value T7 none
+T8	Tobacco 59 66	smoking
+E3	Tobacco:T8 State:T7
+T9	Alcohol 70 78	drinking
+E4	Alcohol:T9 State:T7

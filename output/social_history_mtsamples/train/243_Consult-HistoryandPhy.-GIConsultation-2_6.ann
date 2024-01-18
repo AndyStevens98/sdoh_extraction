@@ -1,0 +1,8 @@
+T1	Residence 64 77	lives up here
+E1	Residence:T1 Location:T2 State:T5
+T2	Location 73 77	here
+T3	Occupation 82 99	works in Portland
+E2	Occupation:T3 Location:T4 State:T5
+T4	Location 91 99	Portland
+T5	Status 54 63	currently
+A1	Value T5 current

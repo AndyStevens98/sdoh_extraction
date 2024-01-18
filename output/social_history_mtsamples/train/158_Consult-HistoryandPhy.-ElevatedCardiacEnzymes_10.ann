@@ -1,0 +1,8 @@
+T1	Status 27 29	ex
+A1	Value T1 past
+T2	Tobacco 30 36	smoker
+E1	Tobacco:T2 State:T1
+T4	Status 38 46	Does not
+A2	Value T4 none
+T5	Alcohol 47 63	consume alcohol.
+E2	Alcohol:T5 State:T4

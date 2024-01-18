@@ -1,0 +1,18 @@
+T1	MaritalStatus 26 33	married
+E1	MaritalStatus:T1 Type:T2 State:T3
+T2	Type 26 33	married
+T3	Status 23 25	is
+A1	Value T3 current
+T4	Status 35 38	non
+A2	Value T4 none
+T5	Tobacco 38 44	smoker
+E2	Tobacco:T5 State:T4
+T7	Status 46 62	Does not consume
+A3	Value T7 none
+T8	Alcohol 63 71	alcohol.
+E3	Alcohol:T8 State:T7
+T9	Status 72 85	No history of
+A4	Value T9 none
+T10	Type 86 98	recreational
+T11	Drug 99 103	drug
+E4	Drug:T11 Type:T10 State:T9

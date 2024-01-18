@@ -1,0 +1,12 @@
+T1	LivingSituation 104 163	lives with both of her parents and has a 9-year-old brother
+E1	LivingSituation:T1 Method:T2 State:T3
+T2	Method 104 163	lives with both of her parents and has a 9-year-old brother
+T3	Status 104 109	lives
+A1	Value T3 current
+T4	Family 127 134	parents
+E2	Family:T4 Type:T5
+T5	Type 127 134	parents
+T6	Family 145 163	9-year-old brother
+E3	Family:T6 Amount:T8 Type:T7
+T7	Type 156 163	brother
+T8	Amount 145 155	9-year-old

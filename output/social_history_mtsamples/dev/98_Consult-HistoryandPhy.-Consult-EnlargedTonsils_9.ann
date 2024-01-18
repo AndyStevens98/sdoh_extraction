@@ -1,0 +1,16 @@
+T1	MaritalStatus 32 38	single
+E1	MaritalStatus:T1 Type:T2 State:T6
+T2	Type 32 39	single.
+T3	Occupation 40 56	She is a student
+E2	Occupation:T3 State:T5 Type:T4
+T4	Type 49 56	student
+T5	Status 44 46	is
+A1	Value T5 current
+T6	Status 29 31	is
+A2	Value T6 current
+T7	Status 58 64	Denies
+A3	Value T7 none
+T8	Tobacco 65 72	tobacco
+E3	Tobacco:T8 State:T7
+T9	Alcohol 76 83	alcohol
+E4	Alcohol:T9 State:T7

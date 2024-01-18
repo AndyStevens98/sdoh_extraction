@@ -1,0 +1,16 @@
+T1	MaritalStatus 25 30	widow
+E1	MaritalStatus:T1 State:T2 Type:T3
+T2	Status 25 30	widow
+A1	Value T2 current
+T3	Type 25 30	widow
+T4	LivingSituation 32 43	lives alone
+E2	LivingSituation:T4 Method:T5 State:T6
+T5	Method 32 43	lives alone
+T6	Status 32 37	lives
+A2	Value T6 current
+T7	Tobacco 56 63	tobacco
+E3	Tobacco:T7 State:T9
+T8	Alcohol 67 74	alcohol
+E4	Alcohol:T8 State:T9
+T9	Status 45 51	Denies
+A3	Value T9 none

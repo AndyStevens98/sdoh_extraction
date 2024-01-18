@@ -1,0 +1,14 @@
+T1	LivingSituation 21 45	lives with her boyfriend
+E1	LivingSituation:T1 Method:T2 State:T3
+T2	Method 21 45	lives with her boyfriend
+T3	Status 21 26	lives
+A1	Value T3 current
+T4	Tobacco 82 89	tobacco
+E2	Tobacco:T4 Frequency:T8 Amount:T6 State:T9 ExposureHistory:T7
+T5	Alcohol 94 101	alcohol
+E3	Alcohol:T5 Frequency:T8 Amount:T6 State:T9 ExposureHistory:T7
+T6	Amount 102 107	abuse
+T7	ExposureHistory 108 122	for many years
+T8	Frequency 76 81	heavy
+T9	Status 65 72	history
+A2	Value T9 current

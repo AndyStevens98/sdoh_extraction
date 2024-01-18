@@ -1,0 +1,20 @@
+T1	MaritalStatus 21 31	is married
+E1	MaritalStatus:T1 State:T2 Type:T3
+T2	Status 21 23	is
+A1	Value T2 current
+T3	Type 24 31	married
+T4	Occupation 37 42	works
+E2	Occupation:T4 State:T7 Location:T6 Type:T5
+T5	Type 62 74	receptionist
+T6	Location 46 56	Eye Center
+T7	Status 37 42	works
+A2	Value T7 current
+T8	Status 80 86	denies
+A3	Value T8 past
+T9	Tobacco 87 94	tobacco
+E3	Tobacco:T9 State:T8 QuitHistory:T11
+T11	QuitHistory 150 164	four years ago
+T12	Status 174 180	denies
+A4	Value T12 none
+T13	Alcohol 181 188	alcohol
+E4	Alcohol:T13 State:T12

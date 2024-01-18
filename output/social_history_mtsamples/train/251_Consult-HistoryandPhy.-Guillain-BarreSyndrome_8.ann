@@ -1,0 +1,14 @@
+T1	Occupation 31 52	retired on disability
+E1	Occupation:T1 Method:T8 State:T9
+T2	Status 87 95	does not
+A1	Value T2 none
+T3	Tobacco 96 101	smoke
+E2	Tobacco:T3 State:T2
+T5	Alcohol 103 108	drink
+E3	Alcohol:T5 State:T2
+T6	Type 120 127	illicit
+T7	Drug 128 133	drugs
+E4	Drug:T7 Type:T6 State:T2
+T8	Method 31 52	retired on disability
+T9	Status 28 30	is
+A2	Value T9 current

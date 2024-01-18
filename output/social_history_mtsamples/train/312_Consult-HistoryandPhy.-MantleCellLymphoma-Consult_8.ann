@@ -1,0 +1,27 @@
+T1	Status 21 29	does not
+A1	Value T1 none
+T2	Tobacco 30 46	smoke cigarettes
+E1	Tobacco:T2 Type:T4 State:T1
+T4	Type 36 46	cigarettes
+T5	Status 51 57	drinks
+A2	Value T5 current
+T6	Alcohol 58 65	alcohol
+E2	Alcohol:T6 State:T5 Frequency:T7
+T7	Frequency 66 83	only occasionally
+T8	MaritalStatus 89 99	is married
+E3	MaritalStatus:T8 State:T9 Type:T10
+T9	Status 89 91	is
+A3	Value T9 current
+T10	Type 92 99	married
+T11	Family 127 129	24
+E4	Family:T11 Amount:T14 Type:T13
+T12	Family 134 136	20
+E5	Family:T12 Amount:T15 Type:T13
+T13	Type 112 120	children
+T14	Amount 127 129	24
+T15	Amount 134 136	20
+T16	Occupation 142 174	works as a project administrator
+E6	Occupation:T16 Type:T18 State:T17
+T17	Status 142 147	works
+A4	Value T17 current
+T18	Type 153 175	project administrator.

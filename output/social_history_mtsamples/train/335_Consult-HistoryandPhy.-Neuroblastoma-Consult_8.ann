@@ -1,0 +1,6 @@
+T1	Family 119 125	father
+E1	Family:T1 Type:T2
+T2	Type 119 125	father
+T3	Family 188 194	mother
+E2	Family:T3 Type:T4
+T4	Type 188 194	mother

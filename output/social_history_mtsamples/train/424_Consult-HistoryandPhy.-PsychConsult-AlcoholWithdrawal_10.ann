@@ -1,0 +1,29 @@
+T1	MaritalStatus 37 51	divorced twice
+E1	MaritalStatus:T1 Amount:T3 Type:T2
+T2	Type 37 45	divorced
+T3	Amount 46 51	twice
+T4	Amount 103 105	15
+T5	Amount 110 112	22
+T6	Family 103 105	15
+E2	Family:T6 Amount:T4 Type:T8
+T7	Family 110 112	22
+E3	Family:T7 Amount:T5 Type:T8
+T8	Type 64 73	daughters
+T9	Occupation 117 149	works as a geologist at Petrogas
+E4	Occupation:T9 State:T10 Type:T11 Location:T12
+T10	Status 117 122	works
+A1	Value T10 current
+T11	Type 128 137	geologist
+T12	Location 141 150	Petrogas.
+T13	Family 273 277	wife
+E5	Family:T13 Type:T14
+T14	Type 273 277	wife
+T15	Alcohol 328 335	alcohol
+E6	Alcohol:T15 State:T16
+T16	Status 336 339	use
+A2	Value T16 current
+T17	Status 465 473	no other
+A3	Value T17 none
+T18	Drug 482 487	drugs
+E7	Drug:T18 State:T17 Type:T19
+T19	Type 474 481	illicit

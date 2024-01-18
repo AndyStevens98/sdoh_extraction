@@ -1,0 +1,14 @@
+T1	Status 28 41	used to smoke
+A1	Value T1 past
+T3	Type 42 52	cigarettes
+T4	ExposureHistory 53 71	for about 20 years
+T5	Amount 73 86	one-half pack
+T6	Frequency 87 92	a day
+T7	Tobacco 36 41	smoke
+E1	Tobacco:T7 State:T1 Type:T3 Amount:T5 Frequency:T6 ExposureHistory:T4
+T8	Alcohol 163 202	drinks any alcohol-containing beverages
+E2	Alcohol:T8 Frequency:T9 State:T10 Type:T11
+T9	Frequency 156 162	rarely
+T10	Status 163 169	drinks
+A2	Value T10 current
+T11	Type 174 202	alcohol-containing beverages

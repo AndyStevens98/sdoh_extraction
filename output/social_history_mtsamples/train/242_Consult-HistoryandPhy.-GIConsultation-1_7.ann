@@ -1,0 +1,10 @@
+T1	LivingSituation 21 37	lives by herself
+E1	LivingSituation:T1 State:T3 Method:T2
+T2	Method 21 37	lives by herself
+T3	Status 21 26	lives
+A1	Value T3 current
+T4	Occupation 53 77	works in a dental office
+E2	Occupation:T4 State:T5 Location:T6
+T5	Status 43 52	currently
+A2	Value T5 current
+T6	Location 59 77	in a dental office

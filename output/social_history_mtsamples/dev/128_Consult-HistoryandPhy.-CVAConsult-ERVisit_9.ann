@@ -1,0 +1,20 @@
+T1	Status 25 28	non
+A1	Value T1 none
+T2	Tobacco 28 34	smoker
+E1	Tobacco:T2 State:T1
+T4	Frequency 39 51	occasionally
+T5	Type 58 62	beer
+T6	Alcohol 52 62	has a beer
+E2	Alcohol:T6 Type:T5 Frequency:T4 State:T10
+T7	MaritalStatus 67 77	is married
+E3	MaritalStatus:T7 State:T8 Type:T9
+T8	Status 67 69	is
+A2	Value T8 current
+T9	Type 70 77	married
+T10	Status 39 51	occasionally
+A3	Value T10 current
+T11	Occupation 82 87	works
+E4	Occupation:T11 Type:T13 State:T12
+T12	Status 82 87	works
+A4	Value T12 current
+T13	Type 93 112	flooring installer.

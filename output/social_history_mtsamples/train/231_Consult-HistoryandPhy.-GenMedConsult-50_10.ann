@@ -1,0 +1,5 @@
+T1	Residence 43 78	lives at a skilled nursing facility
+E1	Residence:T1 State:T3 Type:T2
+T2	Type 54 78	skilled nursing facility
+T3	Status 43 48	lives
+A1	Value T3 current

@@ -1,0 +1,14 @@
+T1	Status 25 27	no
+A1	Value T1 none
+T2	Tobacco 28 35	tobacco
+E1	Tobacco:T2 State:T1
+T3	Frequency 49 53	rare
+T4	Status 45 48	has
+A2	Value T4 current
+T5	Alcohol 54 61	alcohol
+E2	Alcohol:T5 Frequency:T3 State:T4
+T6	Status 67 69	No
+A3	Value T6 none
+T7	Type 70 77	illicit
+T8	Drug 78 82	drug
+E3	Drug:T8 Type:T7 State:T6

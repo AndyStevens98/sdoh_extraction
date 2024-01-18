@@ -1,0 +1,6 @@
+T1	Status 36 42	denies
+A1	Value T1 none
+T2	Tobacco 43 50	tobacco
+E1	Tobacco:T2 State:T1
+T3	Alcohol 54 61	alcohol
+E2	Alcohol:T3 State:T1

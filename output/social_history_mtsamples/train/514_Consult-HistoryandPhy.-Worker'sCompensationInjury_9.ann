@@ -1,0 +1,24 @@
+T1	MaritalStatus 31 37	single
+E1	MaritalStatus:T1 Type:T3 State:T2
+T2	Status 28 37	is single
+A1	Value T2 current
+T3	Type 31 37	single
+T4	LivingSituation 43 82	lives with her boyfriend and his father
+E2	LivingSituation:T4 Method:T5 State:T9
+T5	Method 43 82	lives with her boyfriend and his father
+T6	Occupation 88 105	works at Norcraft
+E3	Occupation:T6 State:T7 Location:T8
+T7	Status 88 93	works
+A2	Value T7 current
+T8	Location 97 105	Norcraft
+T9	Status 43 48	lives
+A3	Value T9 current
+T10	Status 198 201	non
+A4	Value T10 none
+T11	Status 209 212	non
+A5	Value T11 none
+T12	Tobacco 201 207	smoker
+E4	Tobacco:T12 Method:T13 State:T10
+T13	Method 201 207	smoker
+T14	Alcohol 212 219	drinker
+E5	Alcohol:T14 State:T11

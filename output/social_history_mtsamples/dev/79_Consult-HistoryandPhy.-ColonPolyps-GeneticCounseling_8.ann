@@ -1,0 +1,17 @@
+T1	MaritalStatus 29 39	is married
+E1	MaritalStatus:T1 Type:T3 State:T2
+T2	Status 29 39	is married
+A1	Value T2 current
+T3	Type 32 39	married
+T4	Occupation 174 199	certified public account.
+E2	Occupation:T4 Type:T5
+T5	Type 174 199	certified public account.
+T6	Status 204 212	does not
+A2	Value T6 none
+T7	Tobacco 213 218	smoke
+E3	Tobacco:T7 State:T6
+T9	Alcohol 224 230	drinks
+E4	Alcohol:T9 Amount:T10 State:T11
+T10	Amount 231 240	socially.
+T11	Status 224 230	drinks
+A3	Value T11 current

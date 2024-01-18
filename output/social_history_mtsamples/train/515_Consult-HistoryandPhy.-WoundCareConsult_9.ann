@@ -1,0 +1,24 @@
+T1	LivingSituation 48 59	lived alone
+E1	LivingSituation:T1 Method:T2 State:T3
+T2	Method 48 59	lived alone
+T3	Status 16 34	Prior to admission
+A1	Value T3 current
+T4	Residence 60 85	in a one storied dwelling
+E2	Residence:T4 Type:T5 State:T3
+T5	Type 65 85	one storied dwelling
+T10	QuitHistory 270 282	10 years ago
+T11	Tobacco 288 294	smoked
+E4	Tobacco:T11 Amount:T12 Frequency:T13 ExposureHistory:T14 State:T8
+T12	Amount 295 307	1 to 2 packs
+T13	Frequency 308 313	a day
+T14	ExposureHistory 314 331	from age 18 to 54
+T6	Tobacco 248 253	smoke
+E3	Tobacco:T6 State:T7 QuitHistory:T10
+T7	Status 248 253	smoke
+A2	Value T7 past
+T8	Status 288 294	smoked
+A3	Value T8 past
+T9	Status 337 345	does not
+A4	Value T9 none
+T15	Tobacco 346 351	smoke
+E5	Tobacco:T15 State:T9

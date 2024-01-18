@@ -1,0 +1,31 @@
+T1	Status 21 29	does not
+A1	Value T1 none
+T3	Tobacco 30 35	smoke
+E1	Tobacco:T3 State:T1 Type:T4
+T4	Type 36 46	cigarettes
+T5	Alcohol 57 64	alcohol
+E2	Alcohol:T5 State:T6
+T6	Status 52 56	uses
+A2	Value T6 current
+T7	Status 66 72	No use
+A3	Value T7 none
+T8	Type 76 83	illicit
+T9	Drug 84 89	drugs
+E3	Drug:T9 Type:T8 State:T7
+T10	MaritalStatus 95 106	is divorced
+E4	MaritalStatus:T10 State:T11 Type:T12
+T11	Status 95 97	is
+A4	Value T11 current
+T12	Type 98 106	divorced
+T13	LivingSituation 111 134	lives with her daughter
+E5	LivingSituation:T13 State:T14 Method:T15
+T14	Status 111 116	lives
+A5	Value T14 current
+T15	Method 111 134	lives with her daughter
+T16	Method 145 152	retired
+T17	Status 145 152	retired
+A6	Value T17 past
+T18	Type 153 170	medical librarian
+T19	Location 176 183	Florida
+T20	Occupation 153 170	medical librarian
+E6	Occupation:T20 Type:T18 State:T17 Method:T16 Location:T19

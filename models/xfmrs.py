@@ -3,7 +3,7 @@
 
 
 
-from transformers import AutoTokenizer, AutoModel, AutoConfig
+from transformers import AutoTokenizer, AutoModel
 
 import torch
 import torch.utils.data as data_utils

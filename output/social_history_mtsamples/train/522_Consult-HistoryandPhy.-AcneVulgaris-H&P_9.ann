@@ -1,0 +1,22 @@
+T1	Alcohol 94 101	alcohol
+E1	Alcohol:T1 State:T2 Amount:T3
+T2	Status 102 105	use
+A1	Value T2 current
+T3	Amount 131 137	social
+T4	PhysicalActivity 187 208	exercising regularly,
+E2	PhysicalActivity:T4 Frequency:T5 State:T6
+T5	Frequency 198 208	regularly,
+T6	Status 187 197	exercising
+A2	Value T6 current
+T7	Status 217 223	denies
+A3	Value T7 none
+T8	InfectiousDiseases 224 227	STD
+E3	InfectiousDiseases:T8 Type:T9 State:T7
+T9	Type 224 227	STD
+T10	Drug 31 39	caffeine
+E4	Drug:T10 Type:T11 State:T12 Amount:T13 Frequency:T14
+T11	Type 31 39	caffeine
+T12	Status 24 30	admits
+A4	Value T12 current
+T13	Amount 57 69	3-5 servings
+T14	Frequency 70 77	per day

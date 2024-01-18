@@ -1,0 +1,4 @@
+T1	Status 117 121	None
+A1	Value T1 none
+T2	Tobacco 108 115	Tobacco
+E1	Tobacco:T2 State:T1

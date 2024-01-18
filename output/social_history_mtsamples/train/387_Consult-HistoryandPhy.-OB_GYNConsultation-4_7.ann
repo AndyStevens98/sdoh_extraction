@@ -1,0 +1,21 @@
+T1	Tobacco 44 51	Smoke�s
+E1	Tobacco:T1 Type:T4 Frequency:T5 Amount:T3 State:T14
+T4	Type 62 72	cigarettes
+T5	Frequency 73 80	per day
+T6	Status 82 105	Denies the past history
+A1	Value T6 none
+T7	Alcohol 109 116	alcohol
+E2	Alcohol:T7 State:T6
+T8	Status 118 139	Denies past / present
+A2	Value T8 none
+T9	Type 140 147	illegal
+T10	Drug 148 152	drug
+E3	Drug:T10 Type:T9 State:T8
+T11	MaritalStatus 186 193	Married
+E4	MaritalStatus:T11 Type:T12 State:T13
+T12	Type 186 193	Married
+T13	Status 186 193	Married
+A3	Value T13 current
+T3	Amount 52 58	1 pack
+T14	Status 27 34	Tobacco
+A4	Value T14 current

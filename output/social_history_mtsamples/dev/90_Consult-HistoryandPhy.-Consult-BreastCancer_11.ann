@@ -1,0 +1,22 @@
+T1	MaritalStatus 45 52	Married
+E1	MaritalStatus:T1 State:T3 Type:T2
+T2	Type 45 52	Married
+T3	Status 45 52	Married
+A1	Value T3 current
+T5	QuitHistory 85 102	quit 12 years ago
+T6	ExposureHistory 113 133	smoking for 30 years
+T4	Status 71 77	Smoked
+A2	Value T4 past
+T7	Amount 78 83	1 PPD
+T9	Tobacco 71 77	Smoked
+E2	Tobacco:T9 State:T4 Amount:T7 ExposureHistory:T6 QuitHistory:T5
+T10	Alcohol 152 158	Drinks
+E3	Alcohol:T10 State:T12 Amount:T11
+T11	Amount 159 167	socially
+T12	Status 152 158	Drinks
+A3	Value T12 current
+T13	Status 169 187	Denies any history
+A4	Value T13 none
+T14	Amount 196 201	abuse
+T15	Drug 191 195	drug
+E4	Drug:T15 Amount:T14 State:T13

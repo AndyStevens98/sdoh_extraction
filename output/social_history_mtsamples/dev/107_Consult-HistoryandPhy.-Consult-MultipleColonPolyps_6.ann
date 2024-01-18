@@ -1,0 +1,38 @@
+T1	Residence 25 32	born in
+E1	Residence:T1 State:T2 Location:T3
+T2	Status 25 32	born in
+A1	Value T2 past
+T3	Location 33 47	Houston, Texas
+T4	Residence 52 60	moved to
+E2	Residence:T4 Location:T5 State:T6 Time:T7
+T5	Location 61 68	Florida
+T6	Status 75 86	3 years ago
+A2	Value T6 past
+T7	Temporal 75 86	3 years ago
+T8	MaritalStatus 95 103	divorced
+E3	MaritalStatus:T8 State:T9
+T9	Status 95 103	divorced
+A3	Value T9 current
+T10	Occupation 113 119	worked
+E4	Occupation:T10 State:T11 Type:T12
+T11	Status 109 119	has worked
+A4	Value T11 past
+T12	Type 125 137	travel agent
+T13	Family 149 161	sons ages 24
+E5	Family:T13 LivingStatus:T15 Type:T16 Amount:T17 Amount2:T18
+T15	LivingStatus 187 201	alive and well
+T16	Type 149 153	sons
+T17	Amount 159 161	24
+T18	Amount 166 168	26
+T19	Tobacco 207 213	smokes
+E7	Tobacco:T19 Amount:T21 State:T20 Type:T22 Frequency:T27 ExposureHistory:T24
+T20	Status 207 213	smokes
+A5	Value T20 current
+T21	Amount 216 227	half a pack
+T22	Type 231 241	cigarettes
+T24	ExposureHistory 254 272	more than 35 years
+T25	Alcohol 287 302	consume alcohol
+E8	Alcohol:T25 State:T26
+T26	Status 278 286	does not
+A6	Value T26 none
+T27	Frequency 242 249	per day

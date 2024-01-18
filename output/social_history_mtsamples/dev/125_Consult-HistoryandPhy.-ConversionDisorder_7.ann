@@ -1,0 +1,21 @@
+T2	Type 97 112	lifting weights
+T3	Type 114 127	skateboarding
+T4	Type 175 188	rock climbing
+T5	Status 90 96	enjoys
+A1	Value T5 current
+T6	Drug 593 598	drugs
+E2	Drug:T6 State:T8
+T7	Alcohol 602 609	alcohol
+E3	Alcohol:T7 State:T8
+T8	Status 615 621	denied
+A2	Value T8 none
+T9	SexualHistory 662 677	sexually active
+E4	SexualHistory:T9 State:T10
+T10	Status 639 655	not described as
+A3	Value T10 none
+T1	PhysicalActivity 97 112	lifting weights
+E1	PhysicalActivity:T1 Type:T2 State:T5
+T11	PhysicalActivity 114 127	skateboarding
+E5	PhysicalActivity:T11 Type:T3 State:T5
+T12	PhysicalActivity 175 188	rock climbing
+E6	PhysicalActivity:T12 Type:T4 State:T5

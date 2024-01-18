@@ -1,46 +1,27 @@
 
 
-from collections import OrderedDict, Counter
-
-import torch
-import torch.utils.data as data_utils
-import torch.autograd as autograd
-import torch.nn as nn
-import torch.optim as optim
-import torch.nn.functional as F
-from torch.utils.data import Dataset, DataLoader
-
-
-from transformers import AutoTokenizer, AutoModel, AutoConfig
-#torch.multiprocessing.set_start_method("spawn")
-
-import pandas as pd
-
-import sys
-import os
-import errno
-from datetime import datetime
-from tqdm import tqdm
-import numpy as np
-import logging
-from tqdm import tqdm
-import joblib
-import math
 import json
+import logging
+from collections import Counter, OrderedDict
 
-
-from models.utils import pad_embedding_seq
-from models.utils import pad_sequences
-
-# from utils.seq_prep import preprocess_tokens_doc
-from models.utils import create_mask,  map_2D
-from models.crf import  BIO_to_span
-
-# from corpus.event import Event, Span, events2sent_labs, events2seq_tags
-from models.utils import map_dict_builder
-from models.xfmrs import tokens2wordpiece, get_embeddings, embed_len_check
+#torch.multiprocessing.set_start_method("spawn")
+import pandas as pd
+import torch
+from torch.utils.data import Dataset
 
 import config.constants as C
+from models.crf import BIO_to_span
+
+# from utils.seq_prep import preprocess_tokens_doc
+# from corpus.event import Event, Span, events2sent_labs, events2seq_tags
+from models.utils import (
+    create_mask,
+    map_2D,
+    map_dict_builder,
+    pad_embedding_seq,
+    pad_sequences,
+)
+from models.xfmrs import embed_len_check, get_embeddings, tokens2wordpiece
 
 START_TOKEN = '<c>'
 END_TOKEN = '<e>'

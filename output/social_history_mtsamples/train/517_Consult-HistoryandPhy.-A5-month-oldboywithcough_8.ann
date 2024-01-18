@@ -1,0 +1,16 @@
+T1	LivingSituation 16 103	 Lives with parents and with two siblings, one 18-year-old and the other is 14-year-old
+E1	LivingSituation:T1 Method:T2 State:T3
+T2	Method 17 103	Lives with parents and with two siblings, one 18-year-old and the other is 14-year-old
+T3	Status 17 22	Lives
+A1	Value T3 current
+T4	Residence 104 125	in house, in Corrales
+E2	Residence:T4 Type:T5 Location:T6
+T5	Type 107 112	house
+T6	Location 117 125	Corrales
+T7	Other 172 199	father smokes outside house
+T8	Family 172 178	father
+E3	Family:T8 Type:T9 Other:T7
+T9	Type 172 178	father
+T10	Family 225 231	mother
+E4	Family:T10 Type:T11
+T11	Type 225 231	mother

@@ -1,0 +1,40 @@
+T1	MaritalStatus 31 38	married
+E1	MaritalStatus:T1 Type:T2 State:T3
+T2	Type 31 38	married
+T3	Status 28 38	is married
+A1	Value T3 current
+T4	Status 44 55	is employed
+A2	Value T4 current
+T5	Occupation 47 55	employed
+E2	Occupation:T5 Type:T6 State:T4
+T6	Type 62 76	office manager
+T7	Status 82 86	does
+A3	Value T7 current
+T8	Tobacco 87 92	smoke
+E3	Tobacco:T8 State:T7 Type:T10 Amount:T11 Frequency:T12 ExposureHistory:T13
+T10	Type 93 103	cigarettes
+T11	Amount 105 113	one pack
+T12	Frequency 114 121	per day
+T13	ExposureHistory 122 143	for the last 20 years
+T14	Alcohol 149 165	consumes alcohol
+E4	Alcohol:T14 State:T17 Amount:T15 Frequency:T16
+T15	Amount 166 179	3 to 5 drinks
+T16	Frequency 180 185	daily
+T17	Status 149 157	consumes
+A4	Value T17 current
+T18	Status 191 198	uses no
+A5	Value T18 none
+T19	Type 199 206	illicit
+T20	Drug 207 212	drugs
+E5	Drug:T20 Type:T19 State:T18
+T21	PhysicalActivity 218 227	exercises
+E6	PhysicalActivity:T21 Frequency:T22 Type:T23 State:T26
+T22	Frequency 228 235	monthly
+T23	Type 243 274	walking and low impact aerobics
+T24	PhysicalActivity 294 307	play softball
+E7	PhysicalActivity:T24 Type:T25 State:T27
+T25	Type 294 307	play softball
+T26	Status 218 227	exercises
+A6	Value T26 current
+T27	Status 285 298	likes to play
+A7	Value T27 current

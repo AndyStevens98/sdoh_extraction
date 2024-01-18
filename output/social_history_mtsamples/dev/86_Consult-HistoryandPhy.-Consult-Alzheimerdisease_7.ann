@@ -1,0 +1,44 @@
+T1	MaritalStatus 249 260	is divorced
+E1	MaritalStatus:T1 Type:T3 State:T2
+T2	Status 249 251	is
+A1	Value T2 current
+T3	Type 252 260	divorced
+T4	Status 344 359	stopped working
+A2	Value T4 past
+T5	Occupation 344 426	stopped working more than 20 years ago due to complications from her mesothelioma.
+E2	Occupation:T5 State:T4 Time:T6
+T6	Temporal 360 382	more than 20 years ago
+T7	Status 266 278	used to work
+A3	Value T7 past
+T8	Type 316 331	clerical worker
+T9	Location 335 338	IBM
+T10	Status 298 310	later worked
+A4	Value T10 past
+T11	Occupation 304 310	worked
+E3	Occupation:T11 State:T10 Type:T8 Location:T9
+T12	Type 284 293	secretary
+T13	Occupation 274 278	work
+E4	Occupation:T13 State:T7 Type:T12
+T14	Status 431 441	denies any
+A5	Value T14 none
+T15	Amount 442 453	significant
+T16	Tobacco 454 462	tobacco,
+E5	Tobacco:T16 Amount:T15 State:T14
+T17	Alcohol 463 470	alcohol
+E6	Alcohol:T17 Amount:T15 State:T14
+T18	Type 474 481	illicit
+T19	Drug 482 488	drugs.
+E7	Drug:T19 Type:T18 State:T14 Amount:T15
+T20	Family 651 662	one brother
+E8	Family:T20 Amount:T25 Type:T22 LivingStatus:T26
+T21	Family 667 678	one sister,
+E9	Family:T21 Amount:T24 Type:T23 LivingStatus:T26
+T22	Type 655 662	brother
+T23	Type 671 678	sister,
+T24	Amount 667 670	one
+T25	Amount 651 654	one
+T26	LivingStatus 692 703	are healthy
+T27	Family 770 777	one son
+E10	Family:T27 Type:T28 Amount:T29
+T28	Type 774 777	son
+T29	Amount 770 773	one

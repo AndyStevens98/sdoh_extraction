@@ -1,0 +1,9 @@
+T1	Status 28 36	does not
+A1	Value T1 none
+T2	Amount 65 75	moderately
+T3	Status 48 56	consumes
+A2	Value T3 current
+T4	Alcohol 57 64	alcohol
+E1	Alcohol:T4 State:T3 Amount:T2
+T5	Tobacco 37 42	smoke
+E2	Tobacco:T5 State:T1

@@ -1,0 +1,13 @@
+T1	Status 21 29	does not
+A1	Value T1 none
+T2	Tobacco 30 35	smoke
+E1	Tobacco:T2 State:T1
+T4	Status 44 52	does not
+A2	Value T4 none
+T5	Alcohol 53 58	drink
+E2	Alcohol:T5 State:T4
+T6	LivingSituation 64 87	lives with her daughter
+E3	LivingSituation:T6 Method:T7 State:T8
+T7	Method 64 88	lives with her daughter.
+T8	Status 64 69	lives
+A3	Value T8 current

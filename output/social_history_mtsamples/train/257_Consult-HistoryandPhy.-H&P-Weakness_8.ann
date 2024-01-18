@@ -1,0 +1,14 @@
+T1	Residence 28 53	lives at Life Care Center
+E1	Residence:T1 State:T3 Location:T2
+T2	Location 37 53	Life Care Center
+T3	Status 28 33	lives
+A1	Value T3 current
+T4	Status 59 67	does not
+A2	Value T4 none
+T5	Tobacco 68 73	smoke
+E2	Tobacco:T5 State:T4
+T6	Alcohol 75 80	drink
+E3	Alcohol:T6 State:T4
+T7	Type 88 99	intravenous
+T8	Drug 100 105	drugs
+E4	Drug:T8 Type:T7 State:T4

@@ -1,0 +1,24 @@
+T1	LivingSituation 24 108	lives at home with 22-year-old mother Aubrey Mizel and her parents Bud and Sue Mizel
+E1	LivingSituation:T1 Method:T2 State:T3
+T2	Method 24 108	lives at home with 22-year-old mother Aubrey Mizel and her parents Bud and Sue Mizel
+T3	Status 24 29	lives
+A1	Value T3 current
+T4	Family 55 61	mother
+E2	Family:T4 Type:T5 Amount:T6
+T5	Type 55 61	mother
+T6	Amount 43 54	22-year-old
+T7	Family 83 90	parents
+E3	Family:T7 Type:T8
+T8	Type 83 90	parents
+T9	Residence 24 126	lives at home with 22-year-old mother Aubrey Mizel and her parents Bud and Sue Mizel in Newton, Kansas
+E4	Residence:T9 Location:T10 State:T3
+T10	Location 112 126	Newton, Kansas
+T11	Family 128 134	Father
+E5	Family:T11 Type:T12 Amount:T13
+T12	Type 128 134	Father
+T13	Amount 163 169	age 30
+T14	EnvironmentalExposure 272 291	smoking in the home
+E6	EnvironmentalExposure:T14 Type:T16 State:T15
+T15	Status 269 271	no
+A2	Value T15 none
+T16	Type 272 279	smoking

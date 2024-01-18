@@ -1,0 +1,20 @@
+T1	Status 29 35	denies
+A1	Value T1 none
+T2	Tobacco 48 54	smoked
+E1	Tobacco:T2 State:T1
+T4	Status 56 62	denies
+A2	Value T4 none
+T5	Alcohol 79 86	alcohol
+E2	Alcohol:T5 Amount:T6 State:T4
+T6	Amount 67 78	significant
+T7	LivingSituation 96 119	lives with her daughter
+E3	LivingSituation:T7 Method:T9 State:T10
+T8	Location 120 131	in Pasadena
+T9	Method 96 119	lives with her daughter
+T10	Status 96 101	lives
+A3	Value T10 current
+T11	Residence 96 101	lives
+E4	Residence:T11 State:T10 Location:T8
+T12	Family 111 119	daughter
+E5	Family:T12 Type:T13
+T13	Type 111 119	daughter

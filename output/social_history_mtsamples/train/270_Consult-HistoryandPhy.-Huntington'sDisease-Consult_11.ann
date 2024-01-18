@@ -1,0 +1,25 @@
+T1	LivingSituation 28 50	lives with her husband
+E1	LivingSituation:T1 Method:T2 State:T3
+T2	Method 28 50	lives with her husband
+T3	Status 28 33	lives
+A1	Value T3 current
+T4	Family 43 50	husband
+E2	Family:T4 Type:T5 Time:T6
+T5	Type 43 50	husband
+T6	Temporal 51 62	of 48 years
+T7	Status 68 78	used to be
+A2	Value T7 past
+T8	Occupation 79 87	employed
+E3	Occupation:T8 Type:T9 State:T7
+T9	Type 93 109	registered nurse
+T10	Alcohol 316 322	drinks
+E4	Alcohol:T10 Frequency:T11 Amount:T12 State:T13
+T11	Frequency 309 315	rarely
+T12	Amount 323 331	socially
+T13	Status 316 322	drinks
+A3	Value T13 current
+T14	Status 337 343	denies
+A4	Value T14 none
+T15	Type 348 355	illicit
+T16	Drug 356 365	substance
+E5	Drug:T16 Type:T15 State:T14

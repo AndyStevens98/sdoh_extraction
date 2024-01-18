@@ -1,0 +1,23 @@
+T1	MaritalStatus 65 72	married
+E1	MaritalStatus:T1 State:T2 Type:T3
+T2	Status 62 72	is married
+A1	Value T2 current
+T3	Type 65 72	married
+T4	Method 77 90	medical leave
+T5	Occupation 100 103	job
+E2	Occupation:T5 Type:T7 Method:T4 State:T6
+T6	Status 74 90	on medical leave
+A2	Value T6 current
+T7	Type 109 120	tree cutter
+T8	LivingSituation 126 163	lives with his wife and five children
+E3	LivingSituation:T8 State:T10 Method:T9
+T9	Method 126 164	lives with his wife and five children.
+T10	Status 126 131	lives
+A3	Value T10 current
+T11	Family 141 145	wife
+E4	Family:T11 Type:T12
+T12	Type 141 145	wife
+T13	Type 155 164	children.
+T14	Amount 150 154	five
+T15	Family 150 163	five children
+E5	Family:T15 Amount:T14 Type:T13

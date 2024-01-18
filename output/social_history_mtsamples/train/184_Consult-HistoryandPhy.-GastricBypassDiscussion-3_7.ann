@@ -1,0 +1,25 @@
+T1	Tobacco 47 53	smoker
+E1	Tobacco:T1 State:T2
+T2	Status 44 47	non
+A1	Value T2 none
+T3	Alcohol 64 70	drinks
+E2	Alcohol:T3 Amount:T4 Frequency:T5 State:T10
+T4	Amount 80 97	one to two drinks
+T5	Frequency 98 105	a month
+T6	Occupation 114 122	employed
+E3	Occupation:T6 Type:T7 Location:T8 State:T9
+T7	Type 128 135	manager
+T8	Location 143 174	New York department of taxation
+T9	Status 111 122	is employed
+A2	Value T9 current
+T10	Status 64 70	drinks
+A3	Value T10 current
+T11	MaritalStatus 183 190	married
+E4	MaritalStatus:T11 Type:T12 State:T13
+T12	Type 183 190	married
+T13	Status 180 190	is married
+A4	Value T13 current
+T14	Family 196 210	four children.
+E5	Family:T14 Type:T16 Amount:T15
+T15	Amount 196 200	four
+T16	Type 201 210	children.

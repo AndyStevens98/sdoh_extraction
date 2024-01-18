@@ -1,23 +1,11 @@
-
-import re
-import glob
-import os
-import numpy as np
 import logging
-from collections import Counter
+import os
+import re
+import string
 from collections import OrderedDict
 from pathlib import Path
-import stat
-import copy
-import re
-from tqdm import tqdm
-import string
 
-from config.constants import TEXT_FILE_EXT, ANN_FILE_EXT, TRIGGER, ENCODING
-
-
-
-
+from config.constants import ANN_FILE_EXT, ENCODING, TEXT_FILE_EXT, TRIGGER
 
 COMMENT_RE = re.compile(r'^#')
 TEXTBOUND_RE = re.compile(r'^T\d+')

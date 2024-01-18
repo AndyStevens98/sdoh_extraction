@@ -1,0 +1,15 @@
+T1	Status 21 29	does not
+A1	Value T1 none
+T2	Tobacco 30 35	smoke
+E1	Tobacco:T2 State:T1
+T3	Alcohol 39 44	drink
+E2	Alcohol:T3 State:T1
+T5	MaritalStatus 50 60	is married
+E3	MaritalStatus:T5 State:T7 Type:T6
+T6	Type 53 60	married
+T7	Status 50 52	is
+A2	Value T7 current
+T8	Family 66 78	two children
+E4	Family:T8 Amount:T9 Type:T10
+T9	Amount 66 69	two
+T10	Type 70 78	children

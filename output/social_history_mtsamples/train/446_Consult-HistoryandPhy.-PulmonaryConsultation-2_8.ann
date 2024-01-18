@@ -1,0 +1,14 @@
+T1	Status 33 36	non
+A1	Value T1 none
+T2	Tobacco 37 43	smoker
+E1	Tobacco:T2 State:T1
+T4	Status 45 47	No
+A2	Value T4 none
+T5	Alcohol 48 55	alcohol
+E2	Alcohol:T5 Amount:T6 State:T4
+T6	Amount 56 61	abuse
+T7	MaritalStatus 75 85	is married
+E3	MaritalStatus:T7 State:T9 Type:T8
+T8	Type 78 85	married
+T9	Status 75 77	is
+A3	Value T9 current

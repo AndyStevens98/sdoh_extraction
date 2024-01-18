@@ -1,0 +1,21 @@
+T1	MaritalStatus 29 38	is single
+E1	MaritalStatus:T1 Type:T3 State:T2
+T2	Status 29 31	is
+A1	Value T2 current
+T3	Type 32 38	single
+T4	Occupation 44 57	is unemployed
+E2	Occupation:T4 Method:T5 State:T6
+T5	Method 47 57	unemployed
+T6	Status 58 70	at this time
+A2	Value T6 current
+T7	Tobacco 81 87	smoker
+E3	Tobacco:T7 State:T9 Amount:T10 ExposureHistory:T11
+T9	Status 76 80	is a
+A3	Value T9 current
+T10	Amount 94 111	a pack and a half
+T11	ExposureHistory 112 124	for 38 years
+T12	Frequency 135 139	rare
+T13	Alcohol 140 147	alcohol
+E4	Alcohol:T13 Frequency:T12 State:T14
+T14	Status 148 151	use
+A4	Value T14 current

@@ -1,0 +1,11 @@
+T1	Status 22 25	not
+A1	Value T1 none
+T2	Tobacco 28 35	smoker.
+E1	Tobacco:T2 State:T1
+T4	Alcohol 44 49	drink
+E2	Alcohol:T4 State:T5 Amount:T6 Frequency:T7 Type:T3
+T5	Status 39 49	does drink
+A2	Value T5 current
+T6	Amount 50 53	six
+T7	Frequency 60 65	a day
+T3	Type 54 59	beers

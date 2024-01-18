@@ -1,0 +1,17 @@
+T1	LivingSituation 28 76	lives with his girlfriend on an on-and-off basis
+E1	LivingSituation:T1 State:T4 Method:T2 Time:T3
+T2	Method 28 53	lives with his girlfriend
+T3	Temporal 60 76	on-and-off basis
+T4	Status 28 33	lives
+A1	Value T4 past
+T5	Status 181 209	actively tox screen positive
+A2	Value T5 current
+T6	Drug 214 229	benzodiazepines
+E2	Drug:T6 Type:T9 State:T5
+T7	Drug 231 238	cocaine
+E3	Drug:T7 Type:T10 State:T5
+T8	Drug 244 253	marijuana
+E4	Drug:T8 Type:T11 State:T5
+T9	Type 214 229	benzodiazepines
+T10	Type 231 238	cocaine
+T11	Type 244 253	marijuana

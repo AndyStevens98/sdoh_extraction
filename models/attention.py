@@ -1,37 +1,21 @@
-
-
+import logging
 from collections import OrderedDict
 
+import pandas as pd
 import torch
-import torch.utils.data as data_utils
-import torch.autograd as autograd
 import torch.nn as nn
-import torch.optim as optim
 import torch.nn.functional as F
-from torch.utils.data import Dataset, DataLoader
+from allennlp.modules.attention import BilinearAttention, DotProductAttention
+from allennlp.modules.seq2vec_encoders.cnn_encoder import CnnEncoder
+from allennlp.modules.time_distributed import TimeDistributed
+from allennlp.nn import Activation, util
+from allennlp.nn.util import weighted_sum
+from pytorch_models.span_embedder import span_embed_agg
 from torch.distributions.categorical import Categorical
 from torch.nn.parameter import Parameter
 
-from allennlp.modules.seq2seq_encoders import Seq2SeqEncoder, PytorchSeq2SeqWrapper
-from allennlp.modules.attention import BilinearAttention, DotProductAttention
-from allennlp.nn.util import weighted_sum
-from allennlp.nn import Activation
-from allennlp.modules.seq2vec_encoders.cnn_encoder import CnnEncoder
-from allennlp.modules.time_distributed import TimeDistributed
-from allennlp.nn import util
-
-
+from models.training import cross_entropy_soft_labels, get_loss
 from models.utils import loss_reduction
-from models.training import get_loss, cross_entropy_soft_labels
-# from pytorch_models.span_embedder import span_embed_agg
-
-from tqdm import tqdm
-import numpy as np
-import logging
-from tqdm import tqdm
-import joblib
-import math
-import pandas as pd
 
 
 def argmax(vec):

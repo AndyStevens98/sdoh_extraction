@@ -1,0 +1,23 @@
+T1	Tobacco 19 25	smokes
+E1	Tobacco:T1 Amount:T3 Type:T4 Frequency:T5 State:T6
+T3	Amount 26 48	one-and-one-half-packs
+T4	Type 52 62	cigarettes
+T5	Frequency 63 70	per day
+T6	Status 19 25	smokes
+A1	Value T6 current
+T7	Alcohol 75 89	drinks alcohol
+E2	Alcohol:T7 State:T9 Frequency:T8
+T8	Frequency 99 120	several days per week
+T9	Status 75 81	drinks
+A2	Value T9 current
+T10	Occupation 128 145	employed in sales
+E3	Occupation:T10 State:T11 Type:T12
+T11	Status 125 136	is employed
+A3	Value T11 current
+T12	Type 137 145	in sales
+T13	PhysicalActivity 162 184	quite a bit of walking
+E4	PhysicalActivity:T13 Amount:T14 Type:T15 State:T16
+T14	Amount 162 173	quite a bit
+T15	Type 177 185	walking,
+T16	Status 162 184	quite a bit of walking
+A4	Value T16 current

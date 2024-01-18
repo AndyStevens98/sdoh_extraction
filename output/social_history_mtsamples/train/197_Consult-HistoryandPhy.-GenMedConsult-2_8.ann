@@ -1,0 +1,26 @@
+T1	Tobacco 20 26	smokes
+E1	Tobacco:T1 State:T5 Type:T4 Frequency:T3 Amount:T2
+T3	Frequency 50 57	per day
+T4	Type 39 49	cigarettes
+T5	Status 20 26	smokes
+A1	Value T5 current
+T6	Amount 67 73	social
+T7	Alcohol 74 82	drinker.
+E2	Alcohol:T7 Amount:T6 State:T8
+T8	Status 62 64	is
+A2	Value T8 current
+T9	Status 86 92	is not
+A3	Value T9 none
+T10	MaritalStatus 86 100	is not married
+E3	MaritalStatus:T10 State:T9 Type:T11
+T11	Type 93 100	married
+T12	Family 110 122	two children
+E4	Family:T12 Amount:T13 Type:T14
+T13	Amount 110 113	two
+T14	Type 114 122	children
+T15	PhysicalActivity 144 150	hiking
+E5	PhysicalActivity:T15 Type:T16 State:T17
+T16	Type 144 150	hiking
+T17	Status 144 150	hiking
+A4	Value T17 current
+T2	Amount 27 35	one pack

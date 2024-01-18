@@ -1,0 +1,22 @@
+T1	MaritalStatus 16 24	Divorced
+E1	MaritalStatus:T1 State:T3 Type:T2
+T2	Type 16 24	Divorced
+T3	Status 16 24	Divorced
+A1	Value T3 current
+T4	SexualHistory 29 44	sexually active
+E2	SexualHistory:T4 State:T6 Type:T5
+T5	Type 29 44	sexually active
+T6	Status 29 44	sexually active
+A2	Value T6 current
+T7	Tobacco 46 52	Smokes
+E3	Tobacco:T7 State:T9 Amount:T10 Type:T11 Frequency:T12
+T9	Status 46 52	Smokes
+A3	Value T9 current
+T10	Amount 53 62	1-2 packs
+T11	Type 63 73	cigarettes
+T12	Frequency 74 81	per day
+T13	Alcohol 86 92	drinks
+E4	Alcohol:T13 Amount:T14 State:T15
+T14	Amount 101 109	socially
+T15	Status 86 92	drinks
+A4	Value T15 current

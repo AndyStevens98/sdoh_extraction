@@ -1,0 +1,9 @@
+T1	Status 25 28	non
+A1	Value T1 none
+T2	Tobacco 28 34	smoker
+E1	Tobacco:T2 State:T1
+T4	SexualHistory 47 62	sexually active
+E2	SexualHistory:T4 Type:T6 State:T5
+T5	Status 43 46	not
+A2	Value T5 none
+T6	Type 47 62	sexually active

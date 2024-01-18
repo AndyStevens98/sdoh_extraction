@@ -1,0 +1,18 @@
+T1	Status 17 23	Denies
+A1	Value T1 none
+T2	Alcohol 24 31	alcohol
+E1	Alcohol:T2 State:T1
+T3	Drug 35 40	drugs
+E2	Drug:T3 State:T1
+T4	Tobacco 42 48	Smokes
+E3	Tobacco:T4 Amount:T6 Type:T7 Frequency:T8 State:T9
+T6	Amount 49 56	2 packs
+T7	Type 60 70	cigarettes
+T8	Frequency 71 78	per day
+T9	Status 42 48	Smokes
+A2	Value T9 current
+T10	Occupation 80 85	Works
+E4	Occupation:T10 State:T12 Type:T11
+T11	Type 91 98	banker.
+T12	Status 80 85	Works
+A3	Value T12 current

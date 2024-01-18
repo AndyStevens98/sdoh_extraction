@@ -4,7 +4,6 @@ from allennlp.nn import util
 import os
 import numpy as np
 import torch
-import torch.nn as nn
 import torch.nn.functional as F
 from collections import OrderedDict, Counter
 import pandas as pd

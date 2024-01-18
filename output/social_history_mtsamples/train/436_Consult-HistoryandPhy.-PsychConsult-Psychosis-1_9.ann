@@ -1,0 +1,8 @@
+T1	LivingSituation 55 82	living in his father's home
+E1	LivingSituation:T1 Method:T2 State:T3
+T2	Method 55 82	living in his father's home
+T3	Status 46 61	has been living
+A1	Value T3 current
+T4	Family 69 77	father's
+E2	Family:T4 Type:T5
+T5	Type 69 77	father's

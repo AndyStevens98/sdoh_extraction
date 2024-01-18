@@ -1,0 +1,11 @@
+T1	Status 38 45	he used
+A1	Value T1 past
+T2	Alcohol 46 53	alcohol
+E1	Alcohol:T2 State:T1 QuitHistory:T4 ExposureHistory:T3
+T3	ExposureHistory 76 83	in 1993
+T4	QuitHistory 105 127	for the last two years
+T5	Status 129 137	No other
+A2	Value T5 none
+T6	Drug 138 147	substance
+E2	Drug:T6 Amount:T7 State:T5
+T7	Amount 148 153	abuse

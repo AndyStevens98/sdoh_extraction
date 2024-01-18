@@ -1,0 +1,59 @@
+T3	Location 68 75	Houston
+T5	MaritalStatus 232 239	married
+E2	MaritalStatus:T5 Type:T6 State:T7 Amount:T8
+T6	Type 232 239	married
+T7	Status 223 231	has been
+A1	Value T7 past
+T8	Amount 240 244	once
+T9	Family 328 330	47
+E3	Family:T9 Amount:T12 Type:T15
+T10	Family 332 334	49
+E4	Family:T10 Amount:T13 Type:T15
+T11	Family 340 342	51
+E5	Family:T11 Amount:T14 Type:T15
+T12	Amount 328 330	47
+T13	Amount 332 334	49
+T14	Amount 340 342	51
+T15	Type 310 318	children
+T16	Status 381 390	currently
+A2	Value T16 current
+T17	Method 394 401	retired
+T18	Occupation 381 401	currently is retired
+E6	Occupation:T18 State:T16 Method:T17
+T19	Location 419 442	New York public schools
+T20	Temporal 443 463	for 20 or more years
+T21	Status 443 463	for 20 or more years
+A3	Value T21 past
+T22	Occupation 408 463	working in New York public schools for 20 or more years
+E7	Occupation:T22 Location:T19 State:T21 Time:T20
+T23	Alcohol 547 554	alcohol
+E8	Alcohol:T23 Frequency:T26 State:T28
+T25	Status 563 567	quit
+A4	Value T25 past
+T26	Frequency 536 546	occasional
+T27	Tobacco 568 575	smoking
+E10	Tobacco:T27 State:T25 QuitHistory:T29
+T29	QuitHistory 576 588	11 years ago
+T1	Location 36 54	Brooklyn, New York
+T24	Residence 20 27	patient
+E1	Residence:T24 State:T30 Location:T1
+T30	Status 20 27	patient
+A5	Value T30 past
+T31	Residence 59 64	moved
+E9	Residence:T31 State:T32 Location:T3 Time:T33
+T32	Status 59 64	moved
+A6	Value T32 current
+T33	Temporal 76 102	approximately one year ago
+T34	LivingSituation 108 127	lived independently
+E11	LivingSituation:T34 State:T36 Time:T4
+T36	Status 108 127	lived independently
+A7	Value T36 past
+T35	Method 108 143	lived independently in an apartment
+T4	Temporal 144 169	until about one month ago
+T2	LivingSituation 188 193	moved
+E12	LivingSituation:T2 Method:T37 State:T38
+T37	Method 203 217	a nursing home
+T38	Status 188 193	moved
+A8	Value T38 current
+T28	Status 528 535	reports
+A9	Value T28 current

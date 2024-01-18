@@ -1,0 +1,23 @@
+T1	MaritalStatus 31 37	single
+E1	MaritalStatus:T1 Type:T2 State:T6
+T2	Type 31 37	single
+T3	Occupation 39 62	self-employed carpenter
+E2	Occupation:T3 Method:T4 Type:T5 State:T6
+T4	Method 39 52	self-employed
+T5	Type 53 62	carpenter
+T6	Status 28 30	is
+A1	Value T6 current
+T8	Method 67 72	chews
+T9	ExposureHistory 107 119	for 30 years
+T10	Amount 127 137	half a can
+T11	Frequency 138 145	per day
+T12	Frequency 200 210	occasional
+T13	Amount 211 219	moderate
+T14	Alcohol 220 227	alcohol
+E4	Alcohol:T14 State:T15 Amount:T13 Frequency:T12
+T15	Status 228 231	use
+A2	Value T15 current
+T16	Status 67 72	chews
+A3	Value T16 current
+T7	Tobacco 73 80	tobacco
+E3	Tobacco:T7 State:T16 Method:T8 ExposureHistory:T9 Amount:T10 Frequency:T11

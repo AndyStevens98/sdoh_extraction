@@ -1,0 +1,9 @@
+T1	Drug 38 43	drugs
+E1	Drug:T1 Type:T5 State:T4
+T2	Alcohol 45 52	alcohol
+E2	Alcohol:T2 State:T4
+T3	Tobacco 58 65	tobacco
+E3	Tobacco:T3 State:T4
+T4	Status 16 25	 Negative
+A1	Value T4 none
+T5	Type 30 37	illicit

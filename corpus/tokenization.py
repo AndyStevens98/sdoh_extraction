@@ -1,16 +1,10 @@
 
+import logging
 import re
 
 import spacy
-
 from spacy.tokenizer import Tokenizer
-from spacy.attrs import ORTH, NORM
-from spacy.lang.char_classes import ALPHA, ALPHA_LOWER, ALPHA_UPPER, CONCAT_QUOTES, LIST_ELLIPSES, LIST_ICONS
-import logging
 from tqdm import tqdm
-from spacy.tokenizer import Tokenizer
-from spacy.lang.en import English
-
 
 LANG = 'en_core_web_sm'
 
@@ -99,7 +93,7 @@ def get_tokenizer_OLD( \
         #prefixes_custom = PREFIXES,
         #infixes_custom =INFIXES,
         #suffixes_custom = SUFFIXES,
-        #special_cases = None,
+        special_cases = None,
         linebreak_bound = False):
 
     '''
@@ -403,7 +397,7 @@ def get_context(spacy_doc, start, end, context_len=1):
         if start_match:
             target = i
             if not end_match:
-                logging.warn(f"get_context: start and end not an same sentence")
+                logging.warn("get_context: start and end not an same sentence")
             break
 
     assert target is not None

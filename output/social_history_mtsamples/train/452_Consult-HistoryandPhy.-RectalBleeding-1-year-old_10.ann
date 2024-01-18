@@ -1,0 +1,11 @@
+T1	LivingSituation 20 52	lives with parents and siblings.
+E1	LivingSituation:T1 Method:T3 State:T2
+T2	Status 20 25	lives
+A1	Value T2 current
+T3	Method 20 51	lives with parents and siblings
+T4	Family 31 38	parents
+E2	Family:T4 Type:T6
+T5	Family 43 51	siblings
+E3	Family:T5 Type:T7
+T6	Type 31 38	parents
+T7	Type 43 51	siblings

@@ -1,6 +1,3 @@
-
-
-
 import spacy
 
 from corpus.corpus_brat import CorpusBrat

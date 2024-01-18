@@ -1,0 +1,23 @@
+T1	LivingSituation 28 145	lives at home with 23-year-old mother, who is a homemaker and 24-year-old father, John, who is a supervisor at Excel.
+E1	LivingSituation:T1 Method:T2 State:T3
+T2	Method 28 144	lives at home with 23-year-old mother, who is a homemaker and 24-year-old father, John, who is a supervisor at Excel
+T3	Status 28 33	lives
+A1	Value T3 current
+T4	Residence 157 181	lives in Bentley, Kansas
+E2	Residence:T4 State:T6 Location:T5
+T5	Location 166 181	Bentley, Kansas
+T6	Status 157 162	lives
+A2	Value T6 current
+T8	Family 59 65	mother
+E3	Family:T8 Type:T10 Amount:T12
+T9	Family 102 108	father
+E4	Family:T9 Amount:T13 Type:T11
+T10	Type 59 65	mother
+T11	Type 102 108	father
+T12	Amount 47 58	23-year-old
+T13	Amount 90 101	24-year-old
+T7	EnvironmentalExposure 186 205	smoking in the home
+E5	EnvironmentalExposure:T7 Type:T15 State:T14
+T14	Status 183 185	No
+A3	Value T14 none
+T15	Type 186 193	smoking

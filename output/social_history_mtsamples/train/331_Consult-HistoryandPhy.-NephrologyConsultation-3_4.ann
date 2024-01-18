@@ -1,0 +1,35 @@
+T1	Status 38 41	non
+A1	Value T1 none
+T2	Tobacco 41 47	smoker
+E1	Tobacco:T2 State:T1
+T4	Status 52 58	denies
+A2	Value T4 none
+T5	Alcohol 63 71	alcohol.
+E2	Alcohol:T5 State:T4
+T6	Type 75 82	illicit
+T7	Drug 83 88	drugs
+E3	Drug:T7 Type:T6 State:T8
+T8	Status 72 74	No
+A3	Value T8 none
+T9	Status 93 105	used to work
+A4	Value T9 past
+T10	Occupation 93 105	used to work
+E4	Occupation:T10 State:T9 Type:T11 Location:T12
+T11	Type 113 122	custodian
+T12	Location 130 142	nursing home
+T13	Status 148 151	now
+A5	Value T13 current
+T14	Method 152 165	on disability
+T15	Occupation 152 165	on disability
+E5	Occupation:T15 Method:T14 State:T13 Time:T16
+T16	Temporal 166 179	since 03/2008
+T17	MaritalStatus 184 194	is married
+E6	MaritalStatus:T17 State:T19 Type:T18
+T18	Type 187 194	married
+T19	Status 184 186	is
+A6	Value T19 current
+T20	Type 202 206	sons
+T21	Amount 213 214	5
+T22	Amount 219 221	17
+T23	Family 200 206	2 sons
+E7	Family:T23 Type:T20 Amount:T21 Amount2:T22

@@ -1,0 +1,23 @@
+T5	Type 112 133	cigarettes and cigars
+T6	Frequency 179 190	hardly ever
+T7	Alcohol 196 203	alcohol
+E2	Alcohol:T7 Frequency:T6 State:T11
+T8	Occupation 221 228	retired
+E3	Occupation:T8 Method:T9 State:T10
+T9	Method 221 228	retired
+T10	Status 211 220	currently
+A2	Value T10 current
+T11	Status 191 195	uses
+A3	Value T11 current
+T2	Amount 82 91	two packs
+T4	Frequency 92 97	a day
+T13	QuitHistory 44 56	27 years ago
+T14	Tobacco 36 43	smoking
+E1	Tobacco:T14 State:T15 Amount:T2 Frequency:T4 Type:T5 QuitHistory:T13
+T15	Status 28 35	stopped
+A5	Value T15 past
+T1	Status 146 152	smoked
+A1	Value T1 past
+T3	Tobacco 146 152	smoked
+E4	Tobacco:T3 State:T1 QuitHistory:T12
+T12	QuitHistory 157 174	the past 27 years

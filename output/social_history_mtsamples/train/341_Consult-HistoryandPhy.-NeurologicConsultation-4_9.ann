@@ -1,0 +1,18 @@
+T1	Status 65 73	does not
+A1	Value T1 none
+T2	Tobacco 74 79	smoke
+E1	Tobacco:T2 State:T1
+T4	LivingSituation 84 143	lives in a senior citizens building with daily nursing aids
+E2	LivingSituation:T4 Method:T5
+T5	Method 95 143	senior citizens building with daily nursing aids
+T6	Status 84 89	lives
+A2	Value T6 current
+T7	Residence 84 119	lives in a senior citizens building
+E3	Residence:T7 Type:T8 State:T6
+T8	Type 95 119	senior citizens building
+T9	Occupation 148 212	previously was a security guard, but is currently on disability.
+E4	Occupation:T9 Type:T10 Method:T12 State:T11
+T10	Type 165 179	security guard
+T11	Status 148 158	previously
+A3	Value T11 past
+T12	Method 185 212	is currently on disability.

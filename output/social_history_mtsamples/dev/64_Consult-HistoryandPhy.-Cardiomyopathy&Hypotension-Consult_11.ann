@@ -1,0 +1,16 @@
+T1	LivingSituation 20 30	lives with
+E1	LivingSituation:T1 State:T2 Method:T3
+T2	Status 20 30	lives with
+A1	Value T2 current
+T3	Method 20 38	lives with husband
+T4	Family 31 38	husband
+E2	Family:T4 Type:T6 LivingStatus2:T7 Amount:T5
+T5	Amount 40 54	who is elderly
+T6	Type 31 38	husband
+T7	LivingStatus 56 79	cannot take care of her
+T8	Tobacco 94 99	smoke
+E3	Tobacco:T8 State:T11
+T9	Alcohol 103 116	drink alcohol
+E4	Alcohol:T9 State:T11
+T11	Status 85 93	does not
+A2	Value T11 past

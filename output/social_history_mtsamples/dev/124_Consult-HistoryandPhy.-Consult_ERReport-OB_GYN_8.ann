@@ -1,0 +1,25 @@
+T1	Tobacco 35 42	tobacco
+E1	Tobacco:T1 State:T4
+T2	Alcohol 44 51	ethanol
+E2	Alcohol:T2 State:T4
+T3	Drug 56 60	drug
+E3	Drug:T3 State:T4
+T4	Status 28 34	denies
+A1	Value T4 none
+T5	MaritalStatus 83 92	separated
+E4	MaritalStatus:T5 Type:T6 State:T7
+T6	Type 83 92	separated
+T7	Status 73 82	currently
+A2	Value T7 current
+T8	Family 148 156	daughter
+E5	Family:T8 Type:T10 Amount:T9
+T9	Amount 135 147	21-month-old
+T10	Type 148 156	daughter
+T11	LivingSituation 172 194	lives with her parents
+E6	LivingSituation:T11 Method:T13 State:T12
+T12	Status 162 171	currently
+A3	Value T12 current
+T13	Method 172 194	lives with her parents
+T14	Residence 172 177	lives
+E7	Residence:T14 Location:T15 State:T12
+T15	Location 198 208	Greenville

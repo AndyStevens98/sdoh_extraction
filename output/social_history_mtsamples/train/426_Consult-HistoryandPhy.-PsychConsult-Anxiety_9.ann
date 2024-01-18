@@ -1,0 +1,27 @@
+T1	MaritalStatus 31 38	married
+E1	MaritalStatus:T1 Type:T2 State:T3
+T2	Type 31 38	married
+T3	Status 28 30	is
+A1	Value T3 current
+T4	LivingSituation 43 73	lives at home with her husband
+E2	LivingSituation:T4 Method:T5
+T5	Method 43 73	lives at home with her husband
+T6	Family 66 73	husband
+E3	Family:T6 Type:T7
+T7	Type 66 73	husband
+T14	Type 209 213	wine
+T15	Frequency 214 222	everyday
+T17	ExposureHistory 223 244	for the last 50 years
+T10	Amount 104 112	one pack
+T11	Frequency 113 120	per day
+T12	ExposureHistory 121 133	for 18 years
+T18	Tobacco 96 103	smoking
+E4	Tobacco:T18 State:T19 Amount:T10 Frequency:T11 ExposureHistory:T12
+T19	Status 85 92	history
+A3	Value T19 current
+T8	Amount 254 271	one to two drinks
+T9	Frequency 272 279	per day
+T13	Alcohol 202 208	drinks
+E5	Alcohol:T13 Type:T14 State:T16 Frequency:T15 ExposureHistory:T17 Amount:T8 Frequency2:T9
+T16	Status 202 208	drinks
+A2	Value T16 current

@@ -1,0 +1,18 @@
+T1	LivingSituation 24 29	lives
+E1	LivingSituation:T1 Method:T2 State:T3
+T2	Method 24 107	lives mom, dad, a 2-1/2-year-old brother, and a 5-1/2-year-old maternal stepbrother
+T3	Status 24 29	lives
+A1	Value T3 current
+T4	Family 114 122	brothers
+T5	Type 114 122	brothers
+T6	MedicalCondition 135 190	sick with cold symptoms including diarrhea and vomiting
+T7	LivingStatus 135 139	sick
+T8	Amount 42 56	2-1/2-year-old
+T9	Amount 72 86	5-1/2-year-old
+T10	Type 30 33	mom
+T11	Type 35 38	dad
+E3	Family:T4 Type:T5 Amount:T9 Amount2:T8 LivingStatus:T7 Type2:T11 Type3:T10
+T12	Other 613 629	smoking exposure
+T13	Family 642 645	mom
+E2	Family:T13 Type:T14 Other:T12
+T14	Type 642 645	mom

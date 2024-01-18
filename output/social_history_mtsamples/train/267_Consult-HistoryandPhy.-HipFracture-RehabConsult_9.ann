@@ -1,0 +1,11 @@
+T1	Residence 17 57	Lives in a 1-story home with 1 step down
+E1	Residence:T1 Type:T3 Type2:T2
+T2	Type 28 57	1-story home with 1 step down
+T3	Status 17 22	Lives
+A1	Value T3 current
+T4	LivingSituation 17 73	Lives in a 1-story home with 1 step down; wife is there.
+E2	LivingSituation:T4 Method:T5
+T5	Method 17 73	Lives in a 1-story home with 1 step down; wife is there.
+T6	Family 59 63	wife
+E3	Family:T6 Type:T7
+T7	Type 59 63	wife

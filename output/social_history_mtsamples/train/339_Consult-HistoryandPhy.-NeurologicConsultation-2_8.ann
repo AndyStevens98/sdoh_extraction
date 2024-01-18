@@ -1,0 +1,5 @@
+T1	Status 19 23	quit
+A1	Value T1 past
+T2	Tobacco 24 31	smoking
+E1	Tobacco:T2 State:T1 QuitHistory:T4
+T4	QuitHistory 32 39	in 1968

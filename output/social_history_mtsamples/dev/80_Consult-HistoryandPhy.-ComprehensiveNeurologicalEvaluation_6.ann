@@ -1,0 +1,11 @@
+T1	Status 20 28	does not
+A1	Value T1 none
+T2	Tobacco 29 34	smoke
+E1	Tobacco:T2 State:T1
+T4	Amount 46 55	one glass
+T5	Type 59 63	wine
+T6	Frequency 64 72	per day.
+T8	Status 40 45	takes
+A2	Value T8 current
+T3	Alcohol 40 45	takes
+E2	Alcohol:T3 State:T8 Amount:T4 Type:T5 Frequency:T6

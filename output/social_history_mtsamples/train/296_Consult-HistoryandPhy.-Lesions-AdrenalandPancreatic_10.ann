@@ -1,0 +1,29 @@
+T1	Status 24 27	non
+A1	Value T1 none
+T2	Status 49 52	non
+A2	Value T2 none
+T3	Type 28 37	cigarette
+T5	Tobacco 38 44	smoker
+E1	Tobacco:T5 State:T1 Type:T3
+T6	Alcohol 53 57	ETOH
+E2	Alcohol:T6 State:T2
+T7	MaritalStatus 70 76	single
+E3	MaritalStatus:T7 State:T9 Type:T8
+T8	Type 70 76	single
+T9	Status 67 69	is
+A3	Value T9 current
+T10	Occupation 104 137	works as a payroll representative
+E4	Occupation:T10 Type:T12 State:T11
+T11	Status 104 109	works
+A4	Value T11 current
+T12	Type 115 137	payroll representative
+T13	Status 142 152	previously
+A5	Value T13 past
+T14	Occupation 164 188	work in jewelry business
+E5	Occupation:T14 Type:T15 State:T13
+T15	Type 172 188	jewelry business
+T16	EnvironmentalExposure 190 221	working he states with chemical
+E6	EnvironmentalExposure:T16 State:T18 Type:T17
+T17	Type 213 222	chemical.
+T18	Status 190 197	working
+A6	Value T18 past

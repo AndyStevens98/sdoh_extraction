@@ -1,0 +1,11 @@
+T2	Amount 22 27	minor
+T3	Type 28 39	second-hand
+T4	Status 40 47	tobacco
+A1	Value T4 current
+T1	Tobacco 40 47	tobacco
+E1	Tobacco:T1 State:T4 Type:T3 Amount:T2
+T5	EnvironmentalExposure 71 75	pets
+E2	EnvironmentalExposure:T5 State:T6 Type:T7
+T6	Status 68 70	no
+A2	Value T6 none
+T7	Type 71 75	pets

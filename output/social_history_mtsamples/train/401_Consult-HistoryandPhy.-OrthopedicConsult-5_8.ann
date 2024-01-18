@@ -1,0 +1,41 @@
+T1	MaritalStatus 28 38	is married
+E1	MaritalStatus:T1 Type:T3 State:T2
+T2	Status 28 30	is
+A1	Value T2 current
+T3	Type 31 38	married
+T4	Family 44 57	five children
+E2	Family:T4 Amount:T6 Type:T5
+T5	Type 49 57	children
+T6	Amount 44 48	five
+T7	LivingSituation 62 81	lives with his wife
+E3	LivingSituation:T7 State:T9 Method:T8
+T8	Method 62 81	lives with his wife
+T9	Status 62 67	lives
+A2	Value T9 current
+T10	Family 77 81	wife
+E4	Family:T10 Type:T11
+T11	Type 77 81	wife
+T12	Occupation 86 107	is a retired engineer
+E5	Occupation:T12 Type:T15 State:T13 Method:T14
+T13	Status 91 98	retired
+A3	Value T13 past
+T14	Method 91 98	retired
+T15	Type 99 107	engineer
+T16	Occupation 112 130	real estate broker
+E6	Occupation:T16 Type:T17 State:T13 Method:T14
+T17	Type 112 130	real estate broker
+T18	Status 135 141	denies
+A4	Value T18 none
+T19	Tobacco 142 153	tobacco use
+E7	Tobacco:T19 State:T18
+T20	Alcohol 158 172	drinks alcohol
+E8	Alcohol:T20 State:T22 Amount:T23 Frequency:T24
+T22	Status 158 164	drinks
+A5	Value T22 current
+T23	Amount 191 209	up to three drinks
+T24	Frequency 210 217	a week.
+T21	Status 218 228	No history
+A6	Value T21 none
+T25	Drug 232 236	drug
+E9	Drug:T25 Amount:T26 State:T21
+T26	Amount 237 242	abuse

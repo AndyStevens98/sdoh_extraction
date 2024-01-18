@@ -1,0 +1,29 @@
+T1	Amount 73 83	one bottle
+T2	Type 87 91	wine
+T3	Frequency 92 99	per day
+T4	Status 32 46	has been sober
+A1	Value T4 past
+T8	Status 219 236	experimented with
+A2	Value T8 past
+T9	Drug 237 249	amphetamines
+E2	Drug:T9 Type:T12 State:T8 ExposureHistory:T15
+T10	Drug 251 258	cocaine
+E3	Drug:T10 Type:T13 State:T8 ExposureHistory:T15
+T11	Drug 260 269	marijuana
+E4	Drug:T11 Type:T14 State:T8 ExposureHistory:T15
+T12	Type 237 249	amphetamines
+T13	Type 251 258	cocaine
+T14	Type 260 269	marijuana
+T15	ExposureHistory 270 296	approximately 16 years ago
+T6	Alcohol 24 31	patient
+E1	Alcohol:T6 State:T4 QuitHistory:T5
+T5	QuitHistory 47 61	for five years
+T16	Alcohol 67 72	drank
+E5	Alcohol:T16 State:T17 Amount:T1 Type:T2 Frequency:T3
+T17	Status 67 72	drank
+A3	Value T17 past
+T7	Alcohol 123 131	drinking
+E6	Alcohol:T7 State:T19 ExposureHistory:T18
+T18	ExposureHistory 132 158	for approximately 25 years
+T19	Status 112 119	History
+A4	Value T19 past

@@ -1,0 +1,22 @@
+T1	Occupation 32 39	retired
+E1	Occupation:T1 State:T2
+T2	Status 32 39	retired
+A1	Value T2 current
+T3	MaritalStatus 47 54	married
+E2	MaritalStatus:T3 State:T4
+T4	Status 44 54	is married
+A2	Value T4 current
+T5	Family 63 73	4 children
+E3	Family:T5 Type:T6 Amount:T7
+T6	Type 63 73	4 children
+T7	Amount 63 64	4
+T8	Tobacco 78 91	quite smoking
+E4	Tobacco:T8 State:T9 QuitHistory:T10 ExposureHistory:T11
+T9	Status 78 83	quite
+A3	Value T9 past
+T10	QuitHistory 92 104	25 years ago
+T11	ExposureHistory 113 139	35-year history of smoking
+T12	Alcohol 153 166	drink alcohol
+E5	Alcohol:T12 State:T13
+T13	Status 144 152	does not
+A4	Value T13 none

@@ -1,0 +1,10 @@
+T1	Tobacco 38 43	smoke
+E1	Tobacco:T1 State:T2
+T2	Status 29 37	does not
+A1	Value T2 none
+T3	Alcohol 73 91	alcoholic beverage
+E2	Alcohol:T3 State:T4 Frequency:T5 Type:T6
+T4	Status 49 58	does have
+A2	Value T4 current
+T5	Frequency 62 72	occasional
+T6	Type 73 91	alcoholic beverage

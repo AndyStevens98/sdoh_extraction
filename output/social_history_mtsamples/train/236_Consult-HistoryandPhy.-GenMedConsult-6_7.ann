@@ -1,0 +1,30 @@
+T1	Status 25 28	non
+A1	Value T1 none
+T2	Status 39 42	non
+A2	Value T2 none
+T3	Tobacco 28 34	smoker
+E1	Tobacco:T3 State:T1
+T4	Alcohol 42 49	drinker
+E2	Alcohol:T4 State:T2
+T5	MaritalStatus 64 71	widowed
+E3	MaritalStatus:T5 State:T8 Type:T6 Time:T7
+T6	Type 64 71	widowed
+T7	Temporal 72 84	for 18 years
+T8	Status 64 71	widowed
+A3	Value T8 current
+T9	LivingSituation 90 101	lives alone
+E4	LivingSituation:T9 Method:T10 State:T11
+T10	Method 90 101	lives alone
+T11	Status 90 95	lives
+A4	Value T11 current
+T12	Residence 105 109	home
+E5	Residence:T12 State:T14 Type:T13
+T13	Type 105 109	home
+T14	Status 105 109	home
+A5	Value T14 current
+T15	Occupation 118 125	retired
+E6	Occupation:T15 State:T16 Method:T17 Type:T18
+T16	Status 118 125	retired
+A6	Value T16 current
+T17	Method 118 125	retired
+T18	Type 131 151	running a restaurant

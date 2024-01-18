@@ -1,0 +1,19 @@
+T1	Alcohol 31 42	alcohol use
+E1	Alcohol:T1 State:T2 Amount:T3
+T2	Status 31 42	alcohol use
+A1	Value T2 current
+T3	Amount 69 74	heavy
+T4	Status 84 90	denies
+A2	Value T4 none
+T5	Type 91 98	illegal
+T6	Drug 99 107	drug use
+E2	Drug:T6 Type:T5 State:T4
+T7	Status 117 123	denies
+A3	Value T7 none
+T8	InfectiousDiseases 124 135	STD history
+E3	InfectiousDiseases:T8 Type:T9 State:T7
+T9	Type 124 127	STD
+T10	Status 145 151	denies
+A4	Value T10 none
+T11	Tobacco 152 159	tobacco
+E4	Tobacco:T11 State:T10

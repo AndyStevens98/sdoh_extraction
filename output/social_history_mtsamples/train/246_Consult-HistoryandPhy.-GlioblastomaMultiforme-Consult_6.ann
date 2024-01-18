@@ -1,0 +1,10 @@
+T1	Status 20 23	was
+A1	Value T1 past
+T2	LivingSituation 24 36	living alone
+E1	LivingSituation:T2 Method:T3 State:T1
+T3	Method 24 36	living alone
+T4	Status 44 47	now
+A2	Value T4 current
+T5	Residence 48 73	living in assisted living
+E2	Residence:T5 Location:T6 State:T4
+T6	Location 58 73	assisted living

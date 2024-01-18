@@ -1,0 +1,17 @@
+T1	MaritalStatus 28 38	is married
+E1	MaritalStatus:T1 State:T2 Type:T3
+T2	Status 28 30	is
+A1	Value T2 current
+T3	Type 31 38	married
+T4	Status 44 51	uses no
+A2	Value T4 none
+T5	Alcohol 52 59	ethanol
+E2	Alcohol:T5 State:T4
+T6	Tobacco 64 71	tobacco
+E3	Tobacco:T6 State:T7
+T7	Status 61 63	no
+A3	Value T7 none
+T8	Status 76 78	no
+A4	Value T8 none
+T9	Drug 79 87	illicits
+E4	Drug:T9 State:T8

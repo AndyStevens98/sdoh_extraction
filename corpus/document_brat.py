@@ -1,21 +1,34 @@
-
-
-from collections import Counter
-from collections import OrderedDict
 import logging
-import copy
-import pandas as pd
 import os
 import string
+from collections import Counter, OrderedDict
 
-from corpus.tokenization import get_tokenizer, map2ascii, remove_white_space_at_ends
-from config.constants import EVENT, RELATION, TEXTBOUND, ATTRIBUTE, ENTITIES, RELATIONS, EVENTS, ARGUMENTS, SUBTYPE_DEFAULT, TRIGGER
+import pandas as pd
+
+from config.constants import (
+    ARGUMENTS,
+    ATTRIBUTE,
+    ENTITIES,
+    EVENT,
+    EVENTS,
+    RELATION,
+    RELATIONS,
+    TEXTBOUND,
+    TRIGGER,
+)
+from corpus.brat import (
+    Attribute,
+    Textbound,
+    get_annotations,
+    get_max_id,
+    get_next_index,
+    get_unique_arg,
+    write_ann,
+    write_txt,
+)
 from corpus.document import Document
-from corpus.brat import get_annotations, write_txt, write_ann, get_next_index, Textbound, Attribute, get_unique_arg
-from corpus.labels import tb2entities, tb2relations, brat2events
-from corpus.brat import Attribute, get_max_id
-
-
+from corpus.labels import brat2events, tb2entities, tb2relations
+from corpus.tokenization import remove_white_space_at_ends
 from spert_utils.spert_io import doc2spert, doc2spert_multi
 
 #from spert_utils.convert_brat import

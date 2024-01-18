@@ -1,0 +1,11 @@
+T1	Status 20 26	denies
+A1	Value T1 none
+T2	Tobacco 27 34	tobacco
+E1	Tobacco:T2 State:T1
+T3	Alcohol 38 46	alcohol.
+E2	Alcohol:T3 State:T1
+T4	Occupation 73 96	data entry computer job
+E3	Occupation:T4 State:T6 Type:T5
+T5	Type 73 96	data entry computer job
+T6	Status 47 53	He has
+A2	Value T6 current

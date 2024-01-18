@@ -1,0 +1,10 @@
+T1	Status 74 76	no
+A1	Value T1 none
+T2	Alcohol 77 81	ETOH
+E1	Alcohol:T2 State:T1 Type:T3
+T3	Type 77 81	ETOH
+T4	Drug 64 72	caffeine
+E2	Drug:T4 State:T5 Type:T6
+T5	Status 61 63	No
+A2	Value T5 none
+T6	Type 64 72	caffeine

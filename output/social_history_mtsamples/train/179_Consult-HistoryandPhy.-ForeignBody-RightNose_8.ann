@@ -1,0 +1,4 @@
+T1	Family 17 24	Parents
+E1	Family:T1 Type:T2 Other:T3
+T2	Type 17 24	Parents
+T3	Other 28 33	smoke

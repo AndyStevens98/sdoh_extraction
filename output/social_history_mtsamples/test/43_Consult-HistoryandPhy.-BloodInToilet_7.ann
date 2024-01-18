@@ -1,0 +1,6 @@
+T1	Status 17 19	No
+A1	Value T1 none
+T2	Tobacco 20 27	tobacco
+E1	Tobacco:T2 State:T1
+T3	Alcohol 31 38	alcohol
+E2	Alcohol:T3 State:T1

@@ -1,0 +1,28 @@
+T1	Status 184 192	does not
+A1	Value T1 none
+T2	Alcohol 193 198	drink
+E1	Alcohol:T2 State:T1
+T3	Tobacco 202 207	smoke
+E2	Tobacco:T3 State:T1
+T5	MaritalStatus 213 223	is married
+E3	MaritalStatus:T5 Type:T7 State:T6
+T6	Status 213 215	is
+A2	Value T6 current
+T7	Type 216 223	married
+T8	Family 229 249	two adopted children
+E4	Family:T8 Type:T10 Amount:T9
+T9	Amount 229 232	two
+T10	Type 233 249	adopted children
+T11	Occupation 260 281	paralegal specialist.
+E5	Occupation:T11 Type:T12
+T12	Type 260 280	paralegal specialist
+T13	Status 286 293	used to
+A3	Value T13 past
+T14	PhysicalActivity 294 302	exercise
+E6	PhysicalActivity:T14 Amount:T15 State:T13
+T15	Amount 303 313	vigorously
+T16	PhysicalActivity 385 392	walking
+E7	PhysicalActivity:T16 Type:T18 State:T17
+T17	Status 370 379	currently
+A4	Value T17 current
+T18	Type 385 392	walking

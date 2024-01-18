@@ -1,51 +1,30 @@
+import logging
+import os
+from collections import OrderedDict
 
-
-
-
-
+import joblib
+import pandas as pd
 import torch
+import torch.nn as nn
+import torch.optim as optim
+
 #torch.multiprocessing.set_sharing_strategy('file_system')
 # torch.backends.cudnn.enabled = False
 import torch.utils.data as data_utils
-import torch.autograd as autograd
-import torch.nn as nn
-import torch.optim as optim
-import torch.nn.functional as F
-from torch.utils.data import DataLoader
 from torch.nn.utils.clip_grad import clip_grad_norm_
-import json
-from models.recurrent import Recurrent
-
-from tensorboardX import SummaryWriter
-
-import pandas as pd
-import os
-import errno
-from datetime import datetime
-import numpy as np
-import logging
 from tqdm import tqdm
-import joblib
-import math
-from collections import OrderedDict
-
-from transformers import BertPreTrainedModel
-from transformers import BertConfig
-from transformers import BertConfig
-from transformers import AutoTokenizer, AutoModel, AutoConfig
-from models.crf import MultitaskCRF
-from models.attention import MultitaskAttention
-from models.multitask_dataset import MultitaskDataset, get_label_map
-# from models.utils import create_Tensorboard_writer
-from models.utils import nested_dict_to_list
-# from models.utils import get_device, mem_size
-# from models.multitask_dataset import get_label_map
-from models.utils import loss_reduction
+from transformers import AutoConfig
 
 import config.constants as C
+from models.attention import MultitaskAttention
+from models.crf import MultitaskCRF
+from models.multitask_dataset import MultitaskDataset, get_label_map
+from models.recurrent import Recurrent
 
-
-
+# from models.utils import create_Tensorboard_writer
+# from models.utils import get_device, mem_size
+# from models.multitask_dataset import get_label_map
+from models.utils import loss_reduction, nested_dict_to_list
 
 
 class MultitaskModel(nn.Module):

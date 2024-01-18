@@ -1,0 +1,26 @@
+T1	MaritalStatus 34 39	widow
+E1	MaritalStatus:T1 Type:T2 State:T6
+T2	Type 34 39	widow
+T3	LivingSituation 45 50	lives
+E2	LivingSituation:T3 State:T5 Method:T4
+T4	Method 45 56	lives alone
+T5	Status 45 50	lives
+T6	Status 29 39	is a widow
+A1	Value T6 current
+T7	Family 72 87	three daughters
+E3	Family:T7 Type:T8 Amount:T9
+T8	Type 78 87	daughters
+T9	Amount 72 77	three
+T10	Tobacco 153 158	smoke
+E4	Tobacco:T10 State:T11 Type:T13 Amount:T14 Frequency:T15 ExposureHistory:T16 QuitHistory:T12
+T11	Status 159 170	in the past
+A2	Value T11 past
+T13	Type 208 218	cigarettes
+T14	Amount 177 204	one to one and a half packs
+T15	Frequency 219 226	per day
+T16	ExposureHistory 227 245	for about 10 years
+T18	Alcohol 295 302	alcohol
+E5	Alcohol:T18 State:T20
+T20	Status 279 290	never drank
+A3	Value T20 none
+T12	QuitHistory 260 273	long time ago

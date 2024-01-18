@@ -1,0 +1,10 @@
+T1	Status 24 28	quit
+A1	Value T1 past
+T2	Tobacco 29 36	smoking
+E1	Tobacco:T2 State:T1
+T4	Status 56 72	was positive for
+A2	Value T4 current
+T5	Drug 73 80	cocaine
+E2	Drug:T5 Type:T6 State:T4 ExposureHistory:T7
+T6	Type 73 80	cocaine
+T7	ExposureHistory 81 115	during last hospital stay in 01/08

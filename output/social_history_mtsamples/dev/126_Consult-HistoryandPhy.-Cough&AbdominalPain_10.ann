@@ -1,0 +1,17 @@
+T1	Status 28 32	quit
+A1	Value T1 past
+T2	Tobacco 33 40	smoking
+E1	Tobacco:T2 State:T1 QuitHistory:T3 Amount:T4 Frequency:T5 ExposureHistory:T11
+T3	QuitHistory 41 53	17 years ago
+T6	Status 111 117	Denies
+A2	Value T6 none
+T7	Alcohol 122 129	alcohol
+E2	Alcohol:T7 State:T6
+T8	Status 135 141	Denies
+A3	Value T8 none
+T9	Method 146 148	IV
+T10	Drug 149 157	drug use
+E3	Drug:T10 State:T8 Method:T9
+T4	Amount 80 88	one pack
+T5	Frequency 89 96	per day
+T11	ExposureHistory 98 109	or 44 years

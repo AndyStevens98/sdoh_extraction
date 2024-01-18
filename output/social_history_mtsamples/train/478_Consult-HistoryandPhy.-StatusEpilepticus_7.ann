@@ -1,0 +1,13 @@
+T1	LivingSituation 21 85	patient lives at home with mother, father, and 2 other siblings.
+E1	LivingSituation:T1 Method:T2
+T2	Method 21 84	patient lives at home with mother, father, and 2 other siblings
+T3	Family 48 55	mother,
+E2	Family:T3 Type:T9
+T4	Family 56 62	father
+E3	Family:T4 Type:T8
+T5	Family 68 84	2 other siblings
+E4	Family:T5 Amount:T6 Type:T7
+T6	Amount 68 69	2
+T7	Type 76 84	siblings
+T8	Type 56 62	father
+T9	Type 48 54	mother

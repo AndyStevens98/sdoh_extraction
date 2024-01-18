@@ -1,0 +1,19 @@
+T1	LivingSituation 29 65	lives with his wife and two children
+E1	LivingSituation:T1 Method:T2 State:T5
+T2	Method 29 65	lives with his wife and two children
+T3	Residence 87 125	single floor apartment with rear entry
+E2	Residence:T3 Type:T4
+T4	Type 87 109	single floor apartment
+T5	Status 29 34	lives
+A1	Value T5 current
+T6	Family 44 48	wife
+E3	Family:T6 Type:T7
+T7	Type 44 48	wife
+T8	Family 53 65	two children
+E4	Family:T8 Type:T10 Amount:T9
+T9	Amount 53 56	two
+T10	Type 57 65	children
+T11	Status 138 146	does not
+A2	Value T11 none
+T12	Occupation 147 151	work
+E5	Occupation:T12 State:T11

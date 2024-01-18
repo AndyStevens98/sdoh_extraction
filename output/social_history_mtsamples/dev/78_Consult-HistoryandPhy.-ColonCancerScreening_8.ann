@@ -1,0 +1,10 @@
+T1	Status 16 24	Does not
+A1	Value T1 none
+T2	Tobacco 25 30	smoke
+E1	Tobacco:T2 State:T1
+T4	Alcohol 36 42	drinks
+E2	Alcohol:T4 Frequency:T5 State:T7 ExposureHistory:T6
+T5	Frequency 43 55	occasionally
+T6	ExposureHistory 56 79	for the last five years
+T7	Status 36 42	drinks
+A2	Value T7 current

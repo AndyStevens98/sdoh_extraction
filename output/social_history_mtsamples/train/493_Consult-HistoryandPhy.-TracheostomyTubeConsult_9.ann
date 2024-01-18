@@ -1,0 +1,11 @@
+T1	Amount 79 90	quite heavy
+T2	ExposureHistory 35 42	25-year
+T5	Alcohol 116 123	alcohol
+E2	Alcohol:T5 Amount:T6 State:T7
+T6	Amount 104 115	significant
+T7	Status 128 140	in the past.
+A1	Value T7 past
+T8	Status 51 58	history
+A2	Value T8 current
+T3	Tobacco 43 50	smoking
+E1	Tobacco:T3 ExposureHistory:T2 State:T8 Amount:T1

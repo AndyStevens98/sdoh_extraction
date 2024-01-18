@@ -1,0 +1,4 @@
+T1	Alcohol 27 34	alcohol
+E1	Alcohol:T1 State:T2
+T2	Status 35 50	use in the past
+A1	Value T2 past

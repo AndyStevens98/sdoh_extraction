@@ -1,0 +1,17 @@
+T1	Tobacco 34 40	smoker
+E1	Tobacco:T1 State:T3
+T3	Status 29 31	is
+A1	Value T3 current
+T4	Drug 52 58	heroin
+E2	Drug:T4 State:T5 Type:T9
+T5	Status 59 62	use
+A2	Value T5 current
+T6	Alcohol 64 71	alcohol
+E3	Alcohol:T6 State:T5 Amount:T7
+T7	Amount 72 77	abuse
+T9	Type 52 58	heroin
+T8	Drug 111 118	cocaine
+E4	Drug:T8 Type:T10 State:T11
+T10	Type 111 118	cocaine
+T11	Status 105 110	using
+A3	Value T11 current

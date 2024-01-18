@@ -1,0 +1,25 @@
+T1	LivingSituation 20 42	lives with her husband
+E1	LivingSituation:T1 Method:T2 State:T5
+T2	Method 20 42	lives with her husband
+T3	Family 35 42	husband
+E2	Family:T3 Type:T4
+T4	Type 35 42	husband
+T5	Status 20 25	lives
+A1	Value T5 current
+T6	Tobacco 53 62	nonsmoker
+E3	Tobacco:T6 State:T8
+T8	Status 53 56	non
+A2	Value T8 none
+T9	Status 67 77	no history
+A3	Value T9 none
+T10	Drug 81 85	drug
+E4	Drug:T10 Amount:T12 State:T9
+T11	Alcohol 89 96	alcohol
+E5	Alcohol:T11 Amount:T12 State:T9
+T12	Amount 97 102	abuse
+T13	Alcohol 113 118	drink
+E6	Alcohol:T13 Amount:T14 Frequency:T15 State:T16
+T14	Amount 119 138	two to three drinks
+T15	Frequency 139 145	daily.
+T16	Status 108 118	does drink
+A4	Value T16 current

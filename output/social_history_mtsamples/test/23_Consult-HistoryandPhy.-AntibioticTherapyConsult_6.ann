@@ -1,0 +1,30 @@
+T1	LivingSituation 29 34	lives
+E1	LivingSituation:T1 State:T2 Method:T3
+T2	Status 29 34	lives
+A1	Value T2 current
+T3	Method 35 45	by herself
+T4	Tobacco 83 89	smoker
+E2	Tobacco:T4 State:T5 QuitHistory:T7
+T5	Status 80 82	ex
+A2	Value T5 past
+T7	QuitHistory 110 124	five years ago
+T8	Alcohol 143 149	drinks
+E3	Alcohol:T8 Type:T9 Amount:T11 Frequency:T12 State:T13
+T9	Type 161 165	wine
+T11	Amount 150 157	a glass
+T12	Frequency 130 142	occasionally
+T13	Status 143 149	drinks
+A3	Value T13 current
+T14	Drug 201 206	drugs
+E4	Drug:T14 State:T15 Type:T16
+T15	Status 171 177	denies
+A4	Value T15 none
+T16	Type 188 200	recreational
+T18	Occupation 265 281	psychiatric aide
+E5	Occupation:T18 Method:T19 Location:T20 State:T21 Time:T22 Type:T23
+T19	Method 225 232	retired
+T20	Location 238 259	State of Pennsylvania
+T21	Status 216 232	recently retired
+A5	Value T21 past
+T22	Temporal 282 296	after 32 years
+T23	Type 265 281	psychiatric aide

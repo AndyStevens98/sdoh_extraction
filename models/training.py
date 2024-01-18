@@ -2,14 +2,7 @@
 import torch.nn.functional as F
 import torch
 
-import torch
-import torch.utils.data as data_utils
-import torch.autograd as autograd
 import torch.nn as nn
-import torch.optim as optim
-import torch.nn.functional as F
-from torch.utils.data import Dataset, DataLoader
-from torch.distributions.categorical import Categorical
 import logging
 import math
 
@@ -278,4 +271,4 @@ def reduce_loss(loss, reduction='sum'):
 #    return loss
 #
 
-    
+

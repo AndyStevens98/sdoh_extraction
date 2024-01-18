@@ -1,0 +1,16 @@
+T1	Tobacco 37 41	smok
+E1	Tobacco:T1 State:T3 QuitHistory:T4
+T3	Status 28 36	does not
+A1	Value T3 past
+T4	QuitHistory 53 65	25 years ago
+T5	Alcohol 71 77	drinks
+E2	Alcohol:T5 Amount:T6 Frequency:T7 State:T10
+T6	Amount 78 86	one beer
+T7	Frequency 87 92	a day
+T8	Occupation 98 103	works
+E3	Occupation:T8 State:T9 Type:T11
+T9	Status 98 103	works
+A2	Value T9 current
+T10	Status 71 77	drinks
+A3	Value T10 current
+T11	Type 109 133	medical transcriptionist

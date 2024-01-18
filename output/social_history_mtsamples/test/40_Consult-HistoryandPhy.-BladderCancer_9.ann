@@ -1,0 +1,24 @@
+T1	Tobacco 29 35	smokes
+E1	Tobacco:T1 Amount:T2 Frequency:T3 State:T6 ExposureHistory:T4
+T2	Amount 36 57	approximately 2 packs
+T3	Frequency 58 65	per day
+T4	ExposureHistory 72 93	greater than 40 years
+T6	Status 29 35	smokes
+A1	Value T6 current
+T7	Alcohol 103 108	drink
+E2	Alcohol:T7 State:T10 Frequency:T9 Amount:T8 Type:T17
+T9	Frequency 166 175	per month
+T10	Status 98 108	does drink
+A2	Value T10 current
+T11	Status 180 186	denies
+A3	Value T11 none
+T12	Drug 191 199	drug use
+E3	Drug:T12 State:T11
+T13	Method 209 216	retired
+T14	Type 217 235	liquor store owner
+T15	Occupation 217 235	liquor store owner
+E4	Occupation:T15 Type:T14 Method:T13
+T16	Status 204 208	is a
+A4	Value T16 past
+T8	Amount 142 148	5 to 6
+T17	Type 149 165	alcoholic drinks

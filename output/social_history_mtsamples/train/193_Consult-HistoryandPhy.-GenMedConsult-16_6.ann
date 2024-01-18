@@ -1,0 +1,4 @@
+T1	Status 203 206	Non
+A1	Value T1 none
+T2	Tobacco 206 212	smoker
+E1	Tobacco:T2 State:T1

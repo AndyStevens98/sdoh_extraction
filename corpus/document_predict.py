@@ -1,13 +1,4 @@
-
-
-from collections import Counter
 from collections import OrderedDict
-import logging
-
-
-
-from config.constants import EVENT
-
 
 
 class DocumentPredict():

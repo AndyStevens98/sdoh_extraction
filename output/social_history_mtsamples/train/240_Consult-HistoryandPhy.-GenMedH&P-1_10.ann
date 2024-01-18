@@ -1,0 +1,9 @@
+T1	Tobacco 19 26	tobacco
+E1	Tobacco:T1 State:T5 Amount:T4
+T2	Alcohol 28 35	alcohol
+E2	Alcohol:T2 State:T5 Amount:T4
+T4	Amount 45 50	abuse
+T5	Status 16 18	No
+A1	Value T5 none
+T3	Drug 40 44	drug
+E3	Drug:T3 State:T5 Amount:T4

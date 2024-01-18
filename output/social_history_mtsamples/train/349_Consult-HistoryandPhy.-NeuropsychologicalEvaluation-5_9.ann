@@ -1,0 +1,5 @@
+T1	Alcohol 21 35	drinks alcohol
+E1	Alcohol:T1 Frequency:T2 State:T3
+T2	Frequency 36 48	occasionally
+T3	Status 21 27	drinks
+A1	Value T3 current

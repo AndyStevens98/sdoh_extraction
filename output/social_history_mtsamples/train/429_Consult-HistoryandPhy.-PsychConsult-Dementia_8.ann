@@ -1,0 +1,20 @@
+T1	LivingSituation 29 48	lives with a mother
+E1	LivingSituation:T1 Method:T2 State:T3
+T2	Method 29 48	lives with a mother
+T3	Status 29 34	lives
+A1	Value T3 current
+T4	Status 149 155	worked
+A2	Value T4 past
+T5	Type 159 174	accounting tech
+T6	Temporal 175 190	for eight years
+T7	Occupation 149 155	worked
+E2	Occupation:T7 State:T4 Time:T6 Type:T5
+T8	Status 192 202	Denies use
+A3	Value T8 none
+T9	Alcohol 206 213	alcohol
+E3	Alcohol:T9 State:T8
+T10	Tobacco 215 222	tobacco
+E4	Tobacco:T10 State:T8
+T11	Type 227 234	illicit
+T12	Drug 235 240	drugs
+E5	Drug:T12 Type:T11 State:T8

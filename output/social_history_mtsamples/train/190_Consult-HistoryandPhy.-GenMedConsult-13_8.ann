@@ -1,0 +1,17 @@
+T1	MaritalStatus 23 30	married
+E1	MaritalStatus:T1 Type:T2 State:T3
+T2	Type 23 30	married
+T3	Status 20 30	is married
+A1	Value T3 current
+T6	QuitHistory 86 93	in 1985
+T7	Status 81 85	quit
+A2	Value T7 past
+T8	Tobacco 58 63	smoke
+E2	Tobacco:T8 State:T7 Amount:T12 Frequency:T13 QuitHistory:T6
+T9	Occupation 102 109	retired
+E3	Occupation:T9 State:T11 Method:T10
+T10	Method 102 109	retired
+T11	Status 99 109	is retired
+A3	Value T11 current
+T12	Amount 64 70	a pack
+T13	Frequency 71 76	a day

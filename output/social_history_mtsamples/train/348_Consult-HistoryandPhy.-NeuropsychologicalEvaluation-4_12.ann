@@ -1,0 +1,66 @@
+T1	Residence 28 65	was born and raised in North Carolina
+E1	Residence:T1 Method:T3 Location:T2 State:T4
+T2	Location 51 65	North Carolina
+T3	Method 28 47	was born and raised
+T4	Status 28 47	was born and raised
+A1	Value T4 past
+T5	Family 88 101	nine siblings
+E2	Family:T5 Amount:T6 Type:T7
+T6	Amount 88 92	nine
+T7	Type 93 101	siblings
+T8	Family 107 113	father
+E3	Family:T8 Type:T9
+T9	Type 107 113	father
+T10	Family 204 210	mother
+E4	Family:T10 Amount:T12 Type:T11
+T11	Type 204 210	mother
+T12	Amount 214 226	93 years old
+T13	Occupation 232 240	last job
+E5	Occupation:T13 Type:T14 State:T15
+T14	Type 250 257	janitor
+T15	Status 232 240	last job
+A2	Value T15 past
+T16	Status 791 794	was
+A3	Value T16 past
+T17	MaritalStatus 795 802	married
+E6	MaritalStatus:T17 Type:T18 State:T16 Time:T19
+T18	Type 795 802	married
+T19	Temporal 803 816	for two years
+T20	Family 822 832	ex-husband
+E7	Family:T20 Time:T22 Type:T21 LivingStatus:T23 MedicalCondition:T24 Other:T25
+T21	Type 822 832	ex-husband
+T22	Temporal 833 845	died in 1980
+T23	LivingStatus 833 869	died in 1980 from acute pancreatitis
+T24	MedicalCondition 851 869	acute pancreatitis
+T25	Other 870 896	secondary to alcohol abuse
+T27	Amount 924 926	43
+T30	Family 939 942	son
+E9	Family:T30 Amount:T32 Type:T31
+T31	Type 939 942	son
+T32	Amount 949 958	age is 30
+T29	Family 1084 1092	daughter
+E10	Family:T29 Type:T26 Amount:T27
+T26	Type 1084 1092	daughter
+T28	Occupation 1341 1347	worked
+E8	Occupation:T28 State:T33 Location:T34 Time:T35
+T33	Status 1341 1347	worked
+A4	Value T33 past
+T34	Location 1352 1367	Hospital Center
+T35	Temporal 1368 1382	for four years
+T36	Status 1399 1413	she worked for
+A5	Value T36 past
+T37	Location 1417 1448	outpatient mental health center
+T38	Temporal 1449 1464	for 2-1/2 years
+T39	Occupation 1399 1413	she worked for
+E11	Occupation:T39 State:T36 Location:T37 Time:T38
+T40	Status 1573 1582	worked fo
+A6	Value T40 past
+T41	Location 1584 1607	Walter P. Carter Center
+T42	Temporal 1608 1631	reportedly for 21 years
+T43	Occupation 1573 1583	worked for
+E12	Occupation:T43 State:T40 Location:T41 Time:T42
+T44	Status 1646 1655	worked as
+A7	Value T44 past
+T45	Type 1656 1667	an OB nurse
+T46	Occupation 1646 1655	worked as
+E13	Occupation:T46 State:T44 Type:T45

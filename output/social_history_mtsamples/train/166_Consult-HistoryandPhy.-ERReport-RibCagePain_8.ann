@@ -1,0 +1,15 @@
+T1	Status 46 56	history of
+A1	Value T1 current
+T2	Type 57 72	methamphetamine
+T3	Drug 57 72	methamphetamine
+E1	Drug:T3 Type:T2 State:T1 ExposureHistory:T4
+T4	ExposureHistory 93 117	approximately 1 year ago
+T5	Drug 81 88	cocaine
+E2	Drug:T5 Type:T6 State:T1 ExposureHistory:T4
+T6	Type 81 88	cocaine
+T7	Status 133 143	history of
+A2	Value T7 current
+T8	Drug 144 153	marijuana
+E3	Drug:T8 Type:T9 State:T7 ExposureHistory:T10
+T9	Type 144 153	marijuana
+T10	ExposureHistory 159 183	approximately 1 year ago

@@ -1,0 +1,10 @@
+T1	Occupation 65 75	unemployed
+E1	Occupation:T1 Method:T2 State:T4
+T2	Method 65 75	unemployed
+T3	LivingSituation 106 128	lives with his partner
+E2	LivingSituation:T3 State:T5 Method:T6
+T4	Status 62 76	is unemployed,
+A1	Value T4 current
+T5	Status 106 111	lives
+A2	Value T5 current
+T6	Method 106 128	lives with his partner

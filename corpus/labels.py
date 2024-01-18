@@ -1,16 +1,15 @@
-from collections import OrderedDict, Counter
+import copy
+import logging
+from collections import OrderedDict
+
 import pandas as pd
+
+from config.constants import TRIGGER
+from corpus.utils import remove_white_space_at_ends
+
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 500)
 pd.set_option('display.width', 1000)
-import logging
-import config.constants as constants
-import copy
-
-from corpus.utils import remove_white_space_at_ends
-
-from config.constants import TRIGGER
-
 
 class Entity(object):
     '''
@@ -132,7 +131,7 @@ def get_indices_by_sent(start, end, offsets, tokens):
     assert token_end is not None
 
     if (sent_start != sent_end):
-        logging.warn(f"Entity spans multiple sentences, truncating")
+        logging.warn("Entity spans multiple sentences, truncating")
         token_end = len(offsets[sent_start])
 
     toks = tokens[sent_start][token_start:token_end]

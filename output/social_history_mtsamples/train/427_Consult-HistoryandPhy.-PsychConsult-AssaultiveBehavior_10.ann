@@ -1,0 +1,18 @@
+T1	Occupation 49 74	employed as a tree cutter
+E1	Occupation:T1 State:T2 Type:T3 Method:T4 Time:T5
+T2	Status 49 57	employed
+A1	Value T2 current
+T3	Type 63 74	tree cutter
+T4	Method 76 102	currently on medical leave
+T5	Temporal 86 124	on medical leave for the last 2 months
+T6	LivingSituation 153 185	lives with his wife and children
+E2	LivingSituation:T6 Method:T7 State:T8
+T7	Method 153 185	lives with his wife and children
+T8	Status 153 158	lives
+A2	Value T8 current
+T9	Family 168 172	wife
+E3	Family:T9 Type:T12
+T10	Family 177 185	children
+E4	Family:T10 Type:T11
+T11	Type 177 185	children
+T12	Type 168 172	wife

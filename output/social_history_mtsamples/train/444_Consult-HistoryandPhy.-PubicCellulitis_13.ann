@@ -1,0 +1,9 @@
+T1	LivingSituation 20 43	lives with both parents
+E1	LivingSituation:T1 State:T3 Method:T2
+T2	Method 20 43	lives with both parents
+T3	Status 20 25	lives
+A1	Value T3 current
+T4	Family 36 43	parents
+E2	Family:T4 Other:T6 Type:T5
+T5	Type 36 43	parents
+T6	Other 48 66	both of them smoke

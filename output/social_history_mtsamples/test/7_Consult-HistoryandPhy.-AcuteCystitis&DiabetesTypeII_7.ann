@@ -1,0 +1,12 @@
+T1	Status 16 32	No known history
+A1	Value T1 none
+T2	Drug 36 40	drug
+E1	Drug:T2 Amount:T4 State:T1
+T3	Alcohol 44 51	alcohol
+E2	Alcohol:T3 Amount:T4 State:T1
+T4	Amount 52 57	abuse
+T5	PhysicalActivity 75 92	exercise patterns
+E3	PhysicalActivity:T5 Amount:T6 State:T7
+T6	Amount 97 117	within normal limits
+T7	Status 75 117	exercise patterns are within normal limits
+A2	Value T7 current

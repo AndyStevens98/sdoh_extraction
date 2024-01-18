@@ -1,0 +1,5 @@
+T1	LivingSituation 23 46	lives with her parents.
+E1	LivingSituation:T1 Method:T3 State:T2
+T2	Status 23 28	lives
+A1	Value T2 current
+T3	Method 23 46	lives with her parents.

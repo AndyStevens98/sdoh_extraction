@@ -1,0 +1,7 @@
+T1	Tobacco 33 42	nonsmoker
+E1	Tobacco:T1 State:T2
+T2	Status 33 42	nonsmoker
+A1	Value T2 none
+T3	Family 73 81	daughter
+E2	Family:T3 Type:T4
+T4	Type 73 81	daughter

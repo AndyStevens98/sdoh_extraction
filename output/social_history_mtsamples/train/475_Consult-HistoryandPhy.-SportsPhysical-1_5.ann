@@ -1,0 +1,27 @@
+T1	PhysicalActivity 161 171	volleyball
+E1	PhysicalActivity:T1 Type:T3 State:T5
+T2	PhysicalActivity 173 183	basketball
+E2	PhysicalActivity:T2 Type:T4 State:T5
+T3	Type 161 172	volleyball,
+T4	Type 173 183	basketball
+T5	Status 149 160	involved in
+A1	Value T5 current
+T6	PhysicalActivity 336 340	swim
+E3	PhysicalActivity:T6 State:T8 Type:T7 Time:T17
+T7	Type 336 340	swim
+T8	Status 341 359	in the summer time
+A2	Value T8 current
+T9	Status 512 524	does not use
+A3	Value T9 none
+T10	Drug 525 530	drugs
+E4	Drug:T10 State:T9
+T11	Alcohol 532 539	alcohol
+E5	Alcohol:T11 State:T9
+T12	Tobacco 544 549	smoke
+E6	Tobacco:T12 State:T9
+T14	Status 555 561	denies
+A4	Value T14 none
+T15	SexualHistory 562 577	sexual activity
+E7	SexualHistory:T15 Type:T16 State:T14
+T16	Type 562 578	sexual activity.
+T17	Temporal 341 359	in the summer time

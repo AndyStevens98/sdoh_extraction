@@ -1,0 +1,6 @@
+T1	Family 78 81	Mom
+E1	Family:T1 Type:T3
+T2	Family 86 89	Dad
+E2	Family:T2 Type:T4
+T3	Type 78 81	Mom
+T4	Type 86 89	Dad

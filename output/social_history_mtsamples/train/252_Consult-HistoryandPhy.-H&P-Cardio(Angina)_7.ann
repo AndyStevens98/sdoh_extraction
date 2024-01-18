@@ -1,0 +1,5 @@
+T1	Tobacco 31 42	tobacco use
+E1	Tobacco:T1 State:T2 Amount:T3
+T2	Status 39 42	use
+A1	Value T2 current
+T3	Amount 76 89	40 pack years

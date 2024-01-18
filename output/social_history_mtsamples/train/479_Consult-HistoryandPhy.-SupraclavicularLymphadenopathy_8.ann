@@ -1,0 +1,11 @@
+T1	Occupation 35 56	is a registered nurse
+E1	Occupation:T1 State:T3 Type:T2 Location:T4
+T2	Type 40 56	registered nurse
+T3	Status 35 37	is
+A1	Value T3 current
+T4	Location 57 81	at Spring Grove Hospital
+T5	Status 93 101	Negative
+A2	Value T5 none
+T6	Type 105 113	asbestos
+T7	EnvironmentalExposure 93 113	Negative to asbestos
+E2	EnvironmentalExposure:T7 State:T5 Type:T6
